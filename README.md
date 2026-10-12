@@ -1,2 +1,60 @@
-# industrial-anomaly-inspection
-Industrial visual anomaly detection with PatchCore and EfficientAD: small-defect localization, reproducible evaluation, and inference.
+# Industrial Anomaly Inspection
+
+**面向缺陷样本稀缺场景的工业视觉异常检测与定位系统**
+
+An industrial visual anomaly detection project comparing PatchCore and EfficientAD, with an emphasis on small-defect localization, reproducible evaluation, and resource-aware inference.
+
+## 当前状态
+
+**项目初始化：开发计划与实验规范已建立，算法实现、训练和性能测试尚未完成。**
+
+仓库中的方法与功能为开发目标；目前没有已验证的检测指标、部署性能或演示结果。实验完成后将提交配置、实现、原始记录和失败案例。
+
+## 项目目标
+
+使用目标产品的正常图片建立模型，为新图片输出异常分数、正常／异常判断和异常热力图。第一版按产品类别分别建模。
+
+- 数据集：MVTec AD 的 `metal_nut`、`cable`、`carpet`。
+- 方法：PatchCore 与 EfficientAD。
+- 核心实验：整图缩放、高分辨率输入、分块检测之间的效果与成本比较。
+- 评测：图像级与像素级指标、误报／漏检、延迟、资源占用。
+- 工程目标：图片／目录推理、热力图与批量报告，以及简单演示。
+
+目标工业数据的模型拟合只使用正常图片；预训练权重及辅助自然图片来源将单独记录。模型输出异常程度与位置，第一版不预测缺陷语义类别。
+
+## 阅读顺序
+
+1. [开发路线与阶段验收](docs/ROADMAP.md)
+2. [数据集、论文与参考代码](docs/DATASETS.md)
+3. [环境和 RTX 3060 6GB 实施方案](docs/ENVIRONMENT.md)
+4. [数据划分与评测协议](docs/PROTOCOL.md)
+5. [实验记录模板](docs/EXPERIMENT_LOG.md)
+
+## 当前与计划内容
+
+| 内容 | 状态 |
+|---|---|
+| 项目介绍、资料清单和 8 周路线 | 已建立 |
+| 数据划分、阈值校准与评价规范 | 已建立文档，待实现和核验 |
+| MVTec AD 数据检查与读取 | 待实现 |
+| PatchCore 参考基线与核心学习版 | 待实现与验证 |
+| EfficientAD-S 训练 | 待实现与验证 |
+| 小面积异常、分辨率与分块对照 | 待实验 |
+| 图片／目录推理、热力图与演示 | 待实现 |
+| 最终指标与性能结果 | 尚无实测结果 |
+
+## 第一阶段
+
+核对训练设备与环境 → 获取 MVTec AD → 检查 `metal_nut` 的图像和掩码 → 固定数据划分清单 → 运行单类 PatchCore 基线。
+
+环境兼容性确认前，不提供未经验证的一键训练命令。后续会在每个阶段补入实际可运行的步骤。
+
+## 结果记录原则
+
+所有结果需要对应代码版本、配置、划分清单、预训练权重、随机种子和原始预测。开发数据与最终测试数据分开使用。采用自定义划分时，明确注明评价范围，与官方完整测试集的论文数字分开呈现。
+
+## 数据与引用
+
+数据集、外部权重及参考实现遵守各自许可；完整数据、缓存、私有采集资料和凭据不上传到本仓库。数据与方法入口见[资料清单](docs/DATASETS.md)。
+
+本项目的训练、算法与实验实现将随开发逐步提交；引用的方法不表示本仓库已经达到原论文结果。
