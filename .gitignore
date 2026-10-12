@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.egg-info/
+build/
+dist/
+
+# Local environments and credentials
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+.netrc
+*.pem
+*.key
+
+# Data and generated model artifacts
+/data/
+/datasets/
+/artifacts/
+/checkpoints/
+/weights/
+/runs/
+/logs/
+/wandb/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.engine
+*.faiss
+*.npy
+*.npz
+
+# Local editor and operating system files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.ipynb_checkpoints/
+
+# Downloaded archives
+*.zip
+*.tar
+*.tar.gz
+*.tar.xz
+*.7z
