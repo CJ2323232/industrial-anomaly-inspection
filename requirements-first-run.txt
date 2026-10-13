@@ -1,0 +1,4 @@
+# Install the CUDA build of torch/torchvision first; see docs/FIRST_RUN.md.
+torch==2.6.0
+torchvision==0.21.0
+anomalib==2.2.0
