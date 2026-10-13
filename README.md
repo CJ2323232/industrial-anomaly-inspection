@@ -6,9 +6,13 @@ An industrial visual anomaly detection project comparing PatchCore and Efficient
 
 ## 当前状态
 
-**项目初始化：开发计划与实验规范已建立，算法实现、训练和性能测试尚未完成。**
+**项目初始化：开发计划、实验规范和首次试跑脚本已建立，目标设备训练验证和正式性能测试尚未完成。**
 
 仓库中的方法与功能为开发目标；目前没有已验证的检测指标、部署性能或演示结果。实验完成后将提交配置、实现、原始记录和失败案例。
+
+## 现在开始试跑
+
+Windows + NVIDIA 游戏本可按照[首次试跑步骤](docs/FIRST_RUN.md)安装独立环境，运行 `python scripts/run_first_experiment.py`。该脚本调用 anomalib 2.2.0 的小规模 PatchCore 配置，先检查开发集流程；尚未在目标 GPU 完成实测。
 
 ## 项目目标
 
@@ -37,7 +41,7 @@ An industrial visual anomaly detection project comparing PatchCore and Efficient
 | 项目介绍、资料清单和 8 周路线 | 已建立 |
 | 数据划分、阈值校准与评价规范 | 已建立文档，待实现和核验 |
 | MVTec AD 数据检查与读取 | 待实现 |
-| PatchCore 参考基线与核心学习版 | 待实现与验证 |
+| PatchCore 参考基线与核心学习版 | 参考试跑脚本已加入，待目标设备验证；核心学习版待实现 |
 | EfficientAD-S 训练 | 待实现与验证 |
 | 小面积异常、分辨率与分块对照 | 待实验 |
 | 图片／目录推理、热力图与演示 | 待实现 |
@@ -47,7 +51,7 @@ An industrial visual anomaly detection project comparing PatchCore and Efficient
 
 核对训练设备与环境 → 获取 MVTec AD → 检查 `metal_nut` 的图像和掩码 → 固定数据划分清单 → 运行单类 PatchCore 基线。
 
-环境兼容性确认前，不提供未经验证的一键训练命令。后续会在每个阶段补入实际可运行的步骤。
+首次试跑提供按指定版本接口编写的启动步骤；兼容性和训练结果以目标机器实测为准。后续会补入验证结果与正式实验步骤。
 
 ## 结果记录原则
 
