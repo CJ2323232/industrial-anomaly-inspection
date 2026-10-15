@@ -2,6 +2,8 @@
 
 资料核对日期：2026-10-12。此清单记录来源，不表示数据已下载、代码已验证或实验已完成。
 
+进度更新（2026-10-13）：已获取并校验 MVTec AD 完整压缩包，仅解压和检查 `metal_nut`；`cable`、`carpet` 尚未解压检查。数据来源、压缩包 SHA-256 及本次检查结果见[首次试跑记录](results/2026-10-13-first-run.json)。完整数据不提交到仓库。
+
 ## MVTec AD：第一版数据
 
 [官方介绍与下载入口](https://www.mvtec.com/research-teaching/datasets/mvtec-ad)。页面提供 Download dataset 表单和 Evaluation Code 入口。数据包含正常训练图、正常／异常测试图和异常像素标注。

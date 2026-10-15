@@ -2,3 +2,5 @@
 torch==2.6.0
 torchvision==0.21.0
 anomalib==2.2.0
+# anomalib.models imports its video helpers, which require requests.
+requests>=2.32,<3

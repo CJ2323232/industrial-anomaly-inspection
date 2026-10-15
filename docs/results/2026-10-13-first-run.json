@@ -1,0 +1,125 @@
+{
+  "experiment_id": "2026-10-13-metal-nut-patchcore-pipeline-check",
+  "date": "2026-10-13",
+  "status": "passed",
+  "purpose": "pipeline_check_on_development_data_not_final_evaluation",
+  "source": {
+    "repository": "CJ2323232/industrial-anomaly-inspection",
+    "base_commit": "8c1888507ad099b2d20381ac56c576d5681d78f9",
+    "tested_script_sha256": "3844d9881ba83124a136315ec4df59e353b532289213997063c840b4eef47fed",
+    "compatibility_changes": [
+      "Windows regular output directory instead of symlink",
+      "Explicit requests dependency"
+    ]
+  },
+  "environment": {
+    "python": "3.10.10",
+    "torch": "2.6.0+cu118",
+    "torchvision": "0.21.0+cu118",
+    "torch_cuda": "11.8",
+    "anomalib": "2.2.0",
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "gpu_memory_bytes": 6441926656,
+    "driver": "566.07"
+  },
+  "operating_system": "Windows, build 26200",
+  "dataset": {
+    "name": "MVTec AD",
+    "category": "metal_nut",
+    "archive_source_url": "https://www.mydrive.ch/shares/150996/b52ecdcbf521176e9db9c731f2304b27/download/420938113-1629960298/mvtec_anomaly_detection.tar.xz",
+    "archive_sha256": "cf4313b13603bec67abb49ca959488f7eedce2a9f7795ec54446c649ac98cd3d",
+    "license": "CC BY-NC-SA 4.0",
+    "image_count": 335,
+    "anomaly_mask_count": 93,
+    "counts": {
+      "train/good": 220,
+      "test/bent": 25,
+      "test/color": 22,
+      "test/flip": 23,
+      "test/good": 22,
+      "test/scratch": 23
+    },
+    "split_counts": {
+      "train": 220,
+      "development": 45,
+      "held_out": 70
+    },
+    "split_manifest": "2026-10-13-split_manifest.json"
+  },
+  "configuration": {
+    "model": "PatchCore",
+    "backbone": "resnet18",
+    "pretrained_weights": "timm/resnet18.a1_in1k",
+    "layers": [
+      "layer2",
+      "layer3"
+    ],
+    "image_size": [
+      256,
+      256
+    ],
+    "train_batch_size": 4,
+    "eval_batch_size": 1,
+    "coreset_sampling_ratio": 0.01,
+    "seed": 0,
+    "max_epochs": 1,
+    "memory_bank_shape": [
+      2252,
+      384
+    ]
+  },
+  "development_metrics": {
+    "image_AUROC": 1.0,
+    "image_F1Score": 0.9863013625144958,
+    "pixel_AUROC": 0.9848977327346802,
+    "pixel_F1Score": 0.8309462666511536
+  },
+  "verification": {
+    "split_paths_disjoint": true,
+    "training_contains_only_normal_images": true,
+    "held_out_not_evaluated": true,
+    "checkpoint_reload_and_gpu_inference_passed": true,
+    "reload_sample_from_development": "metal_nut/test/bent/000.png",
+    "reload_sample_pred_score": 1.0,
+    "reload_anomaly_map_shape": [
+      1,
+      1,
+      256,
+      256
+    ],
+    "checkpoint_size_bytes": 14713270,
+    "checkpoint_sha256": "a9f8467bf431c45d6b411a905e1ecb1c96ecf1a6cdd4f13956551e0a16e1bfcc",
+    "visualization_count": 45
+  },
+  "data_validation": {
+    "all_png_readable": true,
+    "all_anomaly_masks_present_and_aligned": true,
+    "exact_image_duplicates": []
+  },
+  "gpu_matrix_multiply_passed": true,
+  "duration": {
+    "seconds": 49.90600000001723,
+    "includes": [
+      "Python process startup",
+      "cached pretrained model loading",
+      "feature extraction",
+      "coreset construction",
+      "development calibration and evaluation",
+      "checkpoint and visualization saving"
+    ],
+    "excludes": [
+      "environment installation",
+      "dataset download and extraction",
+      "pretrained weights download"
+    ],
+    "is_single_image_inference_latency": false
+  },
+  "exit_code": 0,
+  "limitations": [
+    "Development data was reused for calibration and pipeline evaluation; threshold-dependent scores are not independent test estimates.",
+    "The 70 held-out images were not evaluated.",
+    "This reduced ResNet18 / 1% coreset setup is not the original paper configuration.",
+    "The proposed formal normal-only calibration split and original-coordinate pixel evaluation remain unimplemented.",
+    "EfficientAD, other categories, resolution and tiling comparisons, and inference performance measurements remain pending."
+  ]
+}
