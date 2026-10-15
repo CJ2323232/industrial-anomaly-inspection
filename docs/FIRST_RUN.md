@@ -2,21 +2,23 @@
 
 目标：先跑通 `metal_nut` 的 PatchCore 参考实现，得到模型、开发集指标和可视化输出。
 
-这是新加入的启动脚本，已核对 anomalib 2.2.0 的接口；尚未在目标 Windows / NVIDIA 设备完成训练验证。遇到报错保留完整输出。
+2026-10-13 已在 Windows + RTX 3060 Laptop 6GB、Python 3.10.10、PyTorch 2.6.0+cu118、anomalib 2.2.0 上完成首次试跑及模型重新加载验证。配置、开发集结果和适用范围见[试跑报告](results/2026-10-13-first-run.md)。遇到报错仍需保留完整输出。
 
 ## 1. 新建环境
 
 在 **Anaconda Prompt** 逐行运行：
 
 ```bat
-conda create -n industrial-ad python=3.11 -y
+conda create -n industrial-ad python=3.10 -y
 conda activate industrial-ad
 python -m pip install --upgrade pip
 python -m pip install torch==2.6.0 torchvision==0.21.0 --index-url https://download.pytorch.org/whl/cu118
-python -m pip install anomalib==2.2.0
+python -m pip install anomalib==2.2.0 "requests>=2.32,<3"
 ```
 
 CUDA 11.8 是这里选用的起始安装方案，不需要先单独安装 CUDA Toolkit。GPU 驱动需要兼容该版本；启动脚本会检查 CUDA 是否可用。安装命令来源：[PyTorch 官方历史版本](https://docs.pytorch.org/get-started/previous-versions/)、[anomalib 2.2.0](https://pypi.org/project/anomalib/2.2.0/)。
+
+显式安装 `requests`，用于 anomalib 2.2.0 模型入口导入的辅助模块。Windows 启动脚本使用普通输出目录，避免创建符号链接所需的额外权限。每次试验可用 `--output` 指定新的目录，以保留此前结果。
 
 ## 2. 获取项目
 
@@ -61,6 +63,8 @@ python scripts/run_first_experiment.py
 
 第一次会下载预训练骨干权重，需要网络。看到提取特征、coreset sampling 或进度条属于正常过程；PatchCore 建立正常特征库，不需要像 YOLO 一样训练很多轮。这里使用 ResNet18、256×256 输入、1% coreset 和 batch=4 来降低启动规模，不能把结果当成原论文默认配置的复现。
 
+Windows 使用普通 `latest` 输出目录。再次运行时建议给 `--output` 指定新的目录，例如 `--output artifacts/first_run_20261013`，以保留此前的模型和记录。
+
 结束后查看：
 
 - `artifacts/first_run/development_results.json`：开发集指标与模型位置。
@@ -85,5 +89,7 @@ python -m pip freeze > artifacts/first_run/environment.txt
 - `CUDA is unavailable`：确认激活的是 `industrial-ad` 环境，再核对上述 CUDA 版 PyTorch 安装；仍失败时保留输出。
 - 权重下载超时：保留报错中的下载网址，按该网址处理网络或本地权重缓存，不反复重装所有依赖。
 - 提示缺少目录：按上面的结构检查是否多套了一层 `metal_nut` 文件夹。
+
+完整实测依赖见[环境锁定记录](results/2026-10-13-environment.txt)。该记录对应 Python 3.10 和 Windows；仍需先从上述 CUDA 11.8 安装源获取匹配的 torch 与 torchvision。
 
 核心参考：[anomalib PatchCore 2.2.0 源码](https://github.com/open-edge-platform/anomalib/blob/v2.2.0/src/anomalib/models/image/patchcore/lightning_model.py)。

@@ -6,6 +6,7 @@ The held-out test subset is not evaluated. See docs/FIRST_RUN.md for limitations
 
 import argparse
 import json
+import os
 from pathlib import Path
 
 
@@ -29,6 +30,19 @@ def main():
     from anomalib.engine import Engine
     from anomalib.models import Patchcore
 
+    engine_class = Engine
+    if os.name == "nt":
+        class WindowsEngine(Engine):
+            """Use a real output directory without Windows symlink privileges."""
+
+            def _setup_workspace(self, *workspace_args, **workspace_kwargs):
+                # anomalib 2.2.0 creates a `latest` symlink for versioned runs.
+                # Non-versioned workspaces use a regular `latest` directory.
+                workspace_kwargs["versioned_dir"] = False
+                return super()._setup_workspace(*workspace_args, **workspace_kwargs)
+
+        engine_class = WindowsEngine
+
     if not torch.cuda.is_available():
         raise SystemExit("CUDA is unavailable. Check the PyTorch install instructions in docs/FIRST_RUN.md")
     seed_everything(0, workers=True)
@@ -50,7 +64,7 @@ def main():
         coreset_sampling_ratio=0.01,
         pre_processor=Patchcore.configure_pre_processor(image_size=(256, 256)),
     )
-    engine = Engine(
+    engine = engine_class(
         accelerator="gpu",
         devices=1,
         max_epochs=1,

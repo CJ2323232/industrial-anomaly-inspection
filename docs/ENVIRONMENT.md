@@ -6,10 +6,18 @@ NVIDIA RTX 3060 Laptop GPU，按 6GB 显存设计资源规模。具体显存、�
 
 主要工作可以在单台游戏本完成。Mac 可作为代码、阅读和结果分析辅助设备；服务器属于后续可选资源。
 
+## 已验证环境：2026-10-13
+
+Windows（build 26200），RTX 3060 Laptop 6GB，驱动 566.07，约 16GB 系统内存。独立 Python 3.10.10 环境，torch 2.6.0+cu118、torchvision 0.21.0+cu118、anomalib 2.2.0。
+
+CUDA 矩阵计算、`metal_nut` PatchCore 256×256 首次试跑及 checkpoint 重新加载推理已通过；`pip check` 未发现损坏依赖。完整版本见[环境锁定记录](results/2026-10-13-environment.txt)。这一验证不代表 EfficientAD、高分辨率或分块配置已经通过资源测试。
+
+Windows 启动脚本使用普通输出目录，避免 anomalib 2.2.0 的符号链接权限要求；`requests` 已显式加入启动依赖。兼容处理依赖该版本的内部工作区接口，升级 anomalib 时需重新核验。
+
 ## 环境准备顺序
 
 1. 记录系统、显卡和驱动信息。NVIDIA 设备可通过 `nvidia-smi` 检查。
-2. 建立独立 Python 环境，Python 3.11 作为起始候选；以所选框架发行版的兼容要求为准。
+2. 建立独立 Python 环境；首次已验证 Python 3.10.10，以所选框架发行版的兼容要求为准。
 3. 按[PyTorch 官方安装入口](https://pytorch.org/get-started/locally/)选择与系统和驱动兼容的版本。
 4. 安装匹配的 anomalib 版本，核对[依赖声明](https://github.com/open-edge-platform/anomalib/blob/main/pyproject.toml)。
 5. 检查 `torch.cuda.is_available()`、GPU 前向计算、数据读取与保存加载。
