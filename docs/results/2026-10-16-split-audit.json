@@ -1,0 +1,46 @@
+{
+  "purpose": "split_and_file_audit_only_no_model_evaluation",
+  "manifest_sha256": "2b4dabc68f69158fc174a3e038f6f10480bd6fa81e17fbd8fbfb15ca5f2f9e4b",
+  "generator_sha256": "0bf25c41b41ccbfe244896729781926a47b062e552055f6fd8fbdfd4d04f6686",
+  "image_count": 335,
+  "mask_count": 93,
+  "counts": {
+    "fit": {
+      "good": 176
+    },
+    "normal_calibration": {
+      "good": 44
+    },
+    "development": {
+      "bent": 10,
+      "color": 8,
+      "flip": 9,
+      "good": 8,
+      "scratch": 10
+    },
+    "held_out": {
+      "bent": 15,
+      "color": 14,
+      "flip": 14,
+      "good": 14,
+      "scratch": 13
+    }
+  },
+  "checks": {
+    "all_paths_disjoint": true,
+    "original_images_covered_once": true,
+    "fit_and_calibration_normal_only": true,
+    "development_membership_preserved": true,
+    "held_out_membership_preserved": true,
+    "images_readable_rgb": true,
+    "masks_nonempty_binary_and_aligned": true,
+    "no_exact_image_duplicates": true
+  },
+  "limitations": [
+    "Byte-level duplicate checks do not establish independence of objects, scenes or capture batches.",
+    "Calibration images were used in the old 220-image smoke feature bank; rebuild using only fit paths.",
+    "Development membership is historical, not newly sampled per-defect stratification.",
+    "Held-out files are audited for integrity and labels; no model predictions or performance are computed.",
+    "Splits are frozen; threshold calibration and manifest-consuming model runners are not implemented yet."
+  ]
+}
