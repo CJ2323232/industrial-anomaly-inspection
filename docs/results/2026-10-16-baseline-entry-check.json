@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-16",
+  "status": "entry_and_preflight_checked_full_gpu_run_pending_user_launch",
+  "formal_baseline_started": false,
+  "new_model_or_development_metrics_available": false,
+  "regression_checks": {
+    "passed": 17,
+    "failed": 0,
+    "duration_seconds": 36.155,
+    "model_roundtrip": "CPU, random weights and synthetic tensor; no industrial fitting or weight download"
+  },
+  "preflight": {
+    "status": "preflight_passed_not_trained",
+    "checked_at": "2026-10-16T20:37:00.655789+08:00",
+    "verified_images": 265,
+    "verified_masks": 37,
+    "held_out_images_opened": 0,
+    "split_counts": {
+      "fit": 176,
+      "normal_calibration": 44,
+      "development": 45,
+      "held_out": 70
+    },
+    "manifest_sha256": "2b4dabc68f69158fc174a3e038f6f10480bd6fa81e17fbd8fbfb15ca5f2f9e4b",
+    "pretrained_sha256": "80c49dee3da4822c009c5a7fe591e9223c5a2cfcf95a4067ca4dfb5a7b89c612",
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU"
+  },
+  "source_sha256": {
+    "scripts/baseline_utils.py": "02f611a64a0651295fef3d8d38c33fa71d2b7a53bf1db2ac69fa32c2d7d084ae",
+    "scripts/run_trusted_baseline.py": "d62fdba29057f3dec73598cbff1490f44dfcdea46c0baa5825b7edebdf3b67ea",
+    "tests/test_trusted_baseline.py": "41c1b10c3882a1506d12d9f9097b6e43282b51e4d87ac75246f392d88167c071"
+  },
+  "pending": [
+    "First complete CUDA fit on 176 normal images",
+    "Normal-only threshold calibration on 44 images",
+    "Original-resolution evaluation on 45 development images",
+    "Checkpoint reload agreement on the actual fitted GPU model"
+  ]
+}
