@@ -1,0 +1,48 @@
+{
+  "status": "provisional_development_choice_recorded_not_applied_to_baseline",
+  "recorded_on": "2026-10-18",
+  "selected_on": "development_after_observing_errors",
+  "category": "metal_nut",
+  "baseline_run": "baseline_20261016_204723_088238",
+  "checkpoint_sha256": "9f6bf4b333ec7aa5552874efc843d6a86a877579a968346b04a07e0ebff9bf38",
+  "manifest_sha256": "2b4dabc68f69158fc174a3e038f6f10480bd6fa81e17fbd8fbfb15ca5f2f9e4b",
+  "analysis_sha256": "65ecaa9a22c096675e0c6983c8097941897ed0b8360539db3bccd643f121de80",
+  "image_quantile": 0.975,
+  "quantile_method": "linear",
+  "image_threshold_for_this_checkpoint": 13.575581574440001,
+  "decision_rule": "raw_score > threshold",
+  "recalibrate_for_changed_model_or_preprocessing": true,
+  "pixel_threshold": 11.98109245300293,
+  "pixel_policy_changed": false,
+  "development_metrics": {
+    "normal_quantile": 0.975,
+    "image_threshold": 13.575581574440001,
+    "calibration_exceedances": 2,
+    "TP": 37,
+    "FP": 0,
+    "FN": 0,
+    "TN": 8,
+    "normal_count": 8,
+    "anomaly_count": 37,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "IoU": 1.0,
+    "false_positive_rate": 0.0,
+    "false_negative_rate": 0.0
+  },
+  "normal_development_max": {
+    "image_path": "metal_nut/test/good/013.png",
+    "raw_score": 13.508660316467285
+  },
+  "anomalous_development_min": {
+    "image_path": "metal_nut/test/scratch/000.png",
+    "raw_score": 13.606968879699707
+  },
+  "normal_margin": 0.06692125797271586,
+  "anomalous_margin": 0.03138730525970601,
+  "baseline_modified": false,
+  "final_configuration_frozen": false,
+  "held_out_images_opened": 0,
+  "scope": "Best observed FP/FN among three explored policies on 8 normal and 37 anomalous development images; no unseen-performance guarantee."
+}

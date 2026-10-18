@@ -2,7 +2,7 @@
 
 **状态：2026-10-16 已完成固定清单下 `metal_nut` 独立正常校准参考基线及原图评价；其他类别尚未固定清单，保留测试未评价。**
 
-入口见[参考基线](TRUSTED_BASELINE.md)，实测见[完成记录](results/2026-10-16-trusted-baseline.md)。[入口预检](results/2026-10-16-baseline-entry-check.json)是实际运行前的历史检查。2026-10-17 已准备图像阈值敏感性开发入口，原基线阈值不变，候选规则未自动采用。
+入口见[参考基线](TRUSTED_BASELINE.md)，实测见[完成记录](results/2026-10-16-trusted-baseline.md)。[入口预检](results/2026-10-16-baseline-entry-check.json)是实际运行前的历史检查。2026-10-17 已完成[三组图像阈值开发对照](results/2026-10-17-threshold-analysis.md)，2026-10-18 暂定正常 97.5% 分位数规则；选择记录独立保存，原基线阈值不变，运行器尚未自动加载候选规则。
 
 ## 已固定的 metal_nut v1
 
