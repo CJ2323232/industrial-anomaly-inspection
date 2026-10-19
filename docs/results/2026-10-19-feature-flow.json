@@ -1,0 +1,74 @@
+{
+  "purpose": "single_fit_image_feature_organization_learning_check",
+  "image_path": "metal_nut/train/good/000.png",
+  "image_sha256": "b0309325bc305ae8b19246884f20397b951285786aecca0ebf1d009e9799e350",
+  "manifest_sha256": "2b4dabc68f69158fc174a3e038f6f10480bd6fa81e17fbd8fbfb15ca5f2f9e4b",
+  "checkpoint_sha256": "9f6bf4b333ec7aa5552874efc843d6a86a877579a968346b04a07e0ebff9bf38",
+  "device": "cuda",
+  "shapes": {
+    "input": [
+      1,
+      3,
+      256,
+      256
+    ],
+    "layer2": [
+      1,
+      128,
+      32,
+      32
+    ],
+    "layer3": [
+      1,
+      256,
+      16,
+      16
+    ],
+    "pooled_layer2": [
+      1,
+      128,
+      32,
+      32
+    ],
+    "pooled_layer3": [
+      1,
+      256,
+      16,
+      16
+    ],
+    "aligned_layer3": [
+      1,
+      256,
+      32,
+      32
+    ],
+    "fused_map": [
+      1,
+      384,
+      32,
+      32
+    ],
+    "patch_vectors": [
+      1024,
+      384
+    ],
+    "existing_memory_bank": [
+      1802,
+      384
+    ]
+  },
+  "reference_max_abs_difference": 0.0,
+  "comparison_rtol": 1e-06,
+  "comparison_atol": 1e-06,
+  "feature_organization_matches_reference": true,
+  "held_out_images_opened": 0,
+  "new_model_fitted": false,
+  "threshold_applied": false,
+  "source_sha256": {
+    "inspect_feature_flow.py": "4c3f74321aa2e81084cdb37226ddd4432d6ea98d89381e588ec48f7817c3eac1",
+    "feature_steps.py": "c1e49954df67519c700c10cdc2f7f1bda83c1059e480dbfd7573d755c0191824",
+    "run_trusted_baseline.py": "d62fdba29057f3dec73598cbff1490f44dfcdea46c0baa5825b7edebdf3b67ea",
+    "baseline_utils.py": "02f611a64a0651295fef3d8d38c33fa71d2b7a53bf1db2ac69fa32c2d7d084ae"
+  },
+  "limits": "One input only. Backbone uses the anomalib reference loader; this is not an independent full detector."
+}

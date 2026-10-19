@@ -12,7 +12,7 @@ An industrial visual anomaly detection project comparing PatchCore and Efficient
 
 项目现以视觉算法实习的技术深度为目标推进：实现并核验 PyTorch 检测核心，研究 6GB 设备上的小缺陷检测取舍，并保存可复核的实验与个人学习记录。实施范围、验收条件与贡献边界见[算法项目路线](docs/ALGORITHM_PROJECT.md)。
 
-**独立校准运行入口：** [参考基线操作说明](docs/TRUSTED_BASELINE.md)。此前 17 项检查、输入／缓存／CUDA 预检以及后续完整 GPU 运行已通过。使用者已完成[阈值对照](docs/results/2026-10-17-threshold-analysis.md)：95% 为 FP=3/FN=0，97.5% 为 FP=0/FN=0，99% 为 FP=0/FN=3；均限于已见开发集。暂定选择记录独立保存，原基线保持不变。用户已完成[单图特征组织核验](docs/results/2026-10-18-feature-flow.md)，最大绝对差为 0.0；下一步解释各维度并学习最近邻检索。项目文件统一存放及入口见[项目文件说明](项目文件说明.md)。
+**独立校准运行入口：** [参考基线操作说明](docs/TRUSTED_BASELINE.md)。此前 17 项检查、输入／缓存／CUDA 预检以及后续完整 GPU 运行已通过。使用者已完成[阈值对照](docs/results/2026-10-17-threshold-analysis.md)：95% 为 FP=3/FN=0，97.5% 为 FP=0/FN=0，99% 为 FP=0/FN=3；均限于已见开发集。暂定选择记录独立保存，原基线保持不变。用户已完成[单图特征组织核验](docs/results/2026-10-18-feature-flow.md)，最大绝对差为 0.0；已准备[第二课：精确最近邻与分块对照](docs/FEATURE_LESSON_02.md)，七项合成检查和入口预检通过，真实单图检索待使用者手动运行。项目文件统一存放及入口见[项目文件说明](项目文件说明.md)。
 
 ## 现在开始试跑
 
