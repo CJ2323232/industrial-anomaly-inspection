@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-19",
+  "status": "prepared_synthetic_checks_passed_real_image_run_pending_user",
+  "synthetic_tests_passed": 7,
+  "synthetic_tests_skipped": 0,
+  "test_execution": "Initial six-test suite plus one added 384D reference-formula test, run separately",
+  "coverage": [
+    "hand arithmetic",
+    "uneven and oversized chunks",
+    "non-contiguous inputs and input preservation",
+    "ties across blocks",
+    "large close vectors and identical vectors",
+    "invalid inputs",
+    "CUDA float32/float64 versus direct CPU oracle",
+    "384D float64 anomalib reference including identical vectors"
+  ],
+  "actual_cmd_check_only_exit_code": 0,
+  "model_forward_executed": false,
+  "real_image_neighbor_search_executed": false,
+  "held_out_images_opened": 0,
+  "backbone_or_memory_bank_changed": false,
+  "source_sha256": {
+    "scripts/nearest_neighbors.py": "b91dd7d12a0f1f3e9ab33c2f744496932a6a7590d0fc2059ed1272392352c8b7",
+    "scripts/inspect_nearest_neighbors.py": "6feff69fb20dce46d2123f788766ecc8192919071f00b5c3ea970632c31d6b27",
+    "tests/test_nearest_neighbors.py": "8b9e11baf1f08e09cfc8c31347f73115b092344a234f71792a0c4e93eb02492f",
+    "开始第二课_最近邻检索.cmd": "71f4c1e5e027955ac7f81ee114eb35990c6863df2bf78d0f5b9e66b58d564cbd"
+  },
+  "note": "Synthetic checks are not real-image detector validation, a measured memory benchmark, or final evaluation."
+}
