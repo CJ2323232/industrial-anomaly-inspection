@@ -50,3 +50,12 @@ Thumbs.db
 *.tar.gz
 *.tar.xz
 *.7z
+
+# Consolidated local runtime, results and migration history
+.cache/
+.migration/
+/experiments/
+/analyses/
+/metal_nut/
+/downloads/
+desktop.ini
