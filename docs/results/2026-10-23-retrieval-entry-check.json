@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-23",
+  "status": "entry_prepared_real_development_comparison_pending_manual_run",
+  "source_sha256": {
+    "scripts/retrieval_backend.py": "b99882559438bb44ee0f95fbc5e9be07acfef4d1799133cc66eb7b9e2f5eedbf",
+    "scripts/compare_retrieval.py": "3bad1670635d06c4dc047a98eee91ffe936959387d606cf3d740ce5780aea73e",
+    "tests/test_retrieval_backend.py": "3769243524661ccc8af1085951a4c69269396e430802c2570ad13fc58c50521f",
+    "运行检索对照实验.cmd": "21eddff4c266ae2dfdc10d8ec34da715b4b3858df796a755dd9f780fbe228dd5"
+  },
+  "synthetic_tests": {
+    "passed": 8,
+    "failed": 0,
+    "names": [
+      "test_k1_and_k9_with_uneven_chunks_match_direct_double_oracle",
+      "test_ties_and_single_vector_bank",
+      "test_invalid_arguments",
+      "test_context_restores_backend_after_exception",
+      "test_small_numeric_change_can_cross_fixed_thresholds",
+      "test_complete_synthetic_forward_preserves_weighting_and_maps",
+      "test_cuda_float32_topk",
+      "test_synthetic_runner_writes_correctness_timing_and_final_reports"
+    ],
+    "execution": "First seven tests passed in 20.408 seconds; added synthetic runner integration test passed separately in 2.665 seconds.",
+    "scope": "Synthetic vectors, synthetic inputs through reference anomalib, and synthetic GPU runner/report orchestration. No MVTec image model forward."
+  },
+  "launcher_preflight": {
+    "command": "运行检索对照实验.cmd --check-only",
+    "exit_code": 0,
+    "marker": "RETRIEVAL_PREFLIGHT_PASSED",
+    "scope": "Frozen checkpoint/policy identity, development image/mask hashes, CUDA availability; no model forward."
+  },
+  "checkpoint_sha256": "9f6bf4b333ec7aa5552874efc843d6a86a877579a968346b04a07e0ebff9bf38",
+  "manifest_sha256": "2b4dabc68f69158fc174a3e038f6f10480bd6fa81e17fbd8fbfb15ca5f2f9e4b",
+  "prepared_protocol": {
+    "development_images": 45,
+    "query_chunk": 128,
+    "bank_chunk": 512,
+    "warmup_each_backend": 10,
+    "repeats": 3,
+    "samples_per_backend": 135,
+    "atol": 0.0001,
+    "rtol": 1e-05,
+    "new_model_fitted": false,
+    "performance": "Synchronized GPU-resident full forward plus original-size interpolation; PyTorch peak allocated memory."
+  },
+  "real_development_comparison_run": false,
+  "real_performance_results": null,
+  "held_out_images_opened": 0,
+  "backend_adopted": false,
+  "contribution": "AI-assisted implementation and integration of existing exhaustive blocked k-NN. Frozen feature extractor, scoring and anomaly-map generation still use anomalib."
+}

@@ -1,6 +1,7 @@
 # Project working rules
 
 - This directory is the user's canonical project folder. Keep all project source, notes, launchers, datasets, downloads, generated results, project-specific environment and caches inside it. Resolve paths from the project or script location, never from the chat workspace.
+- Drive progress through concrete project deliverables, hypotheses and measured experiments. Explain relevant principles within that work; do not make a sequence of lessons a prerequisite for project progress.
 - The user manually launches fitting and learning experiments. Prepare and validate launchers; do not start new fitting or image evaluation without authorization. Synthetic checks and input-only preflight are allowed.
 - Preserve existing baselines and experimental evidence. Record new decisions and results separately; keep the 70 held-out images sealed until final configurations are frozen and evaluation is authorized.
 - Historical source and launcher backups are under `.migration/`. Treat their embedded paths as historical, not as active execution locations.
