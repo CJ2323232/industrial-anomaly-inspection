@@ -1,0 +1,503 @@
+{
+  "status": "completed_development_smoothing_comparison_not_final_test",
+  "completed_at": "2026-10-23T20:25:51.618192+08:00",
+  "decision": {
+    "checks": {
+      "image_decisions_unchanged": true,
+      "pooled_defect_pixel_recall_not_lower": false,
+      "small_group_pixel_recall_not_lower": false,
+      "normal_pixel_false_positive_rate_not_higher": false,
+      "anomaly_macro_IoU_improved": true,
+      "small_macro_IoU_improved": true
+    },
+    "all_quality_conditions_met": false,
+    "new_sigma_automatically_adopted": false,
+    "cost_policy": "Report measured cost ratios; quality checks alone do not adopt a configuration."
+  },
+  "performance": {
+    "sigma4": {
+      "samples": 135,
+      "mean_ms": 4.454957040164758,
+      "p95_ms": 5.391330015845597,
+      "max_peak_allocated_bytes": 41366016,
+      "max_incremental_peak_bytes": 18125312,
+      "round_mean_ms": [
+        4.336599990104635,
+        4.5081088992042675,
+        4.52016223118537
+      ]
+    },
+    "sigma2": {
+      "samples": 135,
+      "mean_ms": 4.255408153834718,
+      "p95_ms": 4.998320178128779,
+      "max_peak_allocated_bytes": 41362944,
+      "max_incremental_peak_bytes": 18125312,
+      "round_mean_ms": [
+        4.249748882527153,
+        4.106620021371378,
+        4.409855557605624
+      ]
+    }
+  },
+  "cost_ratios": {
+    "sigma2_over_sigma4_mean_time": 0.9552074499190547,
+    "sigma2_over_sigma4_peak_allocated": 0.9999257361405072
+  },
+  "baseline_reproduction": {
+    "normal_maps": {
+      "maps_close": true,
+      "max_abs_difference": 0.0
+    },
+    "development_maps": {
+      "maps_close": true,
+      "max_abs_difference": 0.0
+    }
+  },
+  "image_scores_and_decisions_unchanged": true,
+  "model_state_unchanged": true,
+  "held_out_images_opened": 0,
+  "thresholds": {
+    "sigma4": {
+      "image_quantile": 0.975,
+      "pixel_quantile": 0.995,
+      "quantile_method": "linear",
+      "image_threshold": 13.575581574440001,
+      "pixel_threshold": 11.98109245300293,
+      "decision_rule": "raw_score > threshold",
+      "normal_images": 44,
+      "normal_pixels": 21560000,
+      "frozen_at": "2026-10-23T20:24:47.210721+08:00",
+      "normal_image_exceedances": 2,
+      "normal_pixel_exceedance_fraction": 0.004999953617810761,
+      "image_threshold_recomputed_for_check": 13.575581574440001,
+      "image_threshold_policy": "fixed previously recorded q975 rule; not retuned in this ablation"
+    },
+    "sigma2": {
+      "image_quantile": 0.975,
+      "pixel_quantile": 0.995,
+      "quantile_method": "linear",
+      "image_threshold": 13.575581574440001,
+      "pixel_threshold": 12.186553001403809,
+      "decision_rule": "raw_score > threshold",
+      "normal_images": 44,
+      "normal_pixels": 21560000,
+      "frozen_at": "2026-10-23T20:24:53.716090+08:00",
+      "normal_image_exceedances": 2,
+      "normal_pixel_exceedance_fraction": 0.004999953617810761,
+      "image_threshold_recomputed_for_check": 13.575581574440001,
+      "image_threshold_policy": "fixed previously recorded q975 rule; not retuned in this ablation"
+    }
+  },
+  "source_report_sha256": "5c9745ca4099a7282a3b6a299639ccd7f53bfc38bea3c8d072a1b67cc480f46f",
+  "source_commit": "cb9b662c78343280e3018c35a61bbfbc23c7506b",
+  "qualities": {
+    "sigma4": {
+      "image_counts": {
+        "TP": 37,
+        "FP": 0,
+        "FN": 0,
+        "TN": 8
+      },
+      "pixel_metrics": {
+        "TP": 2475990,
+        "FP": 1148875,
+        "FN": 105744,
+        "TN": 18319391,
+        "normal_count": 19468266,
+        "anomaly_count": 2581734,
+        "precision": 0.6830571621287965,
+        "recall": 0.9590414814229506,
+        "F1": 0.7978572483899797,
+        "IoU": 0.6636959273941601,
+        "false_positive_rate": 0.059012703031692704,
+        "false_negative_rate": 0.04095851857704938
+      },
+      "anomaly_macro": {
+        "n": 37,
+        "pixel_IoU": 0.4707266193866444,
+        "pixel_IoU_count": 37,
+        "pixel_F1": 0.6136734254133674,
+        "pixel_F1_count": 37,
+        "pixel_AP": 0.7943342581863676,
+        "pixel_AP_count": 37,
+        "pixel_AUROC": 0.9755761480549249,
+        "pixel_AUROC_count": 37
+      },
+      "normal_false_positive_pixels": {
+        "images": 8,
+        "FP": 20479,
+        "total_pixels": 3920000,
+        "rate": 0.005224234693877551
+      },
+      "area_groups": {
+        "lt_0.1_percent": {
+          "n": 0,
+          "image_counts": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 0
+          },
+          "image_metrics": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 0,
+            "normal_count": 0,
+            "anomaly_count": 0,
+            "precision": null,
+            "recall": null,
+            "F1": null,
+            "IoU": null,
+            "false_positive_rate": null,
+            "false_negative_rate": null
+          },
+          "pixel_counts": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 0
+          },
+          "pixel_metrics": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 0,
+            "normal_count": 0,
+            "anomaly_count": 0,
+            "precision": null,
+            "recall": null,
+            "F1": null,
+            "IoU": null,
+            "false_positive_rate": null,
+            "false_negative_rate": null
+          },
+          "macro": {
+            "n": 0,
+            "pixel_IoU": null,
+            "pixel_IoU_count": 0,
+            "pixel_F1": null,
+            "pixel_F1_count": 0,
+            "pixel_AP": null,
+            "pixel_AP_count": 0,
+            "pixel_AUROC": null,
+            "pixel_AUROC_count": 0
+          }
+        },
+        "0.1_to_lt_1_percent": {
+          "n": 3,
+          "image_counts": {
+            "TP": 3,
+            "FP": 0,
+            "FN": 0,
+            "TN": 0
+          },
+          "image_metrics": {
+            "TP": 3,
+            "FP": 0,
+            "FN": 0,
+            "TN": 0,
+            "normal_count": 0,
+            "anomaly_count": 3,
+            "precision": 1.0,
+            "recall": 1.0,
+            "F1": 1.0,
+            "IoU": 1.0,
+            "false_positive_rate": null,
+            "false_negative_rate": 0.0
+          },
+          "pixel_counts": {
+            "TP": 9669,
+            "FP": 31660,
+            "FN": 0,
+            "TN": 1428671
+          },
+          "pixel_metrics": {
+            "TP": 9669,
+            "FP": 31660,
+            "FN": 0,
+            "TN": 1428671,
+            "normal_count": 1460331,
+            "anomaly_count": 9669,
+            "precision": 0.23395194657504415,
+            "recall": 1.0,
+            "F1": 0.37919134083689554,
+            "IoU": 0.23395194657504415,
+            "false_positive_rate": 0.021680016379848132,
+            "false_negative_rate": 0.0
+          },
+          "macro": {
+            "n": 3,
+            "pixel_IoU": 0.237881829677657,
+            "pixel_IoU_count": 3,
+            "pixel_F1": 0.37999300780153494,
+            "pixel_F1_count": 3,
+            "pixel_AP": 0.6378404732088043,
+            "pixel_AP_count": 3,
+            "pixel_AUROC": 0.9955261198087381,
+            "pixel_AUROC_count": 3
+          }
+        },
+        "ge_1_percent": {
+          "n": 34,
+          "image_counts": {
+            "TP": 34,
+            "FP": 0,
+            "FN": 0,
+            "TN": 0
+          },
+          "image_metrics": {
+            "TP": 34,
+            "FP": 0,
+            "FN": 0,
+            "TN": 0,
+            "normal_count": 0,
+            "anomaly_count": 34,
+            "precision": 1.0,
+            "recall": 1.0,
+            "F1": 1.0,
+            "IoU": 1.0,
+            "false_positive_rate": null,
+            "false_negative_rate": 0.0
+          },
+          "pixel_counts": {
+            "TP": 2466321,
+            "FP": 1096736,
+            "FN": 105744,
+            "TN": 12991199
+          },
+          "pixel_metrics": {
+            "TP": 2466321,
+            "FP": 1096736,
+            "FN": 105744,
+            "TN": 12991199,
+            "normal_count": 14087935,
+            "anomaly_count": 2572065,
+            "precision": 0.6921924066889752,
+            "recall": 0.9588875086749363,
+            "F1": 0.8040006376401316,
+            "IoU": 0.672241694221082,
+            "false_positive_rate": 0.07784930864601519,
+            "false_negative_rate": 0.04111249132506371
+          },
+          "macro": {
+            "n": 34,
+            "pixel_IoU": 0.49127174789037864,
+            "pixel_IoU_count": 34,
+            "pixel_F1": 0.634292285790882,
+            "pixel_F1_count": 34,
+            "pixel_AP": 0.8081425333314467,
+            "pixel_AP_count": 34,
+            "pixel_AUROC": 0.9738158564295882,
+            "pixel_AUROC_count": 34
+          }
+        }
+      }
+    },
+    "sigma2": {
+      "image_counts": {
+        "TP": 37,
+        "FP": 0,
+        "FN": 0,
+        "TN": 8
+      },
+      "pixel_metrics": {
+        "TP": 2425835,
+        "FP": 1043671,
+        "FN": 155899,
+        "TN": 18424595,
+        "normal_count": 19468266,
+        "anomaly_count": 2581734,
+        "precision": 0.6991874347529591,
+        "recall": 0.9396146156033116,
+        "F1": 0.8017645970082165,
+        "IoU": 0.6691211050903279,
+        "false_positive_rate": 0.0536088319319245,
+        "false_negative_rate": 0.060385384396688425
+      },
+      "anomaly_macro": {
+        "n": 37,
+        "pixel_IoU": 0.4757698447799366,
+        "pixel_IoU_count": 37,
+        "pixel_F1": 0.6203969967604411,
+        "pixel_F1_count": 37,
+        "pixel_AP": 0.7818364600951064,
+        "pixel_AP_count": 37,
+        "pixel_AUROC": 0.9733734274789322,
+        "pixel_AUROC_count": 37
+      },
+      "normal_false_positive_pixels": {
+        "images": 8,
+        "FP": 20723,
+        "total_pixels": 3920000,
+        "rate": 0.005286479591836734
+      },
+      "area_groups": {
+        "lt_0.1_percent": {
+          "n": 0,
+          "image_counts": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 0
+          },
+          "image_metrics": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 0,
+            "normal_count": 0,
+            "anomaly_count": 0,
+            "precision": null,
+            "recall": null,
+            "F1": null,
+            "IoU": null,
+            "false_positive_rate": null,
+            "false_negative_rate": null
+          },
+          "pixel_counts": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 0
+          },
+          "pixel_metrics": {
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 0,
+            "normal_count": 0,
+            "anomaly_count": 0,
+            "precision": null,
+            "recall": null,
+            "F1": null,
+            "IoU": null,
+            "false_positive_rate": null,
+            "false_negative_rate": null
+          },
+          "macro": {
+            "n": 0,
+            "pixel_IoU": null,
+            "pixel_IoU_count": 0,
+            "pixel_F1": null,
+            "pixel_F1_count": 0,
+            "pixel_AP": null,
+            "pixel_AP_count": 0,
+            "pixel_AUROC": null,
+            "pixel_AUROC_count": 0
+          }
+        },
+        "0.1_to_lt_1_percent": {
+          "n": 3,
+          "image_counts": {
+            "TP": 3,
+            "FP": 0,
+            "FN": 0,
+            "TN": 0
+          },
+          "image_metrics": {
+            "TP": 3,
+            "FP": 0,
+            "FN": 0,
+            "TN": 0,
+            "normal_count": 0,
+            "anomaly_count": 3,
+            "precision": 1.0,
+            "recall": 1.0,
+            "F1": 1.0,
+            "IoU": 1.0,
+            "false_positive_rate": null,
+            "false_negative_rate": 0.0
+          },
+          "pixel_counts": {
+            "TP": 9395,
+            "FP": 28320,
+            "FN": 274,
+            "TN": 1432011
+          },
+          "pixel_metrics": {
+            "TP": 9395,
+            "FP": 28320,
+            "FN": 274,
+            "TN": 1432011,
+            "normal_count": 1460331,
+            "anomaly_count": 9669,
+            "precision": 0.249105130584648,
+            "recall": 0.9716620126176441,
+            "F1": 0.39654735775789296,
+            "IoU": 0.24730843138803338,
+            "false_positive_rate": 0.019392863672687905,
+            "false_negative_rate": 0.028337987382355982
+          },
+          "macro": {
+            "n": 3,
+            "pixel_IoU": 0.25407605997650057,
+            "pixel_IoU_count": 3,
+            "pixel_F1": 0.39842842337965995,
+            "pixel_F1_count": 3,
+            "pixel_AP": 0.6282725765324183,
+            "pixel_AP_count": 3,
+            "pixel_AUROC": 0.9949795227134354,
+            "pixel_AUROC_count": 3
+          }
+        },
+        "ge_1_percent": {
+          "n": 34,
+          "image_counts": {
+            "TP": 34,
+            "FP": 0,
+            "FN": 0,
+            "TN": 0
+          },
+          "image_metrics": {
+            "TP": 34,
+            "FP": 0,
+            "FN": 0,
+            "TN": 0,
+            "normal_count": 0,
+            "anomaly_count": 34,
+            "precision": 1.0,
+            "recall": 1.0,
+            "F1": 1.0,
+            "IoU": 1.0,
+            "false_positive_rate": null,
+            "false_negative_rate": 0.0
+          },
+          "pixel_counts": {
+            "TP": 2416440,
+            "FP": 994628,
+            "FN": 155625,
+            "TN": 13093307
+          },
+          "pixel_metrics": {
+            "TP": 2416440,
+            "FP": 994628,
+            "FN": 155625,
+            "TN": 13093307,
+            "normal_count": 14087935,
+            "anomaly_count": 2572065,
+            "precision": 0.7084115590776847,
+            "recall": 0.9394941418665547,
+            "F1": 0.8077507219043936,
+            "IoU": 0.6775015399419013,
+            "false_positive_rate": 0.07060140467712266,
+            "false_negative_rate": 0.060505858133445306
+          },
+          "macro": {
+            "n": 34,
+            "pixel_IoU": 0.49533106108612207,
+            "pixel_IoU_count": 34,
+            "pixel_F1": 0.6399824591175691,
+            "pixel_F1_count": 34,
+            "pixel_AP": 0.7953862145271082,
+            "pixel_AP_count": 34,
+            "pixel_AUROC": 0.9714670073111821,
+            "pixel_AUROC_count": 34
+          }
+        }
+      }
+    }
+  },
+  "current_decision": "Keep256 plus sigma4 as development reference; sigma2 not adopted."
+}
