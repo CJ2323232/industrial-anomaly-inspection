@@ -7,3 +7,6 @@
 - Historical source and launcher backups are under `.migration/`. Treat their embedded paths as historical, not as active execution locations.
 - Do not publish raw dataset images, model weights, the virtual environment, caches, private absolute paths or local migration reports. Use explicit file allowlists for GitHub synchronization.
 - Be precise about contribution: the backbone and reference loader still use anomalib; the learning feature organization module is AI-assisted PyTorch code, not a complete original detector.
+
+- Folder layout (2026-10-23): launchers in `01运行入口/`; source/tests/configs in `02代码与配置/`; raw data in `03原始数据/`; generated results in `04实验结果/`; documentation in `05项目文档/`. Keep `.venv`, `.cache`, `.migration` at the project root. Run Python tests with the code folder as cwd.
+- Old paths embedded in frozen reports are historical provenance. Consult `.migration/organization_20261023/move_plan.json`; do not rewrite frozen evidence to update paths.
