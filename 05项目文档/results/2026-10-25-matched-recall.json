@@ -1,0 +1,373 @@
+{
+  "status": "completed_exploratory_development_matched_recall_not_final_test",
+  "source_run": "backbone_comparison_20261025_220104_486177",
+  "completed_at": "2026-10-25T22:26:19.562461+08:00",
+  "protocol": {
+    "development_images": 45,
+    "anomalous_images": 37,
+    "normal_images": 8,
+    "small_area_images": 3,
+    "held_out_images_opened": 0,
+    "new_inference": false,
+    "global_pixel_threshold_per_model": true,
+    "decision": "score > float32 threshold",
+    "threshold_selection_uses_development_defect_labels": true,
+    "anchor": "original normally calibrated ResNet18 pooled pixel recall",
+    "image_decisions_unchanged": true,
+    "automatic_adoption": false
+  },
+  "anchor": {
+    "id": "frozen_resnet18_recall",
+    "required_TP": 2475990,
+    "requested_recall": 0.9590414814229506,
+    "actual_recall_gap": 0.0
+  },
+  "anchor_models": {
+    "resnet18": {
+      "threshold": 11.981094360351562,
+      "actual_recall": 0.9590414814229506,
+      "extra_TP_due_to_ties": 0,
+      "FP": 1148874,
+      "FN": 105744,
+      "pooled_IoU": 0.6636961052997259,
+      "macro_IoU": 0.47072687778498346,
+      "macro_recall": 0.9447601020195829,
+      "small_IoU": 0.237881829677657,
+      "small_recall": 1.0,
+      "normal_FP": 20479,
+      "normal_FPR": 0.005224234693877551
+    },
+    "wide_resnet50": {
+      "threshold": 2.1270151138305664,
+      "actual_recall": 0.9590414814229506,
+      "extra_TP_due_to_ties": 0,
+      "FP": 985275,
+      "FN": 105744,
+      "pooled_IoU": 0.6941361796395804,
+      "macro_IoU": 0.5012679682145528,
+      "macro_recall": 0.9442303610308469,
+      "small_IoU": 0.24444896667961968,
+      "small_recall": 0.993380908056676,
+      "normal_FP": 2010,
+      "normal_FPR": 0.0005127551020408163
+    }
+  },
+  "prespecified_points": [
+    {
+      "id": "recall_0.9",
+      "required_TP": 2323561,
+      "requested_recall": 0.9000001549346293,
+      "actual_recall_gap": 0.0,
+      "models": {
+        "resnet18": {
+          "threshold": 12.625709533691406,
+          "actual_recall": 0.9000001549346293,
+          "extra_TP_due_to_ties": 0,
+          "FP": 720964,
+          "FN": 258173,
+          "pooled_IoU": 0.703534201431678,
+          "macro_IoU": 0.524448406155685,
+          "macro_recall": 0.8564673003597775,
+          "small_IoU": 0.3391330339927147,
+          "small_recall": 0.8894404798841659,
+          "normal_FP": 2386,
+          "normal_FPR": 0.0006086734693877551
+        },
+        "wide_resnet50": {
+          "threshold": 2.277806282043457,
+          "actual_recall": 0.9000001549346293,
+          "extra_TP_due_to_ties": 0,
+          "FP": 539089,
+          "FN": 258173,
+          "pooled_IoU": 0.7445346948545304,
+          "macro_IoU": 0.5576886510609175,
+          "macro_recall": 0.84862031000942,
+          "small_IoU": 0.33448160374999847,
+          "small_recall": 0.8898541731306236,
+          "normal_FP": 0,
+          "normal_FPR": 0.0
+        }
+      }
+    },
+    {
+      "id": "recall_0.95",
+      "required_TP": 2452648,
+      "requested_recall": 0.9500002711356011,
+      "actual_recall_gap": 3.873365729267775e-07,
+      "models": {
+        "resnet18": {
+          "threshold": 12.1038818359375,
+          "actual_recall": 0.9500002711356011,
+          "extra_TP_due_to_ties": 0,
+          "FP": 1048190,
+          "FN": 129086,
+          "pooled_IoU": 0.6756747524190589,
+          "macro_IoU": 0.4850539957824018,
+          "macro_recall": 0.9324807376954701,
+          "small_IoU": 0.26006943844731817,
+          "small_recall": 1.0,
+          "normal_FP": 14840,
+          "normal_FPR": 0.003785714285714286
+        },
+        "wide_resnet50": {
+          "threshold": 2.1563453674316406,
+          "actual_recall": 0.9500006584721741,
+          "extra_TP_due_to_ties": 1,
+          "FP": 868183,
+          "FN": 129085,
+          "pooled_IoU": 0.7109298571530851,
+          "macro_IoU": 0.5212090051789643,
+          "macro_recall": 0.9307464454000056,
+          "small_IoU": 0.26397414879839914,
+          "small_recall": 0.9795221843003413,
+          "normal_FP": 660,
+          "normal_FPR": 0.0001683673469387755
+        }
+      }
+    },
+    {
+      "id": "recall_0.97",
+      "required_TP": 2504282,
+      "requested_recall": 0.9700000077467315,
+      "actual_recall_gap": 0.0,
+      "models": {
+        "resnet18": {
+          "threshold": 11.802688598632812,
+          "actual_recall": 0.9700000077467315,
+          "extra_TP_due_to_ties": 0,
+          "FP": 1325071,
+          "FN": 77452,
+          "pooled_IoU": 0.6410051179928355,
+          "macro_IoU": 0.4461681464327915,
+          "macro_recall": 0.9588525770499682,
+          "small_IoU": 0.2038228873258449,
+          "small_recall": 1.0,
+          "normal_FP": 34456,
+          "normal_FPR": 0.008789795918367347
+        },
+        "wide_resnet50": {
+          "threshold": 2.087337017059326,
+          "actual_recall": 0.9700000077467315,
+          "extra_TP_due_to_ties": 0,
+          "FP": 1180454,
+          "FN": 77452,
+          "pooled_IoU": 0.6656450980121142,
+          "macro_IoU": 0.47053720950177386,
+          "macro_recall": 0.9601631595521817,
+          "small_IoU": 0.20991081320790328,
+          "small_recall": 1.0,
+          "normal_FP": 9061,
+          "normal_FPR": 0.0023114795918367345
+        }
+      }
+    },
+    {
+      "id": "recall_0.99",
+      "required_TP": 2555917,
+      "requested_recall": 0.9900001316944348,
+      "actual_recall_gap": 0.0,
+      "models": {
+        "resnet18": {
+          "threshold": 11.257287979125977,
+          "actual_recall": 0.9900001316944348,
+          "extra_TP_due_to_ties": 0,
+          "FP": 2273304,
+          "FN": 25817,
+          "pooled_IoU": 0.5264463429534434,
+          "macro_IoU": 0.35316754086702273,
+          "macro_recall": 0.9857303136077981,
+          "small_IoU": 0.11071758619527705,
+          "small_recall": 1.0,
+          "normal_FP": 171624,
+          "normal_FPR": 0.043781632653061224
+        },
+        "wide_resnet50": {
+          "threshold": 1.9832143783569336,
+          "actual_recall": 0.9900001316944348,
+          "extra_TP_due_to_ties": 0,
+          "FP": 2001068,
+          "FN": 25817,
+          "pooled_IoU": 0.557719273056091,
+          "macro_IoU": 0.3762207520406784,
+          "macro_recall": 0.9876895726999666,
+          "small_IoU": 0.11358603419071629,
+          "small_recall": 1.0,
+          "normal_FP": 82849,
+          "normal_FPR": 0.021134948979591835
+        }
+      }
+    }
+  ],
+  "paired_IoU_changes": {
+    "improved": 27,
+    "worse": 10,
+    "equal": 0
+  },
+  "reference_normally_calibrated_thresholds": {
+    "resnet18": {
+      "image_quantile": 0.975,
+      "pixel_quantile": 0.995,
+      "quantile_method": "linear",
+      "image_threshold": 13.575581574440001,
+      "pixel_threshold": 11.98109245300293,
+      "decision_rule": "raw_score > threshold",
+      "normal_images": 44,
+      "normal_pixels": 21560000,
+      "frozen_at": "2026-10-25T22:02:01.698562+08:00",
+      "normal_image_exceedances": 2,
+      "normal_pixel_exceedance_fraction": 0.004999953617810761
+    },
+    "wide_resnet50": {
+      "image_quantile": 0.975,
+      "pixel_quantile": 0.995,
+      "quantile_method": "linear",
+      "image_threshold": 2.1319037675857544,
+      "pixel_threshold": 2.0803534984588623,
+      "decision_rule": "raw_score > threshold",
+      "normal_images": 44,
+      "normal_pixels": 21560000,
+      "frozen_at": "2026-10-25T22:02:43.927806+08:00",
+      "normal_image_exceedances": 2,
+      "normal_pixel_exceedance_fraction": 0.004999953617810761
+    }
+  },
+  "original_quality": {
+    "resnet18": {
+      "pixel_counts": {
+        "TP": 2475990,
+        "FP": 1148875,
+        "FN": 105744,
+        "TN": 18319391
+      },
+      "macro_IoU": 0.4707266193866444
+    },
+    "wide_resnet50": {
+      "pixel_counts": {
+        "TP": 2508765,
+        "FP": 1218584,
+        "FN": 72969,
+        "TN": 18249682
+      },
+      "macro_IoU": 0.4649514531403302
+    }
+  },
+  "FP_reduction_fraction_at_anchor": 0.14239942761347202,
+  "macro_IoU_delta_at_anchor": 0.030541090429569318,
+  "maximum_actual_recall_gap_on_curve": 3.873365730377998e-07,
+  "descriptive_grid_results": {
+    "points": 91,
+    "wide_resnet50_lower_FP_points": 91,
+    "wide_resnet50_higher_macro_IoU_points": 91,
+    "not_a_statistical_generalization_claim": true
+  },
+  "reviewed_cases": [
+    {
+      "image_path": "metal_nut/test/bent/014.png",
+      "label": 1,
+      "models": {
+        "resnet18": {
+          "counts": {
+            "TP": 4775,
+            "FP": 5595,
+            "FN": 448,
+            "TN": 479182
+          },
+          "IoU": 0.4413939730079497,
+          "recall": 0.9142255408768907
+        },
+        "wide_resnet50": {
+          "counts": {
+            "TP": 5223,
+            "FP": 8262,
+            "FN": 0,
+            "TN": 476515
+          },
+          "IoU": 0.38731924360400444,
+          "recall": 1.0
+        }
+      },
+      "IoU_delta": -0.054074729403945254
+    },
+    {
+      "image_path": "metal_nut/test/color/000.png",
+      "label": 1,
+      "models": {
+        "resnet18": {
+          "counts": {
+            "TP": 2135,
+            "FP": 6925,
+            "FN": 0,
+            "TN": 480940
+          },
+          "IoU": 0.23565121412803533,
+          "recall": 1.0
+        },
+        "wide_resnet50": {
+          "counts": {
+            "TP": 2135,
+            "FP": 10688,
+            "FN": 0,
+            "TN": 477177
+          },
+          "IoU": 0.1664976994463074,
+          "recall": 1.0
+        }
+      },
+      "IoU_delta": -0.06915351468172792
+    },
+    {
+      "image_path": "metal_nut/test/color/001.png",
+      "label": 1,
+      "models": {
+        "resnet18": {
+          "counts": {
+            "TP": 2771,
+            "FP": 14498,
+            "FN": 0,
+            "TN": 472731
+          },
+          "IoU": 0.1604609415716023,
+          "recall": 1.0
+        },
+        "wide_resnet50": {
+          "counts": {
+            "TP": 2708,
+            "FP": 9073,
+            "FN": 63,
+            "TN": 478156
+          },
+          "IoU": 0.22863897331982438,
+          "recall": 0.9772645254420786
+        }
+      },
+      "IoU_delta": 0.0681780317482221
+    },
+    {
+      "image_path": "metal_nut/test/scratch/000.png",
+      "label": 1,
+      "models": {
+        "resnet18": {
+          "counts": {
+            "TP": 6511,
+            "FP": 4390,
+            "FN": 2791,
+            "TN": 476308
+          },
+          "IoU": 0.4755331580484955,
+          "recall": 0.6999569984949473
+        },
+        "wide_resnet50": {
+          "counts": {
+            "TP": 7683,
+            "FP": 2136,
+            "FN": 1619,
+            "TN": 478562
+          },
+          "IoU": 0.6717083406189893,
+          "recall": 0.8259514082992905
+        }
+      },
+      "IoU_delta": 0.19617518257049382
+    }
+  ]
+}
