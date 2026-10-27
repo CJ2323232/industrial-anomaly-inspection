@@ -1,0 +1,433 @@
+{
+  "groups": {
+    "A": {
+      "baseline": {
+        "threshold": 2.1319037675857544,
+        "FP": 1,
+        "FN": 0,
+        "FPR": 0.125,
+        "Recall": 1.0
+      },
+      "bootstrap": {
+        "rounds": 10000,
+        "threshold": {
+          "n": 10000,
+          "min": 2.0406887531280518,
+          "p025": 2.094862461090088,
+          "median": 2.1319037675857544,
+          "p975": 2.2081005573272705,
+          "max": 2.2081005573272705,
+          "mean": 2.146397688490152,
+          "std_population": 0.03539278061434688
+        },
+        "FP": {
+          "n": 10000,
+          "min": 1.0,
+          "p025": 1.0,
+          "median": 1.0,
+          "p975": 2.0,
+          "max": 3.0,
+          "mean": 1.0314,
+          "std_population": 0.17496868291211426
+        },
+        "FN": {
+          "n": 10000,
+          "min": 0.0,
+          "p025": 0.0,
+          "median": 0.0,
+          "p975": 0.0,
+          "max": 0.0,
+          "mean": 0.0,
+          "std_population": 0.0
+        },
+        "FP_count_distribution": {
+          "1": 9687,
+          "2": 312,
+          "3": 1
+        },
+        "FN_count_distribution": {
+          "0": 10000
+        },
+        "joint_zero_rounds": 0,
+        "joint_zero_frequency": 0.0,
+        "no_FN_frequency": 1.0,
+        "no_FP_frequency": 0.0,
+        "mean_FPR": 0.128925,
+        "min_Recall": 1.0,
+        "OOB_total_predictions": 160175,
+        "OOB_total_FP": 9215,
+        "OOB_pooled_FPR": 0.05753082565943499,
+        "OOB_per_round_FPR": {
+          "n": 10000,
+          "min": 0.0,
+          "p025": 0.0,
+          "median": 0.047619047619047616,
+          "p975": 0.25,
+          "max": 0.7647058823529411,
+          "mean": 0.057418259210390725,
+          "std_population": 0.07491408753850345
+        }
+      },
+      "leave_one_out": {
+        "rounds": 44,
+        "threshold": {
+          "n": 44,
+          "min": 2.125270354747772,
+          "p025": 2.1257748782634733,
+          "median": 2.1320807933807373,
+          "p975": 2.1320807933807373,
+          "max": 2.1320807933807373,
+          "mean": 2.131769331205975,
+          "std_population": 0.0014182474128440117
+        },
+        "FP_count_distribution": {
+          "1": 44
+        },
+        "FN_count_distribution": {
+          "0": 44
+        },
+        "joint_zero_rounds": 0,
+        "removed_normal_FP": 2,
+        "removed_normal_n": 44,
+        "removed_normal_FPR": 0.045454545454545456
+      },
+      "empirical_no_FN_bound": {
+        "max_observed_calibration_score": 2.2081005573272705,
+        "min_development_anomaly_score": 2.23604416847229,
+        "gap": 0.02794361114501953,
+        "proof_holds": true,
+        "interpretation": "Every resampled quantile is <= largest observed calibration score. Does not constrain unseen normal/anomalous scores."
+      }
+    },
+    "B": {
+      "baseline": {
+        "threshold": 2.3230570554733276,
+        "FP": 1,
+        "FN": 0,
+        "FPR": 0.125,
+        "Recall": 1.0
+      },
+      "bootstrap": {
+        "rounds": 10000,
+        "threshold": {
+          "n": 10000,
+          "min": 2.207796812057495,
+          "p025": 2.2593183517456055,
+          "median": 2.3230570554733276,
+          "p975": 2.397841691970825,
+          "max": 2.397841691970825,
+          "mean": 2.3333850984966755,
+          "std_population": 0.03848673445656344
+        },
+        "FP": {
+          "n": 10000,
+          "min": 1.0,
+          "p025": 1.0,
+          "median": 1.0,
+          "p975": 2.0,
+          "max": 4.0,
+          "mean": 1.0324,
+          "std_population": 0.18371238390484187
+        },
+        "FN": {
+          "n": 10000,
+          "min": 0.0,
+          "p025": 0.0,
+          "median": 0.0,
+          "p975": 0.0,
+          "max": 0.0,
+          "mean": 0.0,
+          "std_population": 0.0
+        },
+        "FP_count_distribution": {
+          "1": 9687,
+          "2": 303,
+          "3": 9,
+          "4": 1
+        },
+        "FN_count_distribution": {
+          "0": 10000
+        },
+        "joint_zero_rounds": 0,
+        "joint_zero_frequency": 0.0,
+        "no_FN_frequency": 1.0,
+        "no_FP_frequency": 0.0,
+        "mean_FPR": 0.12905,
+        "min_Recall": 1.0,
+        "OOB_total_predictions": 160175,
+        "OOB_total_FP": 8805,
+        "OOB_pooled_FPR": 0.05497112533166849,
+        "OOB_per_round_FPR": {
+          "n": 10000,
+          "min": 0.0,
+          "p025": 0.0,
+          "median": 0.05,
+          "p975": 0.25,
+          "max": 0.7647058823529411,
+          "mean": 0.05482816078398575,
+          "std_population": 0.07145268284489881
+        }
+      },
+      "leave_one_out": {
+        "rounds": 44,
+        "threshold": {
+          "n": 44,
+          "min": 2.314608836174011,
+          "p025": 2.3152064502239225,
+          "median": 2.3232667446136475,
+          "p975": 2.3232667446136475,
+          "max": 2.3232667446136475,
+          "mean": 2.3228575278412213,
+          "std_population": 0.0018029414360706416
+        },
+        "FP_count_distribution": {
+          "1": 44
+        },
+        "FN_count_distribution": {
+          "0": 44
+        },
+        "joint_zero_rounds": 0,
+        "removed_normal_FP": 2,
+        "removed_normal_n": 44,
+        "removed_normal_FPR": 0.045454545454545456
+      },
+      "empirical_no_FN_bound": {
+        "max_observed_calibration_score": 2.397841691970825,
+        "min_development_anomaly_score": 2.4496524333953857,
+        "gap": 0.05181074142456055,
+        "proof_holds": true,
+        "interpretation": "Every resampled quantile is <= largest observed calibration score. Does not constrain unseen normal/anomalous scores."
+      }
+    },
+    "C": {
+      "baseline": {
+        "threshold": 2.2410881394689732,
+        "FP": 0,
+        "FN": 0,
+        "FPR": 0.0,
+        "Recall": 1.0
+      },
+      "bootstrap": {
+        "rounds": 10000,
+        "threshold": {
+          "n": 10000,
+          "min": 2.1441642371090976,
+          "p025": 2.16726337779652,
+          "median": 2.2410881394689732,
+          "p975": 2.3038941730152476,
+          "max": 2.3038941730152476,
+          "mean": 2.2452756730678405,
+          "std_population": 0.037196470686656206
+        },
+        "FP": {
+          "n": 10000,
+          "min": 0.0,
+          "p025": 0.0,
+          "median": 0.0,
+          "p975": 2.0,
+          "max": 4.0,
+          "mean": 0.2149,
+          "std_population": 0.4922580522449582
+        },
+        "FN": {
+          "n": 10000,
+          "min": 0.0,
+          "p025": 0.0,
+          "median": 0.0,
+          "p975": 0.0,
+          "max": 0.0,
+          "mean": 0.0,
+          "std_population": 0.0
+        },
+        "FP_count_distribution": {
+          "0": 8186,
+          "1": 1501,
+          "2": 302,
+          "4": 11
+        },
+        "FN_count_distribution": {
+          "0": 10000
+        },
+        "joint_zero_rounds": 8186,
+        "joint_zero_frequency": 0.8186,
+        "no_FN_frequency": 1.0,
+        "no_FP_frequency": 0.8186,
+        "mean_FPR": 0.0268625,
+        "min_Recall": 1.0,
+        "OOB_total_predictions": 160175,
+        "OOB_total_FP": 8615,
+        "OOB_pooled_FPR": 0.053784922740752306,
+        "OOB_per_round_FPR": {
+          "n": 10000,
+          "min": 0.0,
+          "p025": 0.0,
+          "median": 0.046536796536796536,
+          "p975": 0.25,
+          "max": 0.5333333333333333,
+          "mean": 0.05367433696876253,
+          "std_population": 0.0702120350703388
+        }
+      },
+      "leave_one_out": {
+        "rounds": 44,
+        "threshold": {
+          "n": 44,
+          "min": 2.229923391342163,
+          "p025": 2.230663700455969,
+          "median": 2.241347897052765,
+          "p975": 2.241347897052765,
+          "max": 2.241347897052765,
+          "mean": 2.2407932895766804,
+          "std_population": 0.002383269162802666
+        },
+        "FP_count_distribution": {
+          "0": 44
+        },
+        "FN_count_distribution": {
+          "0": 44
+        },
+        "joint_zero_rounds": 44,
+        "removed_normal_FP": 2,
+        "removed_normal_n": 44,
+        "removed_normal_FPR": 0.045454545454545456
+      },
+      "empirical_no_FN_bound": {
+        "max_observed_calibration_score": 2.3038941730152476,
+        "min_development_anomaly_score": 2.338852643966675,
+        "gap": 0.034958470951427234,
+        "proof_holds": true,
+        "interpretation": "Every resampled quantile is <= largest observed calibration score. Does not constrain unseen normal/anomalous scores."
+      }
+    }
+  },
+  "paired": {
+    "A_to_B": {
+      "development_FP_delta": {
+        "0": 9990,
+        "1": 10
+      },
+      "mean_FP_delta": 0.001,
+      "fewer_FP_rounds": 0,
+      "equal_FP_rounds": 9990,
+      "more_FP_rounds": 10,
+      "development_FN_delta": {
+        "0": 10000
+      },
+      "OOB_FP_delta": {
+        "-3": 29,
+        "-2": 82,
+        "-1": 1581,
+        "0": 6891,
+        "1": 1415,
+        "2": 1,
+        "5": 1
+      },
+      "OOB_fewer_FP_rounds": 1692,
+      "OOB_equal_FP_rounds": 6891,
+      "OOB_more_FP_rounds": 1417,
+      "OOB_pooled_FPR_difference": -0.0025597003277665056
+    },
+    "A_to_C": {
+      "development_FP_delta": {
+        "-1": 8186,
+        "0": 1803,
+        "1": 1,
+        "2": 10
+      },
+      "mean_FP_delta": -0.8165,
+      "fewer_FP_rounds": 8186,
+      "equal_FP_rounds": 1803,
+      "more_FP_rounds": 11,
+      "development_FN_delta": {
+        "0": 10000
+      },
+      "OOB_FP_delta": {
+        "-6": 1,
+        "-5": 1,
+        "-4": 1,
+        "-3": 180,
+        "-2": 523,
+        "-1": 1302,
+        "0": 6155,
+        "1": 1377,
+        "2": 454,
+        "3": 6
+      },
+      "OOB_fewer_FP_rounds": 2008,
+      "OOB_equal_FP_rounds": 6155,
+      "OOB_more_FP_rounds": 1837,
+      "OOB_pooled_FPR_difference": -0.003745902918682691
+    },
+    "B_to_C": {
+      "development_FP_delta": {
+        "-1": 8194,
+        "0": 1796,
+        "1": 1,
+        "2": 9
+      },
+      "mean_FP_delta": -0.8175,
+      "fewer_FP_rounds": 8194,
+      "equal_FP_rounds": 1796,
+      "more_FP_rounds": 10,
+      "development_FN_delta": {
+        "0": 10000
+      },
+      "OOB_FP_delta": {
+        "-6": 2,
+        "-4": 2,
+        "-3": 2,
+        "-2": 498,
+        "-1": 1235,
+        "0": 6217,
+        "1": 2026,
+        "2": 13,
+        "3": 5
+      },
+      "OOB_fewer_FP_rounds": 1739,
+      "OOB_equal_FP_rounds": 6217,
+      "OOB_more_FP_rounds": 2044,
+      "OOB_pooled_FPR_difference": -0.0011862025909161855
+    }
+  },
+  "sample_counts": {
+    "calibration": 44,
+    "development": 45,
+    "normal_development": 8,
+    "anomalous_development": 37,
+    "unique_calibration_images_per_bootstrap": {
+      "n": 10000,
+      "min": 20.0,
+      "p025": 24.0,
+      "median": 28.0,
+      "p975": 32.0,
+      "max": 36.0,
+      "mean": 27.9825,
+      "std_population": 2.068041041662375
+    },
+    "OOB_normals_per_round": {
+      "n": 10000,
+      "min": 8.0,
+      "p025": 12.0,
+      "median": 16.0,
+      "p975": 20.0,
+      "max": 24.0,
+      "mean": 16.0175,
+      "std_population": 2.068041041662375
+    }
+  },
+  "fixed_scores_AUROC_AP": {
+    "A": {
+      "AUROC": 1.0,
+      "AP": 0.9999999999999998
+    },
+    "B": {
+      "AUROC": 1.0,
+      "AP": 0.9999999999999998
+    },
+    "C": {
+      "AUROC": 1.0,
+      "AP": 0.9999999999999998
+    }
+  },
+  "scope": "Existing sample calibration-sensitivity diagnostic, not independent validation or tuning."
+}

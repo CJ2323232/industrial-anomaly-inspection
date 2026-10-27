@@ -1,0 +1,82 @@
+{
+  "version": "metal_nut-wrn50-frozen-v1",
+  "status": "configuration_frozen_before_final_evaluation",
+  "frozen_at": "2026-10-26T12:55:40.589698+08:00",
+  "authorization": "User confirmed using WideResNet50 and the current thresholds.",
+  "algorithm": "PatchCore",
+  "backbone": "wide_resnet50_2.tv_in1k",
+  "image_size": [
+    256,
+    256
+  ],
+  "sigma": 4,
+  "feature_layers": [
+    "layer2",
+    "layer3"
+  ],
+  "num_neighbors": 9,
+  "memory_bank_shape": [
+    1802,
+    1536
+  ],
+  "checkpoint": "04实验结果/09骨干网络对照/backbone_comparison_20261025_220104_486177/wide_resnet50/model.pt",
+  "image_threshold": 2.1319037675857544,
+  "pixel_threshold": 2.103178024291992,
+  "threshold_rule": "raw_score > threshold",
+  "pixel_threshold_provenance": "selected using development GT; frozen value, not a new normal-only calibration",
+  "preprocessing": {
+    "implementation": "anomalib-2.2.0-PatchcoreModel",
+    "backbone": "wide_resnet50_2.tv_in1k",
+    "pretrained_source": "https://download.pytorch.org/models/wide_resnet50_2-95faca4d.pth",
+    "layers": [
+      "layer2",
+      "layer3"
+    ],
+    "num_neighbors": 9,
+    "image_size": [
+      256,
+      256
+    ],
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "resize_antialias": true,
+    "center_crop": null,
+    "reference_map_upsampling": "anomalib 2.2.0 default nearest followed by sigma=4 Gaussian",
+    "original_coordinate_mapping": "bilinear, align_corners=False",
+    "coreset_ratio": 0.01,
+    "fit_batch_size": 1,
+    "eval_batch_size": 1,
+    "seed": 0,
+    "image_quantile": 0.975,
+    "pixel_quantile": 0.995,
+    "quantile_method": "linear",
+    "decision_rule": "raw_score > threshold",
+    "pixel_calibration": "pooled original-resolution normal calibration pixels",
+    "score_normalization": "none; retain raw distances, not probabilities"
+  },
+  "runtime_policy": "02代码与配置/configs/decisions/metal_nut-wrn50-selected-v1.json",
+  "runtime_policy_pixel_key": "provisional_pixel_threshold",
+  "runtime_policy_unchanged_because_it_already_uses_exact_frozen_values": true,
+  "file_sha256": {
+    "02代码与配置/configs/decisions/metal_nut-wrn50-selected-v1.json": "fe48029cae5e19a0c4f9509e82a32b8056ec0beac1c3ecba278d88728637cbd5",
+    "04实验结果/09骨干网络对照/backbone_comparison_20261025_220104_486177/wide_resnet50/model.pt": "05544fcafb537947579af506beb97e7e80498274b5e2390039fcdf484b73c579",
+    "04实验结果/09骨干网络对照/backbone_comparison_20261025_220104_486177/wide_resnet50/config.json": "1c5a8da65fdbe0cf8ac7e643660210889eea9151a6e2801b435b7f9a026cedd9",
+    "04实验结果/09骨干网络对照/backbone_comparison_20261025_220104_486177/wide_resnet50/calibration.json": "eff21399d5aa1fff7e2d5b8111206447928fc1d8f14c545365e7736e33e1b906",
+    "02代码与配置/configs/splits/metal_nut-v1.json": "86ba5f7cf146a5a41c3f0ee99384ca92a691ead107c46d8cfd0303d6e5ae09bd",
+    "02代码与配置/scripts/inspection_runtime.py": "aa89c8058844a35fc9203849d6ed9aefcc4a3d5e4fcc2d5d6973914f03ef49f0",
+    "02代码与配置/scripts/inspection_app.py": "3a6f567f721343fa2b2c991518471cbe6e215d866ad3955465fc344ba60271fd",
+    "02代码与配置/scripts/run_trusted_baseline.py": "b02513fdfcd1189ba59beac66cb544e68440ae334c1af3cc559e2db8620d831a"
+  },
+  "held_out_images_opened": 0,
+  "final_evaluation_completed": false,
+  "test_protocol": "Do not tune model, thresholds, preprocessing or postprocessing on held-out outcomes. Report all outcomes. Any later tuning creates a new version and requires separate untouched validation.",
+  "baseline_role": "ResNet18 is a preserved reference; its historical artifacts are unchanged"
+}

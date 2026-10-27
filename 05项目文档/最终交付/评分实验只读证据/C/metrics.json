@@ -1,0 +1,20 @@
+{
+  "AUROC": 1.0,
+  "AP": 0.9999999999999998,
+  "TP": 37,
+  "FN": 0,
+  "FP": 0,
+  "TN": 8,
+  "Recall": 1.0,
+  "FPR": 0.0,
+  "Precision": 1.0,
+  "calibration_exceedances": 2,
+  "correct_crossclass_pairs": 296,
+  "tied_crossclass_pairs": 0,
+  "inverted_crossclass_pairs": 0,
+  "normal_max": 2.2014205889268355,
+  "anomalous_min": 2.338852643966675,
+  "raw_class_gap": 0.13743205503983935,
+  "FP_images": [],
+  "FN_images": []
+}

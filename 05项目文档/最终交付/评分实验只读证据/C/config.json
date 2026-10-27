@@ -1,0 +1,64 @@
+{
+  "group": "C",
+  "name": "Top-11 平均距离",
+  "formula": "mean of top K same raw patch distances, no weight",
+  "fixed_model": "04实验结果/09骨干网络对照/backbone_comparison_20261025_220104_486177/wide_resnet50/model.pt",
+  "checkpoint_sha256": "05544fcafb537947579af506beb97e7e80498274b5e2390039fcdf484b73c579",
+  "fixed_preprocessing": {
+    "implementation": "anomalib-2.2.0-PatchcoreModel",
+    "backbone": "wide_resnet50_2.tv_in1k",
+    "pretrained_source": "https://download.pytorch.org/models/wide_resnet50_2-95faca4d.pth",
+    "layers": [
+      "layer2",
+      "layer3"
+    ],
+    "num_neighbors": 9,
+    "image_size": [
+      256,
+      256
+    ],
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "resize_antialias": true,
+    "center_crop": null,
+    "reference_map_upsampling": "anomalib 2.2.0 default nearest followed by sigma=4 Gaussian",
+    "original_coordinate_mapping": "bilinear, align_corners=False",
+    "coreset_ratio": 0.01,
+    "fit_batch_size": 1,
+    "eval_batch_size": 1,
+    "seed": 0,
+    "image_quantile": 0.975,
+    "pixel_quantile": 0.995,
+    "quantile_method": "linear",
+    "decision_rule": "raw_score > threshold",
+    "pixel_calibration": "pooled original-resolution normal calibration pixels",
+    "score_normalization": "none; retain raw distances, not probabilities"
+  },
+  "fixed_pixel_threshold": 2.103178024291992,
+  "runtime_image_threshold_unchanged": 2.2301595211029053,
+  "analysis_image_threshold": 2.2410881394689732,
+  "analysis_calibration": {
+    "split": "normal_calibration",
+    "n": 44,
+    "q": 0.975,
+    "method": "linear",
+    "decision": "score > threshold",
+    "per_group_separate_scale": true,
+    "historical_q_informed_by_development": true,
+    "diagnostic_only": true
+  },
+  "patch_count": 1024,
+  "K": 11,
+  "accumulation": "float64 mean of saved float32 distances",
+  "config_scope": "Diagnostic artifact only, not a runtime configuration",
+  "model_forwards": 0,
+  "training_runs": 0
+}

@@ -1,0 +1,22 @@
+{
+  "AUROC": 1.0,
+  "AP": 0.9999999999999998,
+  "TP": 37,
+  "FN": 0,
+  "FP": 1,
+  "TN": 7,
+  "Recall": 1.0,
+  "FPR": 0.125,
+  "Precision": 0.9736842105263158,
+  "calibration_exceedances": 2,
+  "correct_crossclass_pairs": 296,
+  "tied_crossclass_pairs": 0,
+  "inverted_crossclass_pairs": 0,
+  "normal_max": 2.3991479873657227,
+  "anomalous_min": 2.4496524333953857,
+  "raw_class_gap": 0.050504446029663086,
+  "FP_images": [
+    "metal_nut/test/good/005.png"
+  ],
+  "FN_images": []
+}
