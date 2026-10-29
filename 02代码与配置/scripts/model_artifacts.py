@@ -104,7 +104,7 @@ def resolve_artifact(profile, policy=None, root=ROOT, store=None, catalog=None):
             f"导入位置：{imported}\n历史位置：{original}\n" + "\n".join(errors) +
             "\n获取方式：向有权提供此模型包的持有人获取；当前没有公开权重下载链接。"
             "\n导入：python 02代码与配置/scripts/model_artifacts.py import --bundle <模型包目录>"
-            "\n无需模型的替代入口：python 02代码与配置/scripts/run_saved_score_example.py"
+            "\n无需模型的替代入口：python 02代码与配置/scripts/run_public_score_summary.py"
         )
     return original / "model.pt", read_json(original / "config.json"), "legacy"
 

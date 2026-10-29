@@ -61,6 +61,28 @@ flowchart LR
 
 PatchCore参考实现来自 anomalib；本项目贡献集中于数据与评价协议、评分及阈值诊断、质量/资源对照和工程封装。未宣称从零实现完整PatchCore、自建数据集或已经实现EfficientAD。
 
+
+## 核心代码阅读导航
+
+|入口|阅读重点|
+|---|---|
+|[基线与建库](02代码与配置/scripts/run_trusted_baseline.py)|`run`：176张正常图建库→44张校准→45张开发评价；[源码复现条件](05项目文档/最终交付/环境安装.md#从公开源码重新建库与校准)|
+|[最近邻检索](02代码与配置/scripts/nearest_neighbors.py)|`exact_nearest_neighbors`：分块精确距离；这是保留的研究实现，默认推理仍走anomalib|
+|[推理封装](02代码与配置/scripts/delivery_runtime.py)|`DeliveryInspector`：模型身份校验、单图/批量导出；[Top-K](02代码与配置/scripts/delivery_topk.py)仅替换图像评分|
+|[桌面GUI](02代码与配置/scripts/delivery_app.py)|`main`：选图、异步检测、四视图、报告与输入错误提示|
+|[评分评价](02代码与配置/scripts/run_public_score_summary.py)|`analyze_summary`：从已公开频次摘要复核指标；不读取图片、不新增实验|
+
+<details><summary>真实GUI界面与展示素材</summary>
+
+<img src="05项目文档/最终交付/展示/gui.png" width="560" alt="实际Tkinter界面的初始状态，尚未选择图片">
+
+这是实际程序初始界面，不是模拟检测结果。下方为已有开发图scratch/021及WRN50 C的真实预测叠加（红色是预测候选区域，不是GT）。仅展示功能，不是新增独立验证。
+
+<img src="05项目文档/最终交付/展示/scratch021-original.png" width="320" alt="MVTec AD metal_nut开发样例scratch/021"> <img src="05项目文档/最终交付/展示/scratch021-overlay.png" width="320" alt="同一开发样例的既有WRN50 C预测区域">
+
+图片来源：MVTec AD，MVTec Software GmbH；两图及叠加修改按[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)提供，**不属于代码MIT**。[完整署名、来源、修改和哈希](05项目文档/最终交付/展示/README.md)。
+</details>
+
 ## 文档与目录
 
 |想做什么|入口|

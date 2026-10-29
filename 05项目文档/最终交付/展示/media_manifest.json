@@ -1,0 +1,38 @@
+[
+  {
+    "file": "scratch021-original.png",
+    "source": "04实验结果/26最终演示/demo_20261028_171227_836541/原图.png",
+    "sha256": "86fb2b0422634da5fa269c94e77d5531c9ba720f56709fa2cb706fc9c81bc2c6",
+    "source_image": "metal_nut/test/scratch/021.png",
+    "image_sha256": "de3a7f9c1c72a5170f3710cf730040c63e0f8854dfced22c0445cfa2cd6109fd",
+    "split": "development",
+    "profile": "wrn50_c_experimental",
+    "score": 2.389973055232655,
+    "image_threshold": 2.2410881394689732,
+    "pixel_threshold": 2.103178024291992,
+    "new_inference": false,
+    "publication": "authorized_noncommercial_research_illustration_2026-10-29",
+    "license": "CC BY-NC-SA 4.0; not code MIT",
+    "source_url": "https://www.mvtec.com/research-teaching/datasets/mvtec-ad",
+    "attribution": "MVTec AD, MVTec Software GmbH",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+  },
+  {
+    "file": "scratch021-overlay.png",
+    "source": "04实验结果/26最终演示/demo_20261028_171227_836541/缺陷叠加.png",
+    "sha256": "06dfd205c7cbab55a3b6903fdbb52350f728b106767210c02cecee61abbf08fb",
+    "source_image": "metal_nut/test/scratch/021.png",
+    "image_sha256": "de3a7f9c1c72a5170f3710cf730040c63e0f8854dfced22c0445cfa2cd6109fd",
+    "split": "development",
+    "profile": "wrn50_c_experimental",
+    "score": 2.389973055232655,
+    "image_threshold": 2.2410881394689732,
+    "pixel_threshold": 2.103178024291992,
+    "new_inference": false,
+    "publication": "authorized_noncommercial_research_illustration_2026-10-29",
+    "license": "CC BY-NC-SA 4.0; not code MIT",
+    "source_url": "https://www.mvtec.com/research-teaching/datasets/mvtec-ad",
+    "attribution": "MVTec AD, MVTec Software GmbH",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+  }
+]
