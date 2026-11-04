@@ -32,16 +32,16 @@ python -B -S "02代码与配置/scripts/run_tests.py" --suite basic
 
 ## 检测自己的图片
 
-按[环境安装](05项目文档/最终交付/环境安装.md)配置依赖，取得符合用途许可的研究模型包后：
+按[环境安装](05项目文档/最终交付/环境安装.md)配置依赖，阅读研究模型用途许可后：
 
 ~~~powershell
-python -B "02代码与配置/scripts/install_model_release.py" --profile r18_reference --archive "r18-reference-v1.zip"
+python -B "02代码与配置/scripts/install_model_release.py" --profile r18_reference --download
 .venv/Scripts/python.exe -B "02代码与配置/scripts/delivery_runtime.py" --profile r18_reference --device cpu --image "你的图片.png"
 ~~~
 
 批量输入使用 --input-dir；桌面GUI为 delivery_app.py，也可使用01运行入口中的“打开最终演示”。输出含原图、热力图、叠加图、掩码、连续分数、JSON与HTML。图像判断与像素掩码独立。
 
-**模型获取状态：两个研究模型ZIP已在本地准备并验证；公开Release尚未发布，没有可用公网下载地址。** --download 会明确提示此状态，不假装下载成功。完整步骤、各版本选择和许可证见[研究模型包使用](05项目文档/最终交付/研究模型包使用.md)。
+**研究模型已公开发布。** [下载 R18 / WRN50 模型包](https://github.com/CJ2323232/industrial-anomaly-inspection/releases/tag/research-models-v1)，也可使用上方 `--download` 自动下载、校验和导入。GitHub 服务器已完整回下载并核对外层SHA及ZIP内部文件；两份模型通过独立源码目录的公网下载、导入及CPU检测。完整步骤、各版本选择和许可证见[研究模型包使用](05项目文档/最终交付/研究模型包使用.md)。
 
 ## 技术结构
 
