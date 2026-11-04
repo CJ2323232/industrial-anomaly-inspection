@@ -1,0 +1,27 @@
+name: Verify and publish pinned research models
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/publish-research-models.yml'
+permissions:
+  contents: read
+concurrency:
+  group: research-models-v1-publication
+  cancel-in-progress: false
+jobs:
+  verify-and-publish:
+    if: github.repository == 'CJ2323232/industrial-anomaly-inspection'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          persist-credentials: false
+      - name: Download, verify all hashes and ZIP entries, then publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 -B "02代码与配置/scripts/publish_research_release.py" --publish
