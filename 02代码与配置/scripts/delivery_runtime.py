@@ -4,21 +4,22 @@ import argparse,html,json,time,logging
 from datetime import datetime
 import numpy as np
 from inspection_runtime import ROOT,InputGuard,Inspector,file_sha256,read_json,save_json,visualizations,threshold_result
+from model_artifacts import resolve_artifact, ArtifactError
 PROFILES=ROOT/'02代码与配置/configs/delivery/final_demo_profiles.json'
 class DeliveryInspector(Inspector):
-    def __init__(self,profile='r18_reference',device='auto',output_dir=None):
+    def __init__(self,profile='r18_reference',device='auto',output_dir=None,artifact_root=None):
         table=read_json(PROFILES)
         if profile not in table['profiles']:raise ValueError('未知版本：'+profile)
         self.profile=profile;self.policy=table['profiles'][profile]
-        self.policy_sha256=file_sha256(PROFILES);self.guard=InputGuard()
-        self.checkpoint=(ROOT/self.policy['checkpoint']).resolve()
-        if not self.checkpoint.is_relative_to(ROOT):raise ValueError('权重路径必须位于项目内。')
-        if file_sha256(self.checkpoint)!=self.policy['checkpoint_sha256']:raise ValueError('权重SHA256不一致，拒绝运行。')
-        self.config=read_json(self.checkpoint.parent/'config.json')
-        if self.config['backbone']!=self.policy['backbone'] or self.config['image_size']!=self.policy['input_size']:raise ValueError('版本与权重配置不一致。')
-        self.device_request=device;self.model=None;self.model_load_ms=None
         self.output_base=Path(output_dir or ROOT/'04实验结果/26最终演示').resolve()
-        if not self.output_base.is_relative_to((ROOT/'04实验结果').resolve()):raise ValueError('输出目录必须在项目04实验结果内。')
+        if not self.output_base.is_relative_to((ROOT/'04实验结果').resolve()):
+            raise ValueError('输出目录必须在项目04实验结果内。')
+        self.policy_sha256=file_sha256(PROFILES);self.guard=InputGuard()
+        self.checkpoint,self.config,self.artifact_origin=resolve_artifact(
+            profile,self.policy,root=ROOT,store=artifact_root)
+        if self.config['backbone']!=self.policy['backbone'] or self.config['image_size']!=self.policy['input_size']:
+            raise ValueError('版本与权重配置不一致。')
+        self.device_request=device;self.model=None;self.model_load_ms=None
     def infer(self,path):
         start=time.perf_counter();image,identity=self.guard.load(path);self.load_model()
         from run_trusted_baseline import predict
@@ -51,7 +52,7 @@ class DeliveryInspector(Inspector):
             np.savez_compressed(out/'连续异常分数.npz',anomaly_map=amap)
             if captured:np.savez_compressed(out/'Patch异常距离.npz',patch_distances=captured[0].reshape(32,32))
             result=dict(profile=self.profile,profile_name=self.policy['name'],profile_sha256=self.policy_sha256,
-                checkpoint=self.policy['checkpoint'],checkpoint_sha256=self.policy['checkpoint_sha256'],
+                checkpoint=self.policy['checkpoint'],artifact_origin=self.artifact_origin,checkpoint_sha256=self.policy['checkpoint_sha256'],
                 model_config=self.config,memory_bank_shape=self.policy['memory_bank_shape'],
                 input=identity,raw_image_score=score,image_threshold=it,pixel_threshold=pt,
                 image_is_anomalous=abnormal,predicted_pixels=int(mask.sum()),predicted_area_fraction=float(mask.mean()),
@@ -78,10 +79,14 @@ def main():
     ap.add_argument('--profile',choices=['r18_reference','wrn50_a','wrn50_c_experimental'],default='r18_reference')
     ap.add_argument('--device',choices=['auto','cpu','cuda:0'],default='auto')
     ap.add_argument('--image',type=Path);ap.add_argument('--input-dir',type=Path);ap.add_argument('--output-dir',type=Path)
+    ap.add_argument('--artifact-root',type=Path,help='已导入模型库目录；默认项目.cache/model-artifacts')
     ap.add_argument('--check',action='store_true',help='verify checkpoint SHA/config; no inference')
     args=ap.parse_args()
     if args.image and args.input_dir:ap.error('--image与--input-dir互斥')
-    engine=DeliveryInspector(args.profile,args.device,args.output_dir)
+    try:
+        engine=DeliveryInspector(args.profile,args.device,args.output_dir,args.artifact_root)
+    except (ArtifactError,OSError,ValueError) as exc:
+        ap.exit(2,str(exc)+'\n')
     if args.check:
         print(json.dumps(dict(profile=args.profile,policy=engine.policy,model_loaded=False),ensure_ascii=False));return
     if not args.image and not args.input_dir:ap.error('请指定--image或--input-dir，或使用--check')

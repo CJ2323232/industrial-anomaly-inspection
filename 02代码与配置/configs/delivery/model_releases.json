@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "prepared_date": "2026-10-28",
+  "purpose": "Non-commercial research release candidate; not a commercial license",
+  "artifacts": {
+    "r18-reference-v1": {
+      "filename": "r18-reference-v1.zip",
+      "bytes": 13973783,
+      "sha256": "bc91ce00362b73091495476a166b40f51b5e09f0650e031e7eb469fcbd32c841",
+      "status": "prepared_not_published",
+      "url": null,
+      "files": {
+        "bundle/bundle.json": {
+          "bytes": 394,
+          "sha256": "4bec21ecb544f75caeba7dda55ed1365c1e827848fc8abf3877d3c6923739b7e"
+        },
+        "bundle/config.json": {
+          "bytes": 957,
+          "sha256": "bcb25daab1497239a429786830da4b3b80709d37991148a74ddc2a736ee29ef0"
+        },
+        "bundle/model.pt": {
+          "bytes": 13952962,
+          "sha256": "9f6bf4b333ec7aa5552874efc843d6a86a877579a968346b04a07e0ebff9bf38"
+        },
+        "LICENSES/Apache-2.0.txt": {
+          "bytes": 11343,
+          "sha256": "71b111620fa32c17a80ccd6db2da759d31a591e497d8b5f382174f59d1b59d49"
+        },
+        "LICENSES/torchvision-BSD-3-Clause.txt": {
+          "bytes": 1546,
+          "sha256": "c06363f9d33627dc5173b13522444cc85fbb4739f63e16d4587d5c0a165b5b1e"
+        },
+        "MODEL_CARD.json": {
+          "bytes": 1741,
+          "sha256": "1c0eb7a9a665f10ad1139e4c31871e822e2599955363bb39db346bff22e1c0b2"
+        },
+        "NOTICES.md": {
+          "bytes": 3387,
+          "sha256": "805af552f06de502a09a358ac26d84f7e3479f381c0715ee1fe1ca8f248512d3"
+        },
+        "START_HERE.md": {
+          "bytes": 525,
+          "sha256": "f7d0b77f071be0cc56a62581c349fdba886f9bd3da10767de55630bb7c73b7a4"
+        }
+      }
+    },
+    "wrn50-reference-v1": {
+      "filename": "wrn50-reference-v1.zip",
+      "bytes": 110794150,
+      "sha256": "77729b71f2edb254c9a500e84fa554d7b73c96eb778013854504dbd7b138db24",
+      "status": "prepared_not_published",
+      "url": null,
+      "files": {
+        "bundle/bundle.json": {
+          "bytes": 398,
+          "sha256": "a34d85b1587eb0db39049111e0e891c8e3f922c0a750d7061e59a8b639119c0f"
+        },
+        "bundle/config.json": {
+          "bytes": 1008,
+          "sha256": "1c5a8da65fdbe0cf8ac7e643660210889eea9151a6e2801b435b7f9a026cedd9"
+        },
+        "bundle/model.pt": {
+          "bytes": 110771946,
+          "sha256": "05544fcafb537947579af506beb97e7e80498274b5e2390039fcdf484b73c579"
+        },
+        "LICENSES/Apache-2.0.txt": {
+          "bytes": 11343,
+          "sha256": "71b111620fa32c17a80ccd6db2da759d31a591e497d8b5f382174f59d1b59d49"
+        },
+        "LICENSES/torchvision-BSD-3-Clause.txt": {
+          "bytes": 1546,
+          "sha256": "c06363f9d33627dc5173b13522444cc85fbb4739f63e16d4587d5c0a165b5b1e"
+        },
+        "MODEL_CARD.json": {
+          "bytes": 3081,
+          "sha256": "1831fd0371c8d548d3f3f65502c2e59d425c90322051ff2c567d8bc2fbb18347"
+        },
+        "NOTICES.md": {
+          "bytes": 3387,
+          "sha256": "805af552f06de502a09a358ac26d84f7e3479f381c0715ee1fe1ca8f248512d3"
+        },
+        "START_HERE.md": {
+          "bytes": 513,
+          "sha256": "895e63c02a46035ca30a4a7b11ccf2ddc26cf683b6238f22aa6946c454e6ce1f"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "artifacts": {
+    "r18-reference-v1": {
+      "artifact_id": "r18-reference-v1",
+      "profiles": [
+        "r18_reference"
+      ],
+      "legacy_checkpoint": "04实验结果/01模型与检索实验/baseline_20261016_204723_088238/model.pt",
+      "files": {
+        "model.pt": {
+          "bytes": 13952962,
+          "sha256": "9f6bf4b333ec7aa5552874efc843d6a86a877579a968346b04a07e0ebff9bf38"
+        },
+        "config.json": {
+          "bytes": 957,
+          "sha256": "bcb25daab1497239a429786830da4b3b80709d37991148a74ddc2a736ee29ef0"
+        }
+      },
+      "backbone": "resnet18.a1_in1k",
+      "memory_bank_shape": [
+        1802,
+        384
+      ],
+      "acquisition": "No public download is supplied. Obtain an authorized model bundle from its holder or export your existing frozen artifact.",
+      "contains": "Frozen backbone state AND fitted normal memory bank; ImageNet weights alone are insufficient.",
+      "redistribution_granted": false
+    },
+    "wrn50-reference-v1": {
+      "artifact_id": "wrn50-reference-v1",
+      "profiles": [
+        "wrn50_a",
+        "wrn50_c_experimental"
+      ],
+      "legacy_checkpoint": "04实验结果/09骨干网络对照/backbone_comparison_20261025_220104_486177/wide_resnet50/model.pt",
+      "files": {
+        "model.pt": {
+          "bytes": 110771946,
+          "sha256": "05544fcafb537947579af506beb97e7e80498274b5e2390039fcdf484b73c579"
+        },
+        "config.json": {
+          "bytes": 1008,
+          "sha256": "1c5a8da65fdbe0cf8ac7e643660210889eea9151a6e2801b435b7f9a026cedd9"
+        }
+      },
+      "backbone": "wide_resnet50_2.tv_in1k",
+      "memory_bank_shape": [
+        1802,
+        1536
+      ],
+      "acquisition": "No public download is supplied. Obtain an authorized model bundle from its holder or export your existing frozen artifact.",
+      "contains": "Frozen backbone state AND fitted normal memory bank; ImageNet weights alone are insufficient.",
+      "redistribution_granted": false
+    }
+  }
+}
