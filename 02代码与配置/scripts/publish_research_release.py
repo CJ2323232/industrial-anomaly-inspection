@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parents[2]
 REPO = "CJ2323232/industrial-anomaly-inspection"
 RELEASE_ID = 428745479
 TAG = "research-models-v1"
-TARGET = "e7833c01e664b851b5f902862bd80d7d522752db"
+TARGET = "956e9f8839785917d53392ceda7226e48d53c2b7"
 PINS = {
     "r18-reference-v1.zip": (13974512, "aad3ad16dd25f28a1af52da46cdba54b38b98087145d1c4e619f6b31fb97bd41"),
     "wrn50-reference-v1.zip": (110794848, "2be5dc849a43b8a92c10c5b6811fb793f37d61c64cf67df03b7598cb4740ddfb"),
