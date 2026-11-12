@@ -7,8 +7,8 @@
       "filename": "r18-reference-v1.zip",
       "bytes": 13974512,
       "sha256": "aad3ad16dd25f28a1af52da46cdba54b38b98087145d1c4e619f6b31fb97bd41",
-      "status": "prepared_not_published",
-      "url": null,
+      "status": "published",
+      "url": "https://github.com/CJ2323232/industrial-anomaly-inspection/releases/download/research-models-v1/r18-reference-v1.zip",
       "files": {
         "LICENSES/Apache-2.0.txt": {
           "bytes": 11343,
@@ -48,8 +48,8 @@
       "filename": "wrn50-reference-v1.zip",
       "bytes": 110794848,
       "sha256": "2be5dc849a43b8a92c10c5b6811fb793f37d61c64cf67df03b7598cb4740ddfb",
-      "status": "prepared_not_published",
-      "url": null,
+      "status": "published",
+      "url": "https://github.com/CJ2323232/industrial-anomaly-inspection/releases/download/research-models-v1/wrn50-reference-v1.zip",
       "files": {
         "LICENSES/Apache-2.0.txt": {
           "bytes": 11343,
