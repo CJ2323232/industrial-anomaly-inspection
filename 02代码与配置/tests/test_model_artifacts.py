@@ -57,7 +57,7 @@ class ArtifactTests(unittest.TestCase):
         with self.assertRaises(ArtifactError):resolve_artifact("fixture",root=self.root,store=store,catalog=self.catalog)
         self.assertEqual((dest/"model.pt").read_bytes(),b"broken")
     def test_missing_artifacts_explain_acquisition_and_analysis_alternative(self):
-        with self.assertRaisesRegex(ArtifactError,"run_saved_score_example"):
+        with self.assertRaisesRegex(ArtifactError,"run_public_score_summary"):
             resolve_artifact("fixture",root=self.root/"empty",catalog=self.catalog)
 
 if __name__=="__main__":unittest.main()
