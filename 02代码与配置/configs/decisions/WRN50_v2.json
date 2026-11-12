@@ -1,0 +1,89 @@
+{
+  "version": "WRN50_v2",
+  "status": "candidate_frozen_before_authorized_fixed_version_reevaluation",
+  "frozen_at": "2026-10-26T17:32:29.655610+08:00",
+  "authorization": "User requested save WRN50_v2, audit selection, freeze model and both thresholds, evaluate the fixed70 subset once; no further test-driven tuning.",
+  "checkpoint": "04实验结果/09骨干网络对照/backbone_comparison_20261025_220104_486177/wide_resnet50/model.pt",
+  "checkpoint_sha256": "05544fcafb537947579af506beb97e7e80498274b5e2390039fcdf484b73c579",
+  "backbone": "wide_resnet50_2.tv_in1k",
+  "image_threshold": 2.2301595211029053,
+  "image_threshold_display": "2.2301595211",
+  "pixel_threshold": 2.103178024291992,
+  "decision_rule": "raw_score > threshold",
+  "model_weights_unchanged": true,
+  "pixel_threshold_unchanged": true,
+  "preprocessing": {
+    "implementation": "anomalib-2.2.0-PatchcoreModel",
+    "backbone": "wide_resnet50_2.tv_in1k",
+    "pretrained_source": "https://download.pytorch.org/models/wide_resnet50_2-95faca4d.pth",
+    "layers": [
+      "layer2",
+      "layer3"
+    ],
+    "num_neighbors": 9,
+    "image_size": [
+      256,
+      256
+    ],
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "resize_antialias": true,
+    "center_crop": null,
+    "reference_map_upsampling": "anomalib 2.2.0 default nearest followed by sigma=4 Gaussian",
+    "original_coordinate_mapping": "bilinear, align_corners=False",
+    "coreset_ratio": 0.01,
+    "fit_batch_size": 1,
+    "eval_batch_size": 1,
+    "seed": 0,
+    "image_quantile": 0.975,
+    "pixel_quantile": 0.995,
+    "quantile_method": "linear",
+    "decision_rule": "raw_score > threshold",
+    "pixel_calibration": "pooled original-resolution normal calibration pixels",
+    "score_normalization": "none; retain raw distances, not probabilities"
+  },
+  "manifest_sha256": "2b4dabc68f69158fc174a3e038f6f10480bd6fa81e17fbd8fbfb15ca5f2f9e4b",
+  "development_result": {
+    "normal_FP": 0,
+    "normal_n": 8,
+    "anomalous_FN": 0,
+    "anomalous_n": 37
+  },
+  "image_threshold_origin": "Supervised development label selection, FN=0 then minimum FP then maximum margin plateau midpoint.",
+  "selection_audit": "02代码与配置/configs/decisions/WRN50_v2_selection_audit.json",
+  "source_candidate": "02代码与配置/configs/decisions/metal_nut-wrn50-image-v2-candidate.json",
+  "test_subset_previously_evaluated": true,
+  "new_untouched_test": false,
+  "prior_test_diagnosis_influenced_development": true,
+  "post_evaluation_tuning_allowed": false,
+  "file_sha256": {
+    "02代码与配置/configs/decisions/metal_nut-wrn50-image-v2-candidate.json": "3e86e9a3bb1ab5ff024ea769bcaadda9372331c623bebddcf8ae22facfa09703",
+    "02代码与配置/configs/decisions/metal_nut-wrn50-selected-v1.json": "fe48029cae5e19a0c4f9509e82a32b8056ec0beac1c3ecba278d88728637cbd5",
+    "02代码与配置/configs/decisions/WRN50_v2_selection_audit.json": "e37cc82bf7e276421dfb4fc575d30426f80b2d6e9b55e3d1b22cd054a5c5474b",
+    "04实验结果/09骨干网络对照/backbone_comparison_20261025_220104_486177/wide_resnet50/model.pt": "05544fcafb537947579af506beb97e7e80498274b5e2390039fcdf484b73c579",
+    "04实验结果/09骨干网络对照/backbone_comparison_20261025_220104_486177/wide_resnet50/config.json": "1c5a8da65fdbe0cf8ac7e643660210889eea9151a6e2801b435b7f9a026cedd9",
+    "02代码与配置/configs/splits/metal_nut-v1.json": "86ba5f7cf146a5a41c3f0ee99384ca92a691ead107c46d8cfd0303d6e5ae09bd",
+    "04实验结果/16图像级阈值校准/image_threshold_20261026_171843_356331/protocol.json": "ffc7d62e881f217a8f1728808e04409d958dc0cf541a3098799b7ef8f8f81c16",
+    "04实验结果/16图像级阈值校准/image_threshold_20261026_171843_356331/summary.json": "87aaf04bcec011b9b96e3767b3877e90637309511fb85ce40f43afe96d38c637",
+    "02代码与配置/scripts/evaluate_wrn50_v2_fixed.py": "374cdadb2ea86b3ebe4b9245e50cd7bdb92764e96528bf53016d336d4bb5f0b4",
+    "02代码与配置/scripts/evaluate_frozen_holdout.py": "7a8527ee7d4586fd254ea7f5ef1414d9c36fd96bfbef5bd4af6c59c560749f82",
+    "02代码与配置/scripts/run_trusted_baseline.py": "b02513fdfcd1189ba59beac66cb544e68440ae334c1af3cc559e2db8620d831a",
+    "02代码与配置/scripts/baseline_utils.py": "02f611a64a0651295fef3d8d38c33fa71d2b7a53bf1db2ac69fa32c2d7d084ae",
+    "02代码与配置/scripts/threshold_scan_metrics.py": "85bbab51bdd9a30fde344ddee6f3b331fffd5a72333f99fcc9f1685b9e9af01d",
+    "02代码与配置/scripts/resolution_metrics.py": "6eb2817a3285d053245eb1594e61cb87bce00dd71b008d6f8ce4103a1d1e1ca2",
+    "02代码与配置/scripts/analyze_matched_recall.py": "481f58f4b8981ffdb0bcf88ce0e45a84abfc186f5277f680cdd84d63dccadc4f",
+    "02代码与配置/scripts/inspection_runtime.py": "aa89c8058844a35fc9203849d6ed9aefcc4a3d5e4fcc2d5d6973914f03ef49f0",
+    "02代码与配置/scripts/calibrate_image_threshold_v2.py": "def468ab436184cbc0dfde24763b8331793de60acb9c6e331ebdfe3ebb777799",
+    ".venv/Lib/site-packages/anomalib/models/image/patchcore/torch_model.py": "4cfd13784354a9fb3321270c1d98a32b0a3fb1f8373ff19984fc71856fa376cb",
+    ".venv/Lib/site-packages/anomalib/models/image/patchcore/anomaly_map.py": "ca1d8bebad615dec0b1fdbd2651f7a8ba3200b175082bceb271e2ff2148fd45a",
+    ".venv/Lib/site-packages/anomalib/models/components/filters/blur.py": "337adeedbb5e0ba42071553bf6487a242ef50238010f8adcaee2029023f7a980"
+  }
+}

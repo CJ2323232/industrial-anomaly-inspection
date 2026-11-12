@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "default": "r18_reference",
+  "purpose": "演示引用既有参数；R18默认、WRN-A对照、C为明确标注的可选实验候选。",
+  "profiles": {
+    "r18_reference": {
+      "name": "R18 参考基线 · q97.5",
+      "status": "default_demo_reference_not_unseen_test_winner",
+      "backbone": "resnet18.a1_in1k",
+      "checkpoint": "04实验结果/01模型与检索实验/baseline_20261016_204723_088238/model.pt",
+      "checkpoint_sha256": "9f6bf4b333ec7aa5552874efc843d6a86a877579a968346b04a07e0ebff9bf38",
+      "input_size": [
+        256,
+        256
+      ],
+      "sigma": 4,
+      "memory_bank_shape": [
+        1802,
+        384
+      ],
+      "image_threshold": 13.575581574440001,
+      "provisional_pixel_threshold": 11.98109245300293,
+      "pixel_threshold_status": "44张正常校准图像素q99.5；规则选择曾参考开发集，非误报率保证。",
+      "image_threshold_source": "02代码与配置/configs/decisions/metal_nut-development-reference-v1.json",
+      "scoring": "A: 原始最大Patch距离乘邻居权重",
+      "num_neighbors": 9
+    },
+    "wrn50_a": {
+      "checkpoint": "04实验结果/09骨干网络对照/backbone_comparison_20261025_220104_486177/wide_resnet50/model.pt",
+      "checkpoint_sha256": "05544fcafb537947579af506beb97e7e80498274b5e2390039fcdf484b73c579",
+      "backbone": "wide_resnet50_2.tv_in1k",
+      "input_size": [
+        256,
+        256
+      ],
+      "sigma": 4,
+      "memory_bank_shape": [
+        1802,
+        1536
+      ],
+      "num_neighbors": 9,
+      "image_threshold": 2.1319037675857544,
+      "provisional_pixel_threshold": 2.103178024291992,
+      "pixel_threshold_status": "development-GT-selected candidate; not independently validated or formal deployment calibration",
+      "name": "WRN50 A · 高召回/定位对照",
+      "status": "optional_demo_tradeoff_not_universal_upgrade",
+      "image_threshold_source": "02代码与配置/configs/decisions/metal_nut-wrn50-selected-v1.json",
+      "scoring": "A: 原始最大Patch距离乘邻居权重"
+    },
+    "wrn50_c_experimental": {
+      "checkpoint": "04实验结果/09骨干网络对照/backbone_comparison_20261025_220104_486177/wide_resnet50/model.pt",
+      "checkpoint_sha256": "05544fcafb537947579af506beb97e7e80498274b5e2390039fcdf484b73c579",
+      "backbone": "wide_resnet50_2.tv_in1k",
+      "input_size": [
+        256,
+        256
+      ],
+      "sigma": 4,
+      "memory_bank_shape": [
+        1802,
+        1536
+      ],
+      "num_neighbors": 9,
+      "image_threshold": 2.2410881394689732,
+      "provisional_pixel_threshold": 2.103178024291992,
+      "pixel_threshold_status": "development-GT-selected candidate; not independently validated or formal deployment calibration",
+      "name": "WRN50 C · Top-11实验候选",
+      "status": "experimental_candidate_development_evidence_only",
+      "image_threshold_source": "04实验结果/19图像评分机制三组对照/scoring_ABC_20261026_212757_520502/C/config.json",
+      "scoring": "C: 最高1% Patch距离平均（固定K=11）",
+      "scoring_method": "topk_mean",
+      "K": 11,
+      "expected_patch_count": 1024,
+      "experimental_candidate": true,
+      "evidence_limit": "当前开发集0/8误报、0/37漏检；缺少新增同域独立验证，不能认定全面升级。"
+    }
+  }
+}

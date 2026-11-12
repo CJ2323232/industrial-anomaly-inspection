@@ -1,0 +1,4363 @@
+[
+  {
+    "image_path": "metal_nut/train/good/006.png",
+    "split": "normal_calibration",
+    "label": 0,
+    "scores": {
+      "A": 2.0241026878356934,
+      "B": 2.1721818447113037,
+      "C": 2.090440186587247
+    },
+    "neighbor_weight": 0.9318293333053589,
+    "B_minus_C": 0.08174165812405665,
+    "C_div_B": 0.9623688696583685,
+    "topK_indices": [
+      821,
+      177,
+      175,
+      453,
+      945,
+      853,
+      295,
+      678,
+      144,
+      407,
+      844
+    ],
+    "topK_cutoff": 2.0622642040252686,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 8,
+    "max_cell_upper_tail_component_size": 2,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 821,
+    "gt_area_fraction": null,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": null,
+    "topK_mean_GT_cell_fraction": null,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/train/good/006.npz",
+    "predictions": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "margins": {
+      "A": -0.10780107975006104,
+      "B": -0.15087521076202393,
+      "C": -0.15064795288172617
+    }
+  },
+  {
+    "image_path": "metal_nut/train/good/017.png",
+    "split": "normal_calibration",
+    "label": 0,
+    "scores": {
+      "A": 2.0211374759674072,
+      "B": 2.1929714679718018,
+      "C": 2.122763590379195
+    },
+    "neighbor_weight": 0.9216432571411133,
+    "B_minus_C": 0.07020787759260694,
+    "C_div_B": 0.9679850474034942,
+    "topK_indices": [
+      539,
+      208,
+      240,
+      443,
+      272,
+      311,
+      241,
+      302,
+      753,
+      303,
+      140
+    ],
+    "topK_cutoff": 2.088984727859497,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 6,
+    "max_cell_upper_tail_component_size": 1,
+    "max_cell_is_isolated_in_upper_tail": true,
+    "max_patch_index": 539,
+    "gt_area_fraction": null,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": null,
+    "topK_mean_GT_cell_fraction": null,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/train/good/017.npz",
+    "predictions": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "margins": {
+      "A": -0.11076629161834717,
+      "B": -0.13008558750152588,
+      "C": -0.11832454908977841
+    }
+  },
+  {
+    "image_path": "metal_nut/train/good/022.png",
+    "split": "normal_calibration",
+    "label": 0,
+    "scores": {
+      "A": 2.2081005573272705,
+      "B": 2.397841691970825,
+      "C": 2.3038941730152476
+    },
+    "neighbor_weight": 0.9208700656890869,
+    "B_minus_C": 0.09394751895557762,
+    "C_div_B": 0.9608199660260471,
+    "topK_indices": [
+      884,
+      301,
+      788,
+      819,
+      269,
+      456,
+      272,
+      488,
+      455,
+      853,
+      789
+    ],
+    "topK_cutoff": 2.2516841888427734,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 5,
+    "max_cell_upper_tail_component_size": 2,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 884,
+    "gt_area_fraction": null,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": null,
+    "topK_mean_GT_cell_fraction": null,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/train/good/022.npz",
+    "predictions": {
+      "A": 1,
+      "B": 1,
+      "C": 1
+    },
+    "margins": {
+      "A": 0.07619678974151611,
+      "B": 0.07478463649749756,
+      "C": 0.06280603354627434
+    }
+  },
+  {
+    "image_path": "metal_nut/train/good/026.png",
+    "split": "normal_calibration",
+    "label": 0,
+    "scores": {
+      "A": 1.9812663793563843,
+      "B": 2.163433074951172,
+      "C": 2.069666775790128
+    },
+    "neighbor_weight": 0.9157974123954773,
+    "B_minus_C": 0.09376629916104395,
+    "C_div_B": 0.9566585626120372,
+    "topK_indices": [
+      237,
+      759,
+      507,
+      411,
+      236,
+      207,
+      791,
+      309,
+      443,
+      238,
+      409
+    ],
+    "topK_cutoff": 2.0348849296569824,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 6,
+    "max_cell_upper_tail_component_size": 4,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 237,
+    "gt_area_fraction": null,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": null,
+    "topK_mean_GT_cell_fraction": null,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/train/good/026.npz",
+    "predictions": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "margins": {
+      "A": -0.15063738822937012,
+      "B": -0.15962398052215576,
+      "C": -0.1714213636788453
+    }
+  },
+  {
+    "image_path": "metal_nut/train/good/029.png",
+    "split": "normal_calibration",
+    "label": 0,
+    "scores": {
+      "A": 2.060481309890747,
+      "B": 2.221024751663208,
+      "C": 2.1664255532351406
+    },
+    "neighbor_weight": 0.9277164936065674,
+    "B_minus_C": 0.054599198428067375,
+    "C_div_B": 0.9754171139303238,
+    "topK_indices": [
+      821,
+      822,
+      789,
+      279,
+      787,
+      788,
+      823,
+      326,
+      585,
+      246,
+      487
+    ],
+    "topK_cutoff": 2.11379337310791,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 5,
+    "max_cell_upper_tail_component_size": 6,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 821,
+    "gt_area_fraction": null,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": null,
+    "topK_mean_GT_cell_fraction": null,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/train/good/029.npz",
+    "predictions": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "margins": {
+      "A": -0.07142245769500732,
+      "B": -0.10203230381011963,
+      "C": -0.0746625862338326
+    }
+  },
+  {
+    "image_path": "metal_nut/train/good/032.png",
+    "split": "normal_calibration",
+    "label": 0,
+    "scores": {
+      "A": 1.9803766012191772,
+      "B": 2.17356538772583,
+      "C": 2.077777949246493
+    },
+    "neighbor_weight": 0.9111189246177673,
+    "B_minus_C": 0.0957874384793369,
+    "C_div_B": 0.9559307306694105,
+    "topK_indices": [
+      277,
+      391,
+      516,
+      310,
+      952,
+      390,
+      517,
+      422,
+      306,
+      268,
+      423
+    ],
+    "topK_cutoff": 2.0289857387542725,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 6,
+    "max_cell_upper_tail_component_size": 2,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 277,
+    "gt_area_fraction": null,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": null,
+    "topK_mean_GT_cell_fraction": null,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/train/good/032.npz",
+    "predictions": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "margins": {
+      "A": -0.15152716636657715,
+      "B": -0.14949166774749756,
+      "C": -0.16331019022248006
+    }
+  },
+  {
+    "image_path": "metal_nut/train/good/033.png",
+    "split": "normal_calibration",
+    "label": 0,
+    "scores": {
+      "A": 2.068925380706787,
+      "B": 2.1978979110717773,
+      "C": 2.117563074285334
+    },
+    "neighbor_weight": 0.9413200616836548,
+    "B_minus_C": 0.08033483678644338,
+    "C_div_B": 0.9634492410308224,
+    "topK_indices": [
+      780,
+      310,
+      812,
+      343,
+      781,
+      211,
+      204,
+      147,
+      844,
+      442,
+      146
+    ],
+    "topK_cutoff": 2.066885232925415,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 6,
+    "max_cell_upper_tail_component_size": 4,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 780,
+    "gt_area_fraction": null,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": null,
+    "topK_mean_GT_cell_fraction": null,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/train/good/033.npz",
+    "predictions": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "margins": {
+      "A": -0.06297838687896729,
+      "B": -0.1251591444015503,
+      "C": -0.12352506518363926
+    }
+  },
+  {
+    "image_path": "metal_nut/train/good/039.png",
+    "split": "normal_calibration",
+    "label": 0,
+    "scores": {
+      "A": 1.9462883472442627,
+      "B": 2.112438917160034,
+      "C": 2.0725869048725474
+    },
+    "neighbor_weight": 0.9213465452194214,
+    "B_minus_C": 0.039852012287486804,
+    "C_div_B": 0.9811345966201646,
+    "topK_indices": [
+      913,
+      177,
+      618,
+      790,
+      650,
+      569,
+      853,
+      342,
+      238,
+      375,
+      374
+    ],
+    "topK_cutoff": 2.043131113052368,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 8,
+    "max_cell_upper_tail_component_size": 1,
+    "max_cell_is_isolated_in_upper_tail": true,
+    "max_patch_index": 913,
+    "gt_area_fraction": null,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": null,
+    "topK_mean_GT_cell_fraction": null,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/train/good/039.npz",
+    "predictions": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "margins": {
+      "A": -0.1856154203414917,
+      "B": -0.21061813831329346,
+      "C": -0.16850123459642585
+    }
+  },
+  {
+    "image_path": "metal_nut/train/good/040.png",
+    "split": "normal_calibration",
+    "label": 0,
+    "scores": {
+      "A": 1.9947270154953003,
+      "B": 2.1730027198791504,
+      "C": 2.093251726844094
+    },
+    "neighbor_weight": 0.9179587960243225,
+    "B_minus_C": 0.07975099303505617,
+    "C_div_B": 0.9632991747753121,
+    "topK_indices": [
+      780,
+      748,
+      538,
+      472,
+      442,
+      781,
+      440,
+      409,
+      474,
+      178,
+      682
+    ],
+    "topK_cutoff": 2.05582857131958,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 5,
+    "max_cell_upper_tail_component_size": 3,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 780,
+    "gt_area_fraction": null,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": null,
+    "topK_mean_GT_cell_fraction": null,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/train/good/040.npz",
+    "predictions": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "margins": {
+      "A": -0.1371767520904541,
+      "B": -0.15005433559417725,
+      "C": -0.147836412624879
+    }
+  },
+  {
+    "image_path": "metal_nut/train/good/043.png",
+    "split": "normal_calibration",
+    "label": 0,
+    "scores": {
+      "A": 2.0137336254119873,
+      "B": 2.1792454719543457,
+      "C": 2.070292581211437
+    },
+    "neighbor_weight": 0.9240508675575256,
+    "B_minus_C": 0.1089528907429087,
+    "C_div_B": 0.9500043055520497,
+    "topK_indices": [
+      409,
+      539,
+      376,
+      175,
+      174,
+      582,
+      507,
+      178,
+      487,
+      272,
+      144
+    ],
+    "topK_cutoff": 2.0304043292999268,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 7,
+    "max_cell_upper_tail_component_size": 2,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 409,
+    "gt_area_fraction": null,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": null,
+    "topK_mean_GT_cell_fraction": null,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/train/good/043.npz",
+    "predictions": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "margins": {
+      "A": -0.11817014217376709,
+      "B": -0.14381158351898193,
+      "C": -0.17079555825753623
+    }
+  },
+  {
+    "image_path": "metal_nut/train/good/044.png",
+    "split": "normal_calibration",
+    "label": 0,
+    "scores": {
+      "A": 2.0711777210235596,
+      "B": 2.253504991531372,
+      "C": 2.136207038705999
+    },
+    "neighbor_weight": 0.9190916419029236,
+    "B_minus_C": 0.11729795282537303,
+    "C_div_B": 0.9479486607457377,
+    "topK_indices": [
+      666,
+      636,
+      603,
+      245,
+      617,
+      635,
+      571,
+      388,
+      179,
+      649,
+      756
+    ],
+    "topK_cutoff": 2.087094306945801,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 6,
+    "max_cell_upper_tail_component_size": 5,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 666,
+    "gt_area_fraction": null,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": null,
+    "topK_mean_GT_cell_fraction": null,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/train/good/044.npz",
+    "predictions": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "margins": {
+      "A": -0.060726046562194824,
+      "B": -0.06955206394195557,
+      "C": -0.10488110076297419
+    }
+  },
+  {
+    "image_path": "metal_nut/train/good/046.png",
+    "split": "normal_calibration",
+    "label": 0,
+    "scores": {
+      "A": 1.977222204208374,
+      "B": 2.139829635620117,
+      "C": 2.1053551760586826
+    },
+    "neighbor_weight": 0.9240091443061829,
+    "B_minus_C": 0.03447445956143458,
+    "C_div_B": 0.9838891568807328,
+    "topK_indices": [
+      603,
+      666,
+      178,
+      571,
+      379,
+      390,
+      236,
+      601,
+      486,
+      569,
+      539
+    ],
+    "topK_cutoff": 2.0674781799316406,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 8,
+    "max_cell_upper_tail_component_size": 3,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 603,
+    "gt_area_fraction": null,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": null,
+    "topK_mean_GT_cell_fraction": null,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/train/good/046.npz",
+    "predictions": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "margins": {
+      "A": -0.15468156337738037,
+      "B": -0.18322741985321045,
+      "C": -0.13573296341029062
+    }
+  },
+  {
+    "image_path": "metal_nut/train/good/049.png",
+    "split": "normal_calibration",
+    "label": 0,
+    "scores": {
+      "A": 2.04858660697937,
+      "B": 2.2282347679138184,
+      "C": 2.1206459999084473
+    },
+    "neighbor_weight": 0.9193764925003052,
+    "B_minus_C": 0.1075887680053711,
+    "C_div_B": 0.9517156946141268,
+    "topK_indices": [
+      266,
+      267,
+      914,
+      754,
+      723,
+      882,
+      205,
+      853,
+      363,
+      598,
+      695
+    ],
+    "topK_cutoff": 2.0685267448425293,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 8,
+    "max_cell_upper_tail_component_size": 2,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 266,
+    "gt_area_fraction": null,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": null,
+    "topK_mean_GT_cell_fraction": null,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/train/good/049.npz",
+    "predictions": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "margins": {
+      "A": -0.08331716060638428,
+      "B": -0.09482228755950928,
+      "C": -0.12044213956052596
+    }
+  },
+  {
+    "image_path": "metal_nut/train/good/051.png",
+    "split": "normal_calibration",
+    "label": 0,
+    "scores": {
+      "A": 2.038241147994995,
+      "B": 2.199888229370117,
+      "C": 2.1441642371090976
+    },
+    "neighbor_weight": 0.9265202879905701,
+    "B_minus_C": 0.05572399226101954,
+    "C_div_B": 0.9746696257032228,
+    "topK_indices": [
+      714,
+      790,
+      809,
+      789,
+      245,
+      727,
+      715,
+      792,
+      822,
+      716,
+      312
+    ],
+    "topK_cutoff": 2.116943359375,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 7,
+    "max_cell_upper_tail_component_size": 3,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 714,
+    "gt_area_fraction": null,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": null,
+    "topK_mean_GT_cell_fraction": null,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/train/good/051.npz",
+    "predictions": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "margins": {
+      "A": -0.09366261959075928,
+      "B": -0.12316882610321045,
+      "C": -0.09692390235987558
+    }
+  },
+  {
+    "image_path": "metal_nut/train/good/058.png",
+    "split": "normal_calibration",
+    "label": 0,
+    "scores": {
+      "A": 2.1236846446990967,
+      "B": 2.2905406951904297,
+      "C": 2.1957559368827124
+    },
+    "neighbor_weight": 0.9271543025970459,
+    "B_minus_C": 0.09478475830771727,
+    "C_div_B": 0.9586190463645803,
+    "topK_indices": [
+      541,
+      574,
+      508,
+      542,
+      573,
+      698,
+      749,
+      778,
+      846,
+      279,
+      476
+    ],
+    "topK_cutoff": 2.140047073364258,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 6,
+    "max_cell_upper_tail_component_size": 6,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 541,
+    "gt_area_fraction": null,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": null,
+    "topK_mean_GT_cell_fraction": null,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/train/good/058.npz",
+    "predictions": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "margins": {
+      "A": -0.008219122886657715,
+      "B": -0.03251636028289795,
+      "C": -0.045332202586260806
+    }
+  },
+  {
+    "image_path": "metal_nut/train/good/068.png",
+    "split": "normal_calibration",
+    "label": 0,
+    "scores": {
+      "A": 2.040414333343506,
+      "B": 2.206566572189331,
+      "C": 2.0918278260664507
+    },
+    "neighbor_weight": 0.9247009754180908,
+    "B_minus_C": 0.11473874612288038,
+    "C_div_B": 0.9480012307042983,
+    "topK_indices": [
+      174,
+      788,
+      173,
+      645,
+      814,
+      820,
+      141,
+      696,
+      646,
+      205,
+      665
+    ],
+    "topK_cutoff": 2.0540497303009033,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 5,
+    "max_cell_upper_tail_component_size": 4,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 174,
+    "gt_area_fraction": null,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": null,
+    "topK_mean_GT_cell_fraction": null,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/train/good/068.npz",
+    "predictions": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "margins": {
+      "A": -0.09148943424224854,
+      "B": -0.11649048328399658,
+      "C": -0.14926031340252255
+    }
+  },
+  {
+    "image_path": "metal_nut/train/good/088.png",
+    "split": "normal_calibration",
+    "label": 0,
+    "scores": {
+      "A": 2.0406887531280518,
+      "B": 2.2072343826293945,
+      "C": 2.131749326532537
+    },
+    "neighbor_weight": 0.9245455265045166,
+    "B_minus_C": 0.0754850560968574,
+    "C_div_B": 0.9658010691157616,
+    "topK_indices": [
+      681,
+      267,
+      203,
+      266,
+      268,
+      204,
+      235,
+      747,
+      299,
+      310,
+      264
+    ],
+    "topK_cutoff": 2.0809073448181152,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 5,
+    "max_cell_upper_tail_component_size": 1,
+    "max_cell_is_isolated_in_upper_tail": true,
+    "max_patch_index": 681,
+    "gt_area_fraction": null,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": null,
+    "topK_mean_GT_cell_fraction": null,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/train/good/088.npz",
+    "predictions": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "margins": {
+      "A": -0.09121501445770264,
+      "B": -0.1158226728439331,
+      "C": -0.1093388129364361
+    }
+  },
+  {
+    "image_path": "metal_nut/train/good/093.png",
+    "split": "normal_calibration",
+    "label": 0,
+    "scores": {
+      "A": 1.9440218210220337,
+      "B": 2.1204700469970703,
+      "C": 2.044278383255005
+    },
+    "neighbor_weight": 0.9167881608009338,
+    "B_minus_C": 0.07619166374206543,
+    "C_div_B": 0.9640685027124221,
+    "topK_indices": [
+      406,
+      373,
+      758,
+      340,
+      375,
+      440,
+      578,
+      416,
+      818,
+      857,
+      374
+    ],
+    "topK_cutoff": 2.020123243331909,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 7,
+    "max_cell_upper_tail_component_size": 5,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 406,
+    "gt_area_fraction": null,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": null,
+    "topK_mean_GT_cell_fraction": null,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/train/good/093.npz",
+    "predictions": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "margins": {
+      "A": -0.1878819465637207,
+      "B": -0.20258700847625732,
+      "C": -0.19680975621396835
+    }
+  },
+  {
+    "image_path": "metal_nut/train/good/094.png",
+    "split": "normal_calibration",
+    "label": 0,
+    "scores": {
+      "A": 2.0429749488830566,
+      "B": 2.216062068939209,
+      "C": 2.1296577020124956
+    },
+    "neighbor_weight": 0.9218942523002625,
+    "B_minus_C": 0.08640436692671338,
+    "C_div_B": 0.9610099517798824,
+    "topK_indices": [
+      141,
+      176,
+      142,
+      615,
+      140,
+      179,
+      172,
+      238,
+      646,
+      375,
+      143
+    ],
+    "topK_cutoff": 2.0830464363098145,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 5,
+    "max_cell_upper_tail_component_size": 6,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 141,
+    "gt_area_fraction": null,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": null,
+    "topK_mean_GT_cell_fraction": null,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/train/good/094.npz",
+    "predictions": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "margins": {
+      "A": -0.08892881870269775,
+      "B": -0.10699498653411865,
+      "C": -0.11143043745647763
+    }
+  },
+  {
+    "image_path": "metal_nut/train/good/095.png",
+    "split": "normal_calibration",
+    "label": 0,
+    "scores": {
+      "A": 2.0400938987731934,
+      "B": 2.1713106632232666,
+      "C": 2.108203736218539
+    },
+    "neighbor_weight": 0.9395679235458374,
+    "B_minus_C": 0.06310692700472753,
+    "C_div_B": 0.9709360212365712,
+    "topK_indices": [
+      108,
+      107,
+      139,
+      75,
+      275,
+      276,
+      443,
+      307,
+      475,
+      361,
+      442
+    ],
+    "topK_cutoff": 2.0655877590179443,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 4,
+    "max_cell_upper_tail_component_size": 4,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 108,
+    "gt_area_fraction": null,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": null,
+    "topK_mean_GT_cell_fraction": null,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/train/good/095.npz",
+    "predictions": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "margins": {
+      "A": -0.09180986881256104,
+      "B": -0.15174639225006104,
+      "C": -0.13288440325043416
+    }
+  },
+  {
+    "image_path": "metal_nut/train/good/097.png",
+    "split": "normal_calibration",
+    "label": 0,
+    "scores": {
+      "A": 1.9859613180160522,
+      "B": 2.13932204246521,
+      "C": 2.1128443587910044
+    },
+    "neighbor_weight": 0.9283133745193481,
+    "B_minus_C": 0.026477683674205554,
+    "C_div_B": 0.9876233296583554,
+    "topK_indices": [
+      456,
+      276,
+      310,
+      849,
+      711,
+      912,
+      911,
+      648,
+      282,
+      143,
+      210
+    ],
+    "topK_cutoff": 2.0850558280944824,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 10,
+    "max_cell_upper_tail_component_size": 1,
+    "max_cell_is_isolated_in_upper_tail": true,
+    "max_patch_index": 456,
+    "gt_area_fraction": null,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": null,
+    "topK_mean_GT_cell_fraction": null,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/train/good/097.npz",
+    "predictions": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "margins": {
+      "A": -0.14594244956970215,
+      "B": -0.18373501300811768,
+      "C": -0.12824378067796882
+    }
+  },
+  {
+    "image_path": "metal_nut/train/good/101.png",
+    "split": "normal_calibration",
+    "label": 0,
+    "scores": {
+      "A": 1.9757388830184937,
+      "B": 2.1427717208862305,
+      "C": 2.0824300809340044
+    },
+    "neighbor_weight": 0.9220482110977173,
+    "B_minus_C": 0.06034163995222608,
+    "C_div_B": 0.9718394454415941,
+    "topK_indices": [
+      443,
+      441,
+      213,
+      410,
+      442,
+      408,
+      407,
+      544,
+      473,
+      378,
+      540
+    ],
+    "topK_cutoff": 2.037074327468872,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 4,
+    "max_cell_upper_tail_component_size": 8,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 443,
+    "gt_area_fraction": null,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": null,
+    "topK_mean_GT_cell_fraction": null,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/train/good/101.npz",
+    "predictions": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "margins": {
+      "A": -0.15616488456726074,
+      "B": -0.18028533458709717,
+      "C": -0.15865805853496884
+    }
+  },
+  {
+    "image_path": "metal_nut/train/good/104.png",
+    "split": "normal_calibration",
+    "label": 0,
+    "scores": {
+      "A": 1.9306658506393433,
+      "B": 2.0955848693847656,
+      "C": 2.0527263337915596
+    },
+    "neighbor_weight": 0.9213016629219055,
+    "B_minus_C": 0.04285853559320607,
+    "C_div_B": 0.9795481747270924,
+    "topK_indices": [
+      377,
+      820,
+      409,
+      600,
+      378,
+      346,
+      753,
+      710,
+      821,
+      265,
+      632
+    ],
+    "topK_cutoff": 2.0345613956451416,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 6,
+    "max_cell_upper_tail_component_size": 4,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 377,
+    "gt_area_fraction": null,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": null,
+    "topK_mean_GT_cell_fraction": null,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/train/good/104.npz",
+    "predictions": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "margins": {
+      "A": -0.20123791694641113,
+      "B": -0.227472186088562,
+      "C": -0.18836180567741367
+    }
+  },
+  {
+    "image_path": "metal_nut/train/good/109.png",
+    "split": "normal_calibration",
+    "label": 0,
+    "scores": {
+      "A": 2.0338311195373535,
+      "B": 2.226243734359741,
+      "C": 2.127636606043035
+    },
+    "neighbor_weight": 0.913570761680603,
+    "B_minus_C": 0.09860712831670604,
+    "C_div_B": 0.9557069485273296,
+    "topK_indices": [
+      885,
+      917,
+      884,
+      790,
+      853,
+      307,
+      977,
+      918,
+      520,
+      715,
+      886
+    ],
+    "topK_cutoff": 2.090830087661743,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 6,
+    "max_cell_upper_tail_component_size": 6,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 885,
+    "gt_area_fraction": null,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": null,
+    "topK_mean_GT_cell_fraction": null,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/train/good/109.npz",
+    "predictions": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "margins": {
+      "A": -0.09807264804840088,
+      "B": -0.09681332111358643,
+      "C": -0.11345153342593806
+    }
+  },
+  {
+    "image_path": "metal_nut/train/good/110.png",
+    "split": "normal_calibration",
+    "label": 0,
+    "scores": {
+      "A": 2.028245210647583,
+      "B": 2.207796812057495,
+      "C": 2.0769813494248823
+    },
+    "neighbor_weight": 0.9186738729476929,
+    "B_minus_C": 0.1308154626326128,
+    "C_div_B": 0.9407484140215318,
+    "topK_indices": [
+      818,
+      407,
+      908,
+      439,
+      757,
+      334,
+      406,
+      817,
+      599,
+      416,
+      881
+    ],
+    "topK_cutoff": 2.0202219486236572,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 8,
+    "max_cell_upper_tail_component_size": 2,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 818,
+    "gt_area_fraction": null,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": null,
+    "topK_mean_GT_cell_fraction": null,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/train/good/110.npz",
+    "predictions": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "margins": {
+      "A": -0.10365855693817139,
+      "B": -0.11526024341583252,
+      "C": -0.1641067900440909
+    }
+  },
+  {
+    "image_path": "metal_nut/train/good/117.png",
+    "split": "normal_calibration",
+    "label": 0,
+    "scores": {
+      "A": 2.058300733566284,
+      "B": 2.20945143699646,
+      "C": 2.16726337779652
+    },
+    "neighbor_weight": 0.9315890073776245,
+    "B_minus_C": 0.04218805919993995,
+    "C_div_B": 0.980905640878312,
+    "topK_indices": [
+      276,
+      361,
+      344,
+      341,
+      264,
+      265,
+      695,
+      441,
+      308,
+      745,
+      233
+    ],
+    "topK_cutoff": 2.1470916271209717,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 7,
+    "max_cell_upper_tail_component_size": 3,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 276,
+    "gt_area_fraction": null,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": null,
+    "topK_mean_GT_cell_fraction": null,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/train/good/117.npz",
+    "predictions": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "margins": {
+      "A": -0.07360303401947021,
+      "B": -0.11360561847686768,
+      "C": -0.07382476167245322
+    }
+  },
+  {
+    "image_path": "metal_nut/train/good/119.png",
+    "split": "normal_calibration",
+    "label": 0,
+    "scores": {
+      "A": 1.9829730987548828,
+      "B": 2.1358401775360107,
+      "C": 2.078121705488725
+    },
+    "neighbor_weight": 0.9284276366233826,
+    "B_minus_C": 0.05771847204728564,
+    "C_div_B": 0.9729762214165893,
+    "topK_indices": [
+      440,
+      698,
+      667,
+      713,
+      699,
+      844,
+      810,
+      692,
+      783,
+      714,
+      495
+    ],
+    "topK_cutoff": 2.04414439201355,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 8,
+    "max_cell_upper_tail_component_size": 1,
+    "max_cell_is_isolated_in_upper_tail": true,
+    "max_patch_index": 440,
+    "gt_area_fraction": null,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": null,
+    "topK_mean_GT_cell_fraction": null,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/train/good/119.npz",
+    "predictions": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "margins": {
+      "A": -0.14893066883087158,
+      "B": -0.1872168779373169,
+      "C": -0.16296643398024813
+    }
+  },
+  {
+    "image_path": "metal_nut/train/good/121.png",
+    "split": "normal_calibration",
+    "label": 0,
+    "scores": {
+      "A": 1.992228627204895,
+      "B": 2.156620979309082,
+      "C": 2.092447107488459
+    },
+    "neighbor_weight": 0.9237731695175171,
+    "B_minus_C": 0.06417387182062306,
+    "C_div_B": 0.970243323960809,
+    "topK_indices": [
+      742,
+      850,
+      389,
+      600,
+      200,
+      568,
+      812,
+      780,
+      851,
+      875,
+      296
+    ],
+    "topK_cutoff": 2.067425012588501,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 8,
+    "max_cell_upper_tail_component_size": 1,
+    "max_cell_is_isolated_in_upper_tail": true,
+    "max_patch_index": 742,
+    "gt_area_fraction": null,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": null,
+    "topK_mean_GT_cell_fraction": null,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/train/good/121.npz",
+    "predictions": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "margins": {
+      "A": -0.13967514038085938,
+      "B": -0.1664360761642456,
+      "C": -0.14864103198051426
+    }
+  },
+  {
+    "image_path": "metal_nut/train/good/142.png",
+    "split": "normal_calibration",
+    "label": 0,
+    "scores": {
+      "A": 2.094862461090088,
+      "B": 2.2593183517456055,
+      "C": 2.133553981781006
+    },
+    "neighbor_weight": 0.9272099733352661,
+    "B_minus_C": 0.1257643699645996,
+    "C_div_B": 0.9443352594080285,
+    "topK_indices": [
+      911,
+      539,
+      172,
+      204,
+      332,
+      944,
+      679,
+      582,
+      376,
+      377,
+      486
+    ],
+    "topK_cutoff": 2.067554235458374,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 8,
+    "max_cell_upper_tail_component_size": 2,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 911,
+    "gt_area_fraction": null,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": null,
+    "topK_mean_GT_cell_fraction": null,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/train/good/142.npz",
+    "predictions": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "margins": {
+      "A": -0.037041306495666504,
+      "B": -0.06373870372772217,
+      "C": -0.10753415768796737
+    }
+  },
+  {
+    "image_path": "metal_nut/train/good/146.png",
+    "split": "normal_calibration",
+    "label": 0,
+    "scores": {
+      "A": 2.0345733165740967,
+      "B": 2.2001748085021973,
+      "C": 2.145260897549716
+    },
+    "neighbor_weight": 0.9247325658798218,
+    "B_minus_C": 0.05491391095248144,
+    "C_div_B": 0.9750411145785889,
+    "topK_indices": [
+      299,
+      603,
+      571,
+      311,
+      329,
+      326,
+      267,
+      342,
+      539,
+      296,
+      328
+    ],
+    "topK_cutoff": 2.1172244548797607,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 5,
+    "max_cell_upper_tail_component_size": 2,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 299,
+    "gt_area_fraction": null,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": null,
+    "topK_mean_GT_cell_fraction": null,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/train/good/146.npz",
+    "predictions": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "margins": {
+      "A": -0.09733045101165771,
+      "B": -0.12288224697113037,
+      "C": -0.0958272419192574
+    }
+  },
+  {
+    "image_path": "metal_nut/train/good/148.png",
+    "split": "normal_calibration",
+    "label": 0,
+    "scores": {
+      "A": 2.1230130195617676,
+      "B": 2.301504135131836,
+      "C": 2.241867412220348
+    },
+    "neighbor_weight": 0.9224458932876587,
+    "B_minus_C": 0.059636722911487805,
+    "C_div_B": 0.9740879357976597,
+    "topK_indices": [
+      946,
+      237,
+      945,
+      174,
+      236,
+      302,
+      270,
+      271,
+      173,
+      822,
+      202
+    ],
+    "topK_cutoff": 2.1715087890625,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 5,
+    "max_cell_upper_tail_component_size": 2,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 946,
+    "gt_area_fraction": null,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": null,
+    "topK_mean_GT_cell_fraction": null,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/train/good/148.npz",
+    "predictions": {
+      "A": 0,
+      "B": 0,
+      "C": 1
+    },
+    "margins": {
+      "A": -0.008890748023986816,
+      "B": -0.0215529203414917,
+      "C": 0.0007792727513749043
+    }
+  },
+  {
+    "image_path": "metal_nut/train/good/151.png",
+    "split": "normal_calibration",
+    "label": 0,
+    "scores": {
+      "A": 2.0051493644714355,
+      "B": 2.2048470973968506,
+      "C": 2.144200325012207
+    },
+    "neighbor_weight": 0.9094278812408447,
+    "B_minus_C": 0.060646772384643555,
+    "C_div_B": 0.9724938874644659,
+    "topK_indices": [
+      312,
+      759,
+      238,
+      295,
+      343,
+      212,
+      342,
+      246,
+      234,
+      377,
+      761
+    ],
+    "topK_cutoff": 2.1060380935668945,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 9,
+    "max_cell_upper_tail_component_size": 3,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 312,
+    "gt_area_fraction": null,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": null,
+    "topK_mean_GT_cell_fraction": null,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/train/good/151.npz",
+    "predictions": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "margins": {
+      "A": -0.12675440311431885,
+      "B": -0.11820995807647705,
+      "C": -0.0968878144567662
+    }
+  },
+  {
+    "image_path": "metal_nut/train/good/157.png",
+    "split": "normal_calibration",
+    "label": 0,
+    "scores": {
+      "A": 2.1253538131713867,
+      "B": 2.323686122894287,
+      "C": 2.2314771088686856
+    },
+    "neighbor_weight": 0.9146475195884705,
+    "B_minus_C": 0.09220901402560155,
+    "C_div_B": 0.9603177842665128,
+    "topK_indices": [
+      812,
+      667,
+      844,
+      571,
+      845,
+      780,
+      147,
+      939,
+      145,
+      697,
+      877
+    ],
+    "topK_cutoff": 2.181494951248169,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 7,
+    "max_cell_upper_tail_component_size": 5,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 812,
+    "gt_area_fraction": null,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": null,
+    "topK_mean_GT_cell_fraction": null,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/train/good/157.npz",
+    "predictions": {
+      "A": 0,
+      "B": 1,
+      "C": 0
+    },
+    "margins": {
+      "A": -0.006549954414367676,
+      "B": 0.0006290674209594727,
+      "C": -0.009611030600287673
+    }
+  },
+  {
+    "image_path": "metal_nut/train/good/161.png",
+    "split": "normal_calibration",
+    "label": 0,
+    "scores": {
+      "A": 2.040127754211426,
+      "B": 2.195993661880493,
+      "C": 2.1291523196480493
+    },
+    "neighbor_weight": 0.9290226101875305,
+    "B_minus_C": 0.06684134223244387,
+    "C_div_B": 0.9695621424630134,
+    "topK_indices": [
+      743,
+      788,
+      649,
+      171,
+      266,
+      709,
+      475,
+      617,
+      569,
+      710,
+      740
+    ],
+    "topK_cutoff": 2.1038379669189453,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 7,
+    "max_cell_upper_tail_component_size": 4,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 743,
+    "gt_area_fraction": null,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": null,
+    "topK_mean_GT_cell_fraction": null,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/train/good/161.npz",
+    "predictions": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "margins": {
+      "A": -0.09177601337432861,
+      "B": -0.12706339359283447,
+      "C": -0.11193581982092393
+    }
+  },
+  {
+    "image_path": "metal_nut/train/good/164.png",
+    "split": "normal_calibration",
+    "label": 0,
+    "scores": {
+      "A": 2.0144639015197754,
+      "B": 2.156776189804077,
+      "C": 2.109169374812733
+    },
+    "neighbor_weight": 0.9340161681175232,
+    "B_minus_C": 0.047606814991344226,
+    "C_div_B": 0.9779268636141292,
+    "topK_indices": [
+      663,
+      442,
+      788,
+      408,
+      724,
+      786,
+      344,
+      759,
+      410,
+      673,
+      820
+    ],
+    "topK_cutoff": 2.073293447494507,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 9,
+    "max_cell_upper_tail_component_size": 1,
+    "max_cell_is_isolated_in_upper_tail": true,
+    "max_patch_index": 663,
+    "gt_area_fraction": null,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": null,
+    "topK_mean_GT_cell_fraction": null,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/train/good/164.npz",
+    "predictions": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "margins": {
+      "A": -0.117439866065979,
+      "B": -0.1662808656692505,
+      "C": -0.1319187646562403
+    }
+  },
+  {
+    "image_path": "metal_nut/train/good/166.png",
+    "split": "normal_calibration",
+    "label": 0,
+    "scores": {
+      "A": 1.9804335832595825,
+      "B": 2.1532199382781982,
+      "C": 2.1205378012223677
+    },
+    "neighbor_weight": 0.9197544455528259,
+    "B_minus_C": 0.03268213705583056,
+    "C_div_B": 0.9848217376800047,
+    "topK_indices": [
+      328,
+      296,
+      268,
+      298,
+      267,
+      913,
+      265,
+      299,
+      264,
+      297,
+      749
+    ],
+    "topK_cutoff": 2.094426393508911,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 3,
+    "max_cell_upper_tail_component_size": 9,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 328,
+    "gt_area_fraction": null,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": null,
+    "topK_mean_GT_cell_fraction": null,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/train/good/166.npz",
+    "predictions": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "margins": {
+      "A": -0.15147018432617188,
+      "B": -0.1698371171951294,
+      "C": -0.12055033824660555
+    }
+  },
+  {
+    "image_path": "metal_nut/train/good/176.png",
+    "split": "normal_calibration",
+    "label": 0,
+    "scores": {
+      "A": 2.0630722045898438,
+      "B": 2.234790325164795,
+      "C": 2.160467581315474
+    },
+    "neighbor_weight": 0.9231614470481873,
+    "B_minus_C": 0.0743227438493208,
+    "C_div_B": 0.966742855912516,
+    "topK_indices": [
+      210,
+      357,
+      583,
+      613,
+      237,
+      582,
+      244,
+      517,
+      243,
+      616,
+      552
+    ],
+    "topK_cutoff": 2.126908302307129,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 5,
+    "max_cell_upper_tail_component_size": 3,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 210,
+    "gt_area_fraction": null,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": null,
+    "topK_mean_GT_cell_fraction": null,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/train/good/176.npz",
+    "predictions": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "margins": {
+      "A": -0.06883156299591064,
+      "B": -0.08826673030853271,
+      "C": -0.08062055815349911
+    }
+  },
+  {
+    "image_path": "metal_nut/train/good/182.png",
+    "split": "normal_calibration",
+    "label": 0,
+    "scores": {
+      "A": 2.0063743591308594,
+      "B": 2.1716628074645996,
+      "C": 2.0807079401883213
+    },
+    "neighbor_weight": 0.9238885045051575,
+    "B_minus_C": 0.09095486727627833,
+    "C_div_B": 0.9581174080231786,
+    "topK_indices": [
+      664,
+      663,
+      278,
+      327,
+      179,
+      647,
+      781,
+      615,
+      312,
+      632,
+      234
+    ],
+    "topK_cutoff": 2.0373222827911377,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 8,
+    "max_cell_upper_tail_component_size": 3,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 664,
+    "gt_area_fraction": null,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": null,
+    "topK_mean_GT_cell_fraction": null,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/train/good/182.npz",
+    "predictions": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "margins": {
+      "A": -0.12552940845489502,
+      "B": -0.15139424800872803,
+      "C": -0.16038019928065195
+    }
+  },
+  {
+    "image_path": "metal_nut/train/good/197.png",
+    "split": "normal_calibration",
+    "label": 0,
+    "scores": {
+      "A": 2.0187435150146484,
+      "B": 2.1676762104034424,
+      "C": 2.1178222569552334
+    },
+    "neighbor_weight": 0.9312938451766968,
+    "B_minus_C": 0.049853953448208976,
+    "C_div_B": 0.9770011991602149,
+    "topK_indices": [
+      209,
+      211,
+      210,
+      140,
+      310,
+      141,
+      146,
+      848,
+      472,
+      242,
+      756
+    ],
+    "topK_cutoff": 2.0817503929138184,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 7,
+    "max_cell_upper_tail_component_size": 4,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 209,
+    "gt_area_fraction": null,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": null,
+    "topK_mean_GT_cell_fraction": null,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/train/good/197.npz",
+    "predictions": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "margins": {
+      "A": -0.11316025257110596,
+      "B": -0.15538084506988525,
+      "C": -0.12326588251373982
+    }
+  },
+  {
+    "image_path": "metal_nut/train/good/205.png",
+    "split": "normal_calibration",
+    "label": 0,
+    "scores": {
+      "A": 1.9731651544570923,
+      "B": 2.108339309692383,
+      "C": 2.0665066675706343
+    },
+    "neighbor_weight": 0.9358859658241272,
+    "B_minus_C": 0.04183264212174853,
+    "C_div_B": 0.9801584868576718,
+    "topK_indices": [
+      312,
+      715,
+      520,
+      646,
+      80,
+      495,
+      237,
+      301,
+      311,
+      486,
+      521
+    ],
+    "topK_cutoff": 2.0385518074035645,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 9,
+    "max_cell_upper_tail_component_size": 2,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 312,
+    "gt_area_fraction": null,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": null,
+    "topK_mean_GT_cell_fraction": null,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/train/good/205.npz",
+    "predictions": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "margins": {
+      "A": -0.1587386131286621,
+      "B": -0.21471774578094482,
+      "C": -0.17458147189833895
+    }
+  },
+  {
+    "image_path": "metal_nut/train/good/206.png",
+    "split": "normal_calibration",
+    "label": 0,
+    "scores": {
+      "A": 2.132434844970703,
+      "B": 2.315298557281494,
+      "C": 2.200402758338235
+    },
+    "neighbor_weight": 0.9210193753242493,
+    "B_minus_C": 0.1148957989432593,
+    "C_div_B": 0.950375385247005,
+    "topK_indices": [
+      246,
+      279,
+      278,
+      310,
+      309,
+      749,
+      213,
+      312,
+      780,
+      212,
+      280
+    ],
+    "topK_cutoff": 2.132086753845215,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 2,
+    "max_cell_upper_tail_component_size": 9,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 246,
+    "gt_area_fraction": null,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": null,
+    "topK_mean_GT_cell_fraction": null,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/train/good/206.npz",
+    "predictions": {
+      "A": 1,
+      "B": 0,
+      "C": 0
+    },
+    "margins": {
+      "A": 0.0005310773849487305,
+      "B": -0.007758498191833496,
+      "C": -0.040685381130738385
+    }
+  },
+  {
+    "image_path": "metal_nut/train/good/207.png",
+    "split": "normal_calibration",
+    "label": 0,
+    "scores": {
+      "A": 2.0142078399658203,
+      "B": 2.1639041900634766,
+      "C": 2.0927199667150322
+    },
+    "neighbor_weight": 0.9308211803436279,
+    "B_minus_C": 0.07118422334844432,
+    "C_div_B": 0.9671038007711625,
+    "topK_indices": [
+      268,
+      240,
+      847,
+      208,
+      682,
+      177,
+      145,
+      334,
+      876,
+      815,
+      877
+    ],
+    "topK_cutoff": 2.0660412311553955,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 6,
+    "max_cell_upper_tail_component_size": 1,
+    "max_cell_is_isolated_in_upper_tail": true,
+    "max_patch_index": 268,
+    "gt_area_fraction": null,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": null,
+    "topK_mean_GT_cell_fraction": null,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/train/good/207.npz",
+    "predictions": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "margins": {
+      "A": -0.11769592761993408,
+      "B": -0.15915286540985107,
+      "C": -0.14836817275394099
+    }
+  },
+  {
+    "image_path": "metal_nut/train/good/210.png",
+    "split": "normal_calibration",
+    "label": 0,
+    "scores": {
+      "A": 2.062574625015259,
+      "B": 2.231081008911133,
+      "C": 2.1329923326318916
+    },
+    "neighbor_weight": 0.9244731664657593,
+    "B_minus_C": 0.09808867627924123,
+    "C_div_B": 0.9560353586949705,
+    "topK_indices": [
+      245,
+      615,
+      212,
+      908,
+      647,
+      264,
+      327,
+      583,
+      213,
+      744,
+      517
+    ],
+    "topK_cutoff": 2.0925517082214355,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 7,
+    "max_cell_upper_tail_component_size": 3,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 245,
+    "gt_area_fraction": null,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": null,
+    "topK_mean_GT_cell_fraction": null,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/train/good/210.npz",
+    "predictions": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "margins": {
+      "A": -0.0693291425704956,
+      "B": -0.09197604656219482,
+      "C": -0.10809580683708164
+    }
+  },
+  {
+    "image_path": "metal_nut/train/good/217.png",
+    "split": "normal_calibration",
+    "label": 0,
+    "scores": {
+      "A": 1.966511845588684,
+      "B": 2.1216673851013184,
+      "C": 2.0950704487887295
+    },
+    "neighbor_weight": 0.9268709421157837,
+    "B_minus_C": 0.02659693631258886,
+    "C_div_B": 0.9874641348123854,
+    "topK_indices": [
+      327,
+      214,
+      454,
+      568,
+      600,
+      584,
+      247,
+      302,
+      711,
+      712,
+      374
+    ],
+    "topK_cutoff": 2.0683538913726807,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 8,
+    "max_cell_upper_tail_component_size": 1,
+    "max_cell_is_isolated_in_upper_tail": true,
+    "max_patch_index": 327,
+    "gt_area_fraction": null,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": null,
+    "topK_mean_GT_cell_fraction": null,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/train/good/217.npz",
+    "predictions": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "margins": {
+      "A": -0.1653919219970703,
+      "B": -0.20138967037200928,
+      "C": -0.14601769068024373
+    }
+  },
+  {
+    "image_path": "metal_nut/test/bent/000.png",
+    "split": "development",
+    "label": 1,
+    "scores": {
+      "A": 2.814300060272217,
+      "B": 3.088348865509033,
+      "C": 3.0143636139956387
+    },
+    "neighbor_weight": 0.911263644695282,
+    "B_minus_C": 0.07398525151339452,
+    "C_div_B": 0.9760437519414763,
+    "topK_indices": [
+      380,
+      539,
+      508,
+      412,
+      348,
+      476,
+      540,
+      444,
+      507,
+      572,
+      112
+    ],
+    "topK_cutoff": 2.932898998260498,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 2,
+    "max_cell_upper_tail_component_size": 10,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 380,
+    "gt_area_fraction": 0.04698979591836735,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": 11,
+    "topK_mean_GT_cell_fraction": 0.9984533424987112,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/test/bent/000.npz",
+    "predictions": {
+      "A": 1,
+      "B": 1,
+      "C": 1
+    },
+    "margins": {
+      "A": 0.6823962926864624,
+      "B": 0.7652918100357056,
+      "C": 0.7732754745266655
+    }
+  },
+  {
+    "image_path": "metal_nut/test/bent/002.png",
+    "split": "development",
+    "label": 1,
+    "scores": {
+      "A": 2.7912073135375977,
+      "B": 2.9946036338806152,
+      "C": 2.7205223820426245
+    },
+    "neighbor_weight": 0.9320790767669678,
+    "B_minus_C": 0.2740812518379907,
+    "C_div_B": 0.9084749484916582,
+    "topK_indices": [
+      580,
+      612,
+      644,
+      579,
+      613,
+      645,
+      676,
+      581,
+      611,
+      548,
+      677
+    ],
+    "topK_cutoff": 2.4726624488830566,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 1,
+    "max_cell_upper_tail_component_size": 11,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 580,
+    "gt_area_fraction": 0.009720408163265306,
+    "small_defect_lt_1pct": true,
+    "topK_GT_intersecting_cells": 11,
+    "topK_mean_GT_cell_fraction": 0.703729163086441,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/test/bent/002.npz",
+    "predictions": {
+      "A": 1,
+      "B": 1,
+      "C": 1
+    },
+    "margins": {
+      "A": 0.6593035459518433,
+      "B": 0.6715465784072876,
+      "C": 0.4794342425736513
+    }
+  },
+  {
+    "image_path": "metal_nut/test/bent/006.png",
+    "split": "development",
+    "label": 1,
+    "scores": {
+      "A": 2.5162949562072754,
+      "B": 2.7296383380889893,
+      "C": 2.5221773494373667
+    },
+    "neighbor_weight": 0.9218418598175049,
+    "B_minus_C": 0.20746098865162255,
+    "C_div_B": 0.923996895208885,
+    "topK_indices": [
+      644,
+      611,
+      643,
+      676,
+      675,
+      612,
+      708,
+      645,
+      709,
+      677,
+      613
+    ],
+    "topK_cutoff": 2.3488590717315674,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 1,
+    "max_cell_upper_tail_component_size": 11,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 644,
+    "gt_area_fraction": 0.01389795918367347,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": 11,
+    "topK_mean_GT_cell_fraction": 0.8314143323595119,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/test/bent/006.npz",
+    "predictions": {
+      "A": 1,
+      "B": 1,
+      "C": 1
+    },
+    "margins": {
+      "A": 0.384391188621521,
+      "B": 0.4065812826156616,
+      "C": 0.2810892099683935
+    }
+  },
+  {
+    "image_path": "metal_nut/test/bent/014.png",
+    "split": "development",
+    "label": 1,
+    "scores": {
+      "A": 2.5892107486724854,
+      "B": 2.817589521408081,
+      "C": 2.605877551165494
+    },
+    "neighbor_weight": 0.9189453721046448,
+    "B_minus_C": 0.21171197024258692,
+    "C_div_B": 0.9248606056226443,
+    "topK_indices": [
+      214,
+      182,
+      215,
+      183,
+      247,
+      246,
+      181,
+      150,
+      216,
+      279,
+      278
+    ],
+    "topK_cutoff": 2.4433984756469727,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 1,
+    "max_cell_upper_tail_component_size": 11,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 214,
+    "gt_area_fraction": 0.010659183673469387,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": 11,
+    "topK_mean_GT_cell_fraction": 0.7853604393700316,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/test/bent/014.npz",
+    "predictions": {
+      "A": 1,
+      "B": 1,
+      "C": 1
+    },
+    "margins": {
+      "A": 0.45730698108673096,
+      "B": 0.4945324659347534,
+      "C": 0.3647894116965209
+    }
+  },
+  {
+    "image_path": "metal_nut/test/bent/015.png",
+    "split": "development",
+    "label": 1,
+    "scores": {
+      "A": 2.505415916442871,
+      "B": 2.7652394771575928,
+      "C": 2.7079049457203257
+    },
+    "neighbor_weight": 0.9060393571853638,
+    "B_minus_C": 0.05733453143726708,
+    "C_div_B": 0.9792659797059596,
+    "topK_indices": [
+      205,
+      237,
+      206,
+      204,
+      173,
+      235,
+      207,
+      172,
+      140,
+      236,
+      208
+    ],
+    "topK_cutoff": 2.6753249168395996,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 1,
+    "max_cell_upper_tail_component_size": 11,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 205,
+    "gt_area_fraction": 0.035895918367346936,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": 11,
+    "topK_mean_GT_cell_fraction": 0.9268774703557312,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/test/bent/015.npz",
+    "predictions": {
+      "A": 1,
+      "B": 1,
+      "C": 1
+    },
+    "margins": {
+      "A": 0.3735121488571167,
+      "B": 0.44218242168426514,
+      "C": 0.46681680625135247
+    }
+  },
+  {
+    "image_path": "metal_nut/test/bent/016.png",
+    "split": "development",
+    "label": 1,
+    "scores": {
+      "A": 2.773970365524292,
+      "B": 3.013572931289673,
+      "C": 2.850985657085072
+    },
+    "neighbor_weight": 0.9204921722412109,
+    "B_minus_C": 0.16258727420460106,
+    "C_div_B": 0.946048336007909,
+    "topK_indices": [
+      666,
+      697,
+      731,
+      698,
+      665,
+      730,
+      699,
+      729,
+      763,
+      762,
+      634
+    ],
+    "topK_cutoff": 2.7488462924957275,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 1,
+    "max_cell_upper_tail_component_size": 11,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 666,
+    "gt_area_fraction": 0.01699183673469388,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": 11,
+    "topK_mean_GT_cell_fraction": 0.9339233545282696,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/test/bent/016.npz",
+    "predictions": {
+      "A": 1,
+      "B": 1,
+      "C": 1
+    },
+    "margins": {
+      "A": 0.6420665979385376,
+      "B": 0.6905158758163452,
+      "C": 0.6098975176160986
+    }
+  },
+  {
+    "image_path": "metal_nut/test/bent/017.png",
+    "split": "development",
+    "label": 1,
+    "scores": {
+      "A": 2.8240487575531006,
+      "B": 3.098501443862915,
+      "C": 2.9936003468253394
+    },
+    "neighbor_weight": 0.9114240407943726,
+    "B_minus_C": 0.10490109703757566,
+    "C_div_B": 0.9661445705486601,
+    "topK_indices": [
+      634,
+      602,
+      635,
+      604,
+      603,
+      666,
+      636,
+      570,
+      633,
+      665,
+      601
+    ],
+    "topK_cutoff": 2.904893159866333,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 1,
+    "max_cell_upper_tail_component_size": 11,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 634,
+    "gt_area_fraction": 0.018451020408163266,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": 11,
+    "topK_mean_GT_cell_fraction": 0.7600962364667467,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/test/bent/017.npz",
+    "predictions": {
+      "A": 1,
+      "B": 1,
+      "C": 1
+    },
+    "margins": {
+      "A": 0.6921449899673462,
+      "B": 0.7754443883895874,
+      "C": 0.7525122073563661
+    }
+  },
+  {
+    "image_path": "metal_nut/test/bent/018.png",
+    "split": "development",
+    "label": 1,
+    "scores": {
+      "A": 2.637911081314087,
+      "B": 2.888038158416748,
+      "C": 2.834904735738581
+    },
+    "neighbor_weight": 0.9133920669555664,
+    "B_minus_C": 0.05313342267816701,
+    "C_div_B": 0.9816022435426216,
+    "topK_indices": [
+      170,
+      169,
+      138,
+      233,
+      168,
+      201,
+      107,
+      137,
+      202,
+      234,
+      106
+    ],
+    "topK_cutoff": 2.797468662261963,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 1,
+    "max_cell_upper_tail_component_size": 11,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 170,
+    "gt_area_fraction": 0.02426326530612245,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": 10,
+    "topK_mean_GT_cell_fraction": 0.7535893389992032,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/test/bent/018.npz",
+    "predictions": {
+      "A": 1,
+      "B": 1,
+      "C": 1
+    },
+    "margins": {
+      "A": 0.5060073137283325,
+      "B": 0.5649811029434204,
+      "C": 0.5938165962696078
+    }
+  },
+  {
+    "image_path": "metal_nut/test/bent/019.png",
+    "split": "development",
+    "label": 1,
+    "scores": {
+      "A": 2.7520577907562256,
+      "B": 3.021088123321533,
+      "C": 2.9007230671969326
+    },
+    "neighbor_weight": 0.910949170589447,
+    "B_minus_C": 0.12036505612460058,
+    "C_div_B": 0.9601583763163236,
+    "topK_indices": [
+      477,
+      572,
+      509,
+      635,
+      603,
+      636,
+      604,
+      540,
+      541,
+      571,
+      445
+    ],
+    "topK_cutoff": 2.752803087234497,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 1,
+    "max_cell_upper_tail_component_size": 11,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 477,
+    "gt_area_fraction": 0.028428571428571428,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": 11,
+    "topK_mean_GT_cell_fraction": 0.95377212579481,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/test/bent/019.npz",
+    "predictions": {
+      "A": 1,
+      "B": 1,
+      "C": 1
+    },
+    "margins": {
+      "A": 0.6201540231704712,
+      "B": 0.6980310678482056,
+      "C": 0.6596349277279594
+    }
+  },
+  {
+    "image_path": "metal_nut/test/bent/020.png",
+    "split": "development",
+    "label": 1,
+    "scores": {
+      "A": 2.8169095516204834,
+      "B": 3.055856227874756,
+      "C": 2.912851485339078
+    },
+    "neighbor_weight": 0.9218069314956665,
+    "B_minus_C": 0.14300474253567774,
+    "C_div_B": 0.9532030528035893,
+    "topK_indices": [
+      603,
+      571,
+      635,
+      572,
+      604,
+      667,
+      636,
+      570,
+      602,
+      666,
+      698
+    ],
+    "topK_cutoff": 2.7990376949310303,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 1,
+    "max_cell_upper_tail_component_size": 11,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 603,
+    "gt_area_fraction": 0.019642857142857142,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": 11,
+    "topK_mean_GT_cell_fraction": 0.7496133356246779,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/test/bent/020.npz",
+    "predictions": {
+      "A": 1,
+      "B": 1,
+      "C": 1
+    },
+    "margins": {
+      "A": 0.685005784034729,
+      "B": 0.7327991724014282,
+      "C": 0.6717633458701049
+    }
+  },
+  {
+    "image_path": "metal_nut/test/color/000.png",
+    "split": "development",
+    "label": 1,
+    "scores": {
+      "A": 2.5335516929626465,
+      "B": 2.749642848968506,
+      "C": 2.5923127911307593
+    },
+    "neighbor_weight": 0.9214112162590027,
+    "B_minus_C": 0.15733005783774656,
+    "C_div_B": 0.9427816387510957,
+    "topK_indices": [
+      307,
+      308,
+      340,
+      339,
+      275,
+      306,
+      276,
+      309,
+      341,
+      338,
+      274
+    ],
+    "topK_cutoff": 2.416637659072876,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 1,
+    "max_cell_upper_tail_component_size": 11,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 307,
+    "gt_area_fraction": 0.004357142857142857,
+    "small_defect_lt_1pct": true,
+    "topK_GT_intersecting_cells": 10,
+    "topK_mean_GT_cell_fraction": 0.4045056163976941,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/test/color/000.npz",
+    "predictions": {
+      "A": 1,
+      "B": 1,
+      "C": 1
+    },
+    "margins": {
+      "A": 0.4016479253768921,
+      "B": 0.4265857934951782,
+      "C": 0.35122465166178607
+    }
+  },
+  {
+    "image_path": "metal_nut/test/color/001.png",
+    "split": "development",
+    "label": 1,
+    "scores": {
+      "A": 2.6399502754211426,
+      "B": 2.8903937339782715,
+      "C": 2.5650567791678687
+    },
+    "neighbor_weight": 0.9133532047271729,
+    "B_minus_C": 0.3253369548104028,
+    "C_div_B": 0.887441994152604,
+    "topK_indices": [
+      377,
+      376,
+      345,
+      344,
+      409,
+      378,
+      346,
+      408,
+      314,
+      343,
+      375
+    ],
+    "topK_cutoff": 2.3676788806915283,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 1,
+    "max_cell_upper_tail_component_size": 11,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 377,
+    "gt_area_fraction": 0.005655102040816326,
+    "small_defect_lt_1pct": true,
+    "topK_GT_intersecting_cells": 9,
+    "topK_mean_GT_cell_fraction": 0.3017934977893734,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/test/color/001.npz",
+    "predictions": {
+      "A": 1,
+      "B": 1,
+      "C": 1
+    },
+    "margins": {
+      "A": 0.5080465078353882,
+      "B": 0.5673366785049438,
+      "C": 0.32396863969889544
+    }
+  },
+  {
+    "image_path": "metal_nut/test/color/008.png",
+    "split": "development",
+    "label": 1,
+    "scores": {
+      "A": 2.8215596675872803,
+      "B": 3.110930919647217,
+      "C": 2.983103535392068
+    },
+    "neighbor_weight": 0.906982421875,
+    "B_minus_C": 0.12782738425514895,
+    "C_div_B": 0.9589102466249412,
+    "topK_indices": [
+      210,
+      242,
+      211,
+      243,
+      209,
+      241,
+      274,
+      178,
+      275,
+      244,
+      177
+    ],
+    "topK_cutoff": 2.8885836601257324,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 1,
+    "max_cell_upper_tail_component_size": 11,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 210,
+    "gt_area_fraction": 0.04604693877551021,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": 11,
+    "topK_mean_GT_cell_fraction": 0.7158212126419723,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/test/color/008.npz",
+    "predictions": {
+      "A": 1,
+      "B": 1,
+      "C": 1
+    },
+    "margins": {
+      "A": 0.6896559000015259,
+      "B": 0.7878738641738892,
+      "C": 0.7420153959230946
+    }
+  },
+  {
+    "image_path": "metal_nut/test/color/013.png",
+    "split": "development",
+    "label": 1,
+    "scores": {
+      "A": 2.8246421813964844,
+      "B": 3.0928235054016113,
+      "C": 2.9799328717318447
+    },
+    "neighbor_weight": 0.9132891893386841,
+    "B_minus_C": 0.1128906336697666,
+    "C_div_B": 0.9634991671937945,
+    "topK_indices": [
+      728,
+      697,
+      729,
+      760,
+      759,
+      727,
+      696,
+      662,
+      726,
+      694,
+      630
+    ],
+    "topK_cutoff": 2.87894868850708,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 1,
+    "max_cell_upper_tail_component_size": 11,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 728,
+    "gt_area_fraction": 0.022977551020408164,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": 11,
+    "topK_mean_GT_cell_fraction": 0.7463258007751751,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/test/color/013.npz",
+    "predictions": {
+      "A": 1,
+      "B": 1,
+      "C": 1
+    },
+    "margins": {
+      "A": 0.69273841381073,
+      "B": 0.7697664499282837,
+      "C": 0.7388447322628715
+    }
+  },
+  {
+    "image_path": "metal_nut/test/color/014.png",
+    "split": "development",
+    "label": 1,
+    "scores": {
+      "A": 3.051938772201538,
+      "B": 3.3536508083343506,
+      "C": 3.16184384172613
+    },
+    "neighbor_weight": 0.9100347757339478,
+    "B_minus_C": 0.19180696660822072,
+    "C_div_B": 0.9428065181587928,
+    "topK_indices": [
+      474,
+      473,
+      442,
+      443,
+      475,
+      441,
+      506,
+      505,
+      472,
+      410,
+      411
+    ],
+    "topK_cutoff": 2.960777759552002,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 1,
+    "max_cell_upper_tail_component_size": 11,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 474,
+    "gt_area_fraction": 0.012228571428571429,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": 11,
+    "topK_mean_GT_cell_fraction": 0.6739052320767392,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/test/color/014.npz",
+    "predictions": {
+      "A": 1,
+      "B": 1,
+      "C": 1
+    },
+    "margins": {
+      "A": 0.9200350046157837,
+      "B": 1.030593752861023,
+      "C": 0.9207557022571566
+    }
+  },
+  {
+    "image_path": "metal_nut/test/color/016.png",
+    "split": "development",
+    "label": 1,
+    "scores": {
+      "A": 2.6150238513946533,
+      "B": 2.8647212982177734,
+      "C": 2.730408690192483
+    },
+    "neighbor_weight": 0.9128370881080627,
+    "B_minus_C": 0.13431260802529055,
+    "C_div_B": 0.9531149476534243,
+    "topK_indices": [
+      345,
+      377,
+      344,
+      376,
+      343,
+      312,
+      346,
+      311,
+      342,
+      375,
+      313
+    ],
+    "topK_cutoff": 2.66530179977417,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 1,
+    "max_cell_upper_tail_component_size": 11,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 345,
+    "gt_area_fraction": 0.025104081632653062,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": 11,
+    "topK_mean_GT_cell_fraction": 0.996219281663516,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/test/color/016.npz",
+    "predictions": {
+      "A": 1,
+      "B": 1,
+      "C": 1
+    },
+    "margins": {
+      "A": 0.4831200838088989,
+      "B": 0.5416642427444458,
+      "C": 0.48932055072350966
+    }
+  },
+  {
+    "image_path": "metal_nut/test/color/017.png",
+    "split": "development",
+    "label": 1,
+    "scores": {
+      "A": 2.620145082473755,
+      "B": 2.8460347652435303,
+      "C": 2.6924462751908735
+    },
+    "neighbor_weight": 0.9206300377845764,
+    "B_minus_C": 0.15358849005265673,
+    "C_div_B": 0.9460342185807719,
+    "topK_indices": [
+      880,
+      879,
+      912,
+      881,
+      849,
+      848,
+      913,
+      815,
+      878,
+      847,
+      911
+    ],
+    "topK_cutoff": 2.5942635536193848,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 1,
+    "max_cell_upper_tail_component_size": 11,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 880,
+    "gt_area_fraction": 0.033218367346938775,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": 11,
+    "topK_mean_GT_cell_fraction": 0.954904779015451,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/test/color/017.npz",
+    "predictions": {
+      "A": 1,
+      "B": 1,
+      "C": 1
+    },
+    "margins": {
+      "A": 0.4882413148880005,
+      "B": 0.5229777097702026,
+      "C": 0.4513581357219003
+    }
+  },
+  {
+    "image_path": "metal_nut/test/color/019.png",
+    "split": "development",
+    "label": 1,
+    "scores": {
+      "A": 2.55704402923584,
+      "B": 2.798344135284424,
+      "C": 2.7021328535946934
+    },
+    "neighbor_weight": 0.9137703776359558,
+    "B_minus_C": 0.09621128168973048,
+    "C_div_B": 0.9656184954249912,
+    "topK_indices": [
+      408,
+      377,
+      344,
+      376,
+      345,
+      440,
+      601,
+      312,
+      600,
+      632,
+      409
+    ],
+    "topK_cutoff": 2.620081663131714,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 2,
+    "max_cell_upper_tail_component_size": 8,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 408,
+    "gt_area_fraction": 0.022822448979591837,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": 10,
+    "topK_mean_GT_cell_fraction": 0.7265306441281695,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/test/color/019.npz",
+    "predictions": {
+      "A": 1,
+      "B": 1,
+      "C": 1
+    },
+    "margins": {
+      "A": 0.42514026165008545,
+      "B": 0.4752870798110962,
+      "C": 0.4610447141257201
+    }
+  },
+  {
+    "image_path": "metal_nut/test/flip/000.png",
+    "split": "development",
+    "label": 1,
+    "scores": {
+      "A": 3.1363213062286377,
+      "B": 3.415457248687744,
+      "C": 3.2768950895829634
+    },
+    "neighbor_weight": 0.9182727336883545,
+    "B_minus_C": 0.13856215910478076,
+    "C_div_B": 0.959430861224213,
+    "topK_indices": [
+      581,
+      550,
+      613,
+      582,
+      882,
+      883,
+      850,
+      518,
+      475,
+      851,
+      884
+    ],
+    "topK_cutoff": 3.2031753063201904,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 3,
+    "max_cell_upper_tail_component_size": 5,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 581,
+    "gt_area_fraction": 0.48438979591836734,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": 11,
+    "topK_mean_GT_cell_fraction": 0.9668327891390274,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/test/flip/000.npz",
+    "predictions": {
+      "A": 1,
+      "B": 1,
+      "C": 1
+    },
+    "margins": {
+      "A": 1.0044175386428833,
+      "B": 1.0924001932144165,
+      "C": 1.0358069501139902
+    }
+  },
+  {
+    "image_path": "metal_nut/test/flip/001.png",
+    "split": "development",
+    "label": 1,
+    "scores": {
+      "A": 3.1668026447296143,
+      "B": 3.4387784004211426,
+      "C": 3.301452398300171
+    },
+    "neighbor_weight": 0.9209091663360596,
+    "B_minus_C": 0.13732600212097168,
+    "C_div_B": 0.960065469149116,
+    "topK_indices": [
+      410,
+      378,
+      411,
+      379,
+      377,
+      409,
+      344,
+      345,
+      442,
+      389,
+      421
+    ],
+    "topK_cutoff": 3.2084760665893555,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 2,
+    "max_cell_upper_tail_component_size": 9,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 410,
+    "gt_area_fraction": 0.4871795918367347,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": 11,
+    "topK_mean_GT_cell_fraction": 1.0,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/test/flip/001.npz",
+    "predictions": {
+      "A": 1,
+      "B": 1,
+      "C": 1
+    },
+    "margins": {
+      "A": 1.0348988771438599,
+      "B": 1.115721344947815,
+      "C": 1.0603642588311977
+    }
+  },
+  {
+    "image_path": "metal_nut/test/flip/004.png",
+    "split": "development",
+    "label": 1,
+    "scores": {
+      "A": 3.0572896003723145,
+      "B": 3.3197011947631836,
+      "C": 3.2469442107460718
+    },
+    "neighbor_weight": 0.9209532737731934,
+    "B_minus_C": 0.07275698401711184,
+    "C_div_B": 0.9780832732379994,
+    "topK_indices": [
+      378,
+      379,
+      844,
+      812,
+      422,
+      411,
+      843,
+      420,
+      666,
+      665,
+      453
+    ],
+    "topK_cutoff": 3.201493263244629,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 4,
+    "max_cell_upper_tail_component_size": 3,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 378,
+    "gt_area_fraction": 0.47939591836734696,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": 11,
+    "topK_mean_GT_cell_fraction": 0.9845334249871112,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/test/flip/004.npz",
+    "predictions": {
+      "A": 1,
+      "B": 1,
+      "C": 1
+    },
+    "margins": {
+      "A": 0.9253858327865601,
+      "B": 0.996644139289856,
+      "C": 1.0058560712770985
+    }
+  },
+  {
+    "image_path": "metal_nut/test/flip/007.png",
+    "split": "development",
+    "label": 1,
+    "scores": {
+      "A": 3.0341668128967285,
+      "B": 3.298780679702759,
+      "C": 3.209595940329812
+    },
+    "neighbor_weight": 0.9197843670845032,
+    "B_minus_C": 0.0891847393729468,
+    "C_div_B": 0.9729643319661424,
+    "topK_indices": [
+      357,
+      811,
+      697,
+      389,
+      810,
+      696,
+      410,
+      411,
+      245,
+      358,
+      212
+    ],
+    "topK_cutoff": 3.171480894088745,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 5,
+    "max_cell_upper_tail_component_size": 3,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 357,
+    "gt_area_fraction": 0.48563061224489795,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": 11,
+    "topK_mean_GT_cell_fraction": 0.9996562983330469,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/test/flip/007.npz",
+    "predictions": {
+      "A": 1,
+      "B": 1,
+      "C": 1
+    },
+    "margins": {
+      "A": 0.9022630453109741,
+      "B": 0.9757236242294312,
+      "C": 0.9685078008608388
+    }
+  },
+  {
+    "image_path": "metal_nut/test/flip/009.png",
+    "split": "development",
+    "label": 1,
+    "scores": {
+      "A": 3.0060009956359863,
+      "B": 3.292938709259033,
+      "C": 3.196494535966353
+    },
+    "neighbor_weight": 0.9128627181053162,
+    "B_minus_C": 0.09644417329268018,
+    "C_div_B": 0.97071182253666,
+    "topK_indices": [
+      581,
+      849,
+      549,
+      850,
+      881,
+      613,
+      582,
+      244,
+      246,
+      550,
+      245
+    ],
+    "topK_cutoff": 3.1497416496276855,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 3,
+    "max_cell_upper_tail_component_size": 5,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 581,
+    "gt_area_fraction": 0.4823795918367347,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": 11,
+    "topK_mean_GT_cell_fraction": 0.9573809932978176,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/test/flip/009.npz",
+    "predictions": {
+      "A": 1,
+      "B": 1,
+      "C": 1
+    },
+    "margins": {
+      "A": 0.8740972280502319,
+      "B": 0.9698816537857056,
+      "C": 0.9554063964973798
+    }
+  },
+  {
+    "image_path": "metal_nut/test/flip/012.png",
+    "split": "development",
+    "label": 1,
+    "scores": {
+      "A": 3.0471060276031494,
+      "B": 3.333848714828491,
+      "C": 3.257783196189187
+    },
+    "neighbor_weight": 0.9139904975891113,
+    "B_minus_C": 0.07606551863930422,
+    "C_div_B": 0.9771838721112402,
+    "topK_indices": [
+      847,
+      549,
+      517,
+      486,
+      879,
+      548,
+      571,
+      485,
+      518,
+      454,
+      846
+    ],
+    "topK_cutoff": 3.195141553878784,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 3,
+    "max_cell_upper_tail_component_size": 3,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 847,
+    "gt_area_fraction": 0.47902653061224487,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": 11,
+    "topK_mean_GT_cell_fraction": 0.9427736724523114,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/test/flip/012.npz",
+    "predictions": {
+      "A": 1,
+      "B": 1,
+      "C": 1
+    },
+    "margins": {
+      "A": 0.915202260017395,
+      "B": 1.0107916593551636,
+      "C": 1.0166950567202138
+    }
+  },
+  {
+    "image_path": "metal_nut/test/flip/013.png",
+    "split": "development",
+    "label": 1,
+    "scores": {
+      "A": 3.0204954147338867,
+      "B": 3.322646141052246,
+      "C": 3.2252775972539727
+    },
+    "neighbor_weight": 0.9090632200241089,
+    "B_minus_C": 0.09736854379827342,
+    "C_div_B": 0.9706954819548019,
+    "topK_indices": [
+      517,
+      549,
+      848,
+      208,
+      581,
+      880,
+      207,
+      518,
+      539,
+      879,
+      847
+    ],
+    "topK_cutoff": 3.14737868309021,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 4,
+    "max_cell_upper_tail_component_size": 4,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 517,
+    "gt_area_fraction": 0.4790204081632653,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": 11,
+    "topK_mean_GT_cell_fraction": 0.9211282788357887,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/test/flip/013.npz",
+    "predictions": {
+      "A": 1,
+      "B": 1,
+      "C": 1
+    },
+    "margins": {
+      "A": 0.8885916471481323,
+      "B": 0.9995890855789185,
+      "C": 0.9841894577849994
+    }
+  },
+  {
+    "image_path": "metal_nut/test/flip/020.png",
+    "split": "development",
+    "label": 1,
+    "scores": {
+      "A": 2.9037225246429443,
+      "B": 3.1721084117889404,
+      "C": 3.1098929318514736
+    },
+    "neighbor_weight": 0.9153919816017151,
+    "B_minus_C": 0.06221547993746679,
+    "C_div_B": 0.9803867107106911,
+    "topK_indices": [
+      692,
+      660,
+      661,
+      266,
+      693,
+      822,
+      711,
+      712,
+      377,
+      679,
+      267
+    ],
+    "topK_cutoff": 3.0691723823547363,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 5,
+    "max_cell_upper_tail_component_size": 4,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 692,
+    "gt_area_fraction": 0.4820734693877551,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": 11,
+    "topK_mean_GT_cell_fraction": 1.0,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/test/flip/020.npz",
+    "predictions": {
+      "A": 1,
+      "B": 1,
+      "C": 1
+    },
+    "margins": {
+      "A": 0.7718187570571899,
+      "B": 0.8490513563156128,
+      "C": 0.8688047923825004
+    }
+  },
+  {
+    "image_path": "metal_nut/test/flip/022.png",
+    "split": "development",
+    "label": 1,
+    "scores": {
+      "A": 2.8768410682678223,
+      "B": 3.178933620452881,
+      "C": 3.1427420269359243
+    },
+    "neighbor_weight": 0.9049704670906067,
+    "B_minus_C": 0.036191593516956555,
+    "C_div_B": 0.9886151779690824,
+    "topK_indices": [
+      175,
+      518,
+      507,
+      143,
+      538,
+      913,
+      880,
+      539,
+      486,
+      914,
+      506
+    ],
+    "topK_cutoff": 3.114285945892334,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 4,
+    "max_cell_upper_tail_component_size": 2,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 175,
+    "gt_area_fraction": 0.48155714285714285,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": 11,
+    "topK_mean_GT_cell_fraction": 0.9067553000359325,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/test/flip/022.npz",
+    "predictions": {
+      "A": 1,
+      "B": 1,
+      "C": 1
+    },
+    "margins": {
+      "A": 0.7449373006820679,
+      "B": 0.8558765649795532,
+      "C": 0.9016538874669511
+    }
+  },
+  {
+    "image_path": "metal_nut/test/good/001.png",
+    "split": "development",
+    "label": 0,
+    "scores": {
+      "A": 1.9814667701721191,
+      "B": 2.1288201808929443,
+      "C": 2.0753685994581743
+    },
+    "neighbor_weight": 0.9307816624641418,
+    "B_minus_C": 0.053451581434770024,
+    "C_div_B": 0.9748914530618789,
+    "topK_indices": [
+      729,
+      822,
+      248,
+      298,
+      330,
+      821,
+      217,
+      474,
+      785,
+      790,
+      665
+    ],
+    "topK_cutoff": 2.0430643558502197,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 7,
+    "max_cell_upper_tail_component_size": 1,
+    "max_cell_is_isolated_in_upper_tail": true,
+    "max_patch_index": 729,
+    "gt_area_fraction": 0.0,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": 0,
+    "topK_mean_GT_cell_fraction": 0.0,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/test/good/001.npz",
+    "predictions": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "margins": {
+      "A": -0.15043699741363525,
+      "B": -0.1942368745803833,
+      "C": -0.16571954001079892
+    }
+  },
+  {
+    "image_path": "metal_nut/test/good/005.png",
+    "split": "development",
+    "label": 0,
+    "scores": {
+      "A": 2.2242748737335205,
+      "B": 2.3991479873657227,
+      "C": 2.1860836202448066
+    },
+    "neighbor_weight": 0.9271103143692017,
+    "B_minus_C": 0.21306436712091603,
+    "C_div_B": 0.9111916529355649,
+    "topK_indices": [
+      344,
+      710,
+      376,
+      312,
+      683,
+      372,
+      311,
+      345,
+      682,
+      715,
+      696
+    ],
+    "topK_cutoff": 2.1296300888061523,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 5,
+    "max_cell_upper_tail_component_size": 5,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 344,
+    "gt_area_fraction": 0.0,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": 0,
+    "topK_mean_GT_cell_fraction": 0.0,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/test/good/005.npz",
+    "predictions": {
+      "A": 1,
+      "B": 1,
+      "C": 0
+    },
+    "margins": {
+      "A": 0.09237110614776611,
+      "B": 0.07609093189239502,
+      "C": -0.055004519224166604
+    }
+  },
+  {
+    "image_path": "metal_nut/test/good/006.png",
+    "split": "development",
+    "label": 0,
+    "scores": {
+      "A": 2.1140153408050537,
+      "B": 2.2749857902526855,
+      "C": 2.2014205889268355
+    },
+    "neighbor_weight": 0.9292433261871338,
+    "B_minus_C": 0.0735652013258501,
+    "C_div_B": 0.9676634457933563,
+    "topK_indices": [
+      263,
+      808,
+      841,
+      648,
+      788,
+      811,
+      615,
+      294,
+      649,
+      809,
+      812
+    ],
+    "topK_cutoff": 2.1391093730926514,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 5,
+    "max_cell_upper_tail_component_size": 2,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 263,
+    "gt_area_fraction": 0.0,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": 0,
+    "topK_mean_GT_cell_fraction": 0.0,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/test/good/006.npz",
+    "predictions": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "margins": {
+      "A": -0.017888426780700684,
+      "B": -0.04807126522064209,
+      "C": -0.039667550542137775
+    }
+  },
+  {
+    "image_path": "metal_nut/test/good/012.png",
+    "split": "development",
+    "label": 0,
+    "scores": {
+      "A": 2.055590867996216,
+      "B": 2.2308998107910156,
+      "C": 2.151831106706099
+    },
+    "neighbor_weight": 0.9214178323745728,
+    "B_minus_C": 0.07906870408491651,
+    "C_div_B": 0.9645574831722806,
+    "topK_indices": [
+      270,
+      649,
+      509,
+      977,
+      267,
+      912,
+      379,
+      330,
+      475,
+      714,
+      302
+    ],
+    "topK_cutoff": 2.0971314907073975,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 10,
+    "max_cell_upper_tail_component_size": 2,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 270,
+    "gt_area_fraction": 0.0,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": 0,
+    "topK_mean_GT_cell_fraction": 0.0,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/test/good/012.npz",
+    "predictions": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "margins": {
+      "A": -0.07631289958953857,
+      "B": -0.09215724468231201,
+      "C": -0.08925703276287411
+    }
+  },
+  {
+    "image_path": "metal_nut/test/good/013.png",
+    "split": "development",
+    "label": 0,
+    "scores": {
+      "A": 2.0293447971343994,
+      "B": 2.208603620529175,
+      "C": 2.156240159815008
+    },
+    "neighbor_weight": 0.9188361763954163,
+    "B_minus_C": 0.052363460714166976,
+    "C_div_B": 0.9762911460311647,
+    "topK_indices": [
+      180,
+      812,
+      177,
+      455,
+      844,
+      179,
+      147,
+      811,
+      268,
+      423,
+      619
+    ],
+    "topK_cutoff": 2.129953384399414,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 6,
+    "max_cell_upper_tail_component_size": 3,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 180,
+    "gt_area_fraction": 0.0,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": 0,
+    "topK_mean_GT_cell_fraction": 0.0,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/test/good/013.npz",
+    "predictions": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "margins": {
+      "A": -0.10255897045135498,
+      "B": -0.11445343494415283,
+      "C": -0.0848479796539654
+    }
+  },
+  {
+    "image_path": "metal_nut/test/good/017.png",
+    "split": "development",
+    "label": 0,
+    "scores": {
+      "A": 1.9584599733352661,
+      "B": 2.1357076168060303,
+      "C": 2.069428638978438
+    },
+    "neighbor_weight": 0.9170075058937073,
+    "B_minus_C": 0.06627897782759229,
+    "C_div_B": 0.9689662679919112,
+    "topK_indices": [
+      276,
+      201,
+      516,
+      359,
+      310,
+      616,
+      584,
+      536,
+      327,
+      243,
+      200
+    ],
+    "topK_cutoff": 2.0378270149230957,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 7,
+    "max_cell_upper_tail_component_size": 2,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 276,
+    "gt_area_fraction": 0.0,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": 0,
+    "topK_mean_GT_cell_fraction": 0.0,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/test/good/017.npz",
+    "predictions": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "margins": {
+      "A": -0.17344379425048828,
+      "B": -0.18734943866729736,
+      "C": -0.17165950049053524
+    }
+  },
+  {
+    "image_path": "metal_nut/test/good/018.png",
+    "split": "development",
+    "label": 0,
+    "scores": {
+      "A": 1.9298701286315918,
+      "B": 2.0980935096740723,
+      "C": 2.0706284913149746
+    },
+    "neighbor_weight": 0.9198208451271057,
+    "B_minus_C": 0.027465018359097648,
+    "C_div_B": 0.9869095356177122,
+    "topK_indices": [
+      331,
+      568,
+      238,
+      82,
+      301,
+      235,
+      277,
+      874,
+      300,
+      907,
+      236
+    ],
+    "topK_cutoff": 2.054713010787964,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 7,
+    "max_cell_upper_tail_component_size": 3,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 331,
+    "gt_area_fraction": 0.0,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": 0,
+    "topK_mean_GT_cell_fraction": 0.0,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/test/good/018.npz",
+    "predictions": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "margins": {
+      "A": -0.2020336389541626,
+      "B": -0.22496354579925537,
+      "C": -0.1704596481539986
+    }
+  },
+  {
+    "image_path": "metal_nut/test/good/019.png",
+    "split": "development",
+    "label": 0,
+    "scores": {
+      "A": 1.9955943822860718,
+      "B": 2.165773868560791,
+      "C": 2.090194832194935
+    },
+    "neighbor_weight": 0.9214232563972473,
+    "B_minus_C": 0.07557903636585594,
+    "C_div_B": 0.9651029881452582,
+    "topK_indices": [
+      146,
+      294,
+      550,
+      951,
+      782,
+      115,
+      648,
+      325,
+      582,
+      712,
+      603
+    ],
+    "topK_cutoff": 2.0517947673797607,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 8,
+    "max_cell_upper_tail_component_size": 2,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 146,
+    "gt_area_fraction": 0.0,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": 0,
+    "topK_mean_GT_cell_fraction": 0.0,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/test/good/019.npz",
+    "predictions": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "margins": {
+      "A": -0.13630938529968262,
+      "B": -0.15728318691253662,
+      "C": -0.15089330727403816
+    }
+  },
+  {
+    "image_path": "metal_nut/test/scratch/000.png",
+    "split": "development",
+    "label": 1,
+    "scores": {
+      "A": 2.254401683807373,
+      "B": 2.470141887664795,
+      "C": 2.338852643966675
+    },
+    "neighbor_weight": 0.9126608371734619,
+    "B_minus_C": 0.13128924369812012,
+    "C_div_B": 0.9468495132389997,
+    "topK_indices": [
+      692,
+      753,
+      724,
+      661,
+      693,
+      663,
+      752,
+      660,
+      722,
+      723,
+      754
+    ],
+    "topK_cutoff": 2.2838447093963623,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 2,
+    "max_cell_upper_tail_component_size": 10,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 692,
+    "gt_area_fraction": 0.018983673469387754,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": 11,
+    "topK_mean_GT_cell_fraction": 0.8233774653848394,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/test/scratch/000.npz",
+    "predictions": {
+      "A": 1,
+      "B": 1,
+      "C": 1
+    },
+    "margins": {
+      "A": 0.12249791622161865,
+      "B": 0.14708483219146729,
+      "C": 0.09776450449770158
+    }
+  },
+  {
+    "image_path": "metal_nut/test/scratch/001.png",
+    "split": "development",
+    "label": 1,
+    "scores": {
+      "A": 2.3307344913482666,
+      "B": 2.5592100620269775,
+      "C": 2.476760365746238
+    },
+    "neighbor_weight": 0.9107241630554199,
+    "B_minus_C": 0.08244969628073973,
+    "C_div_B": 0.967783146251216,
+    "topK_indices": [
+      754,
+      753,
+      821,
+      755,
+      724,
+      723,
+      789,
+      854,
+      788,
+      721,
+      786
+    ],
+    "topK_cutoff": 2.43045711517334,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 1,
+    "max_cell_upper_tail_component_size": 11,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 754,
+    "gt_area_fraction": 0.0712,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": 11,
+    "topK_mean_GT_cell_fraction": 0.9992813510600072,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/test/scratch/001.npz",
+    "predictions": {
+      "A": 1,
+      "B": 1,
+      "C": 1
+    },
+    "margins": {
+      "A": 0.1988307237625122,
+      "B": 0.2361530065536499,
+      "C": 0.23567222627726458
+    }
+  },
+  {
+    "image_path": "metal_nut/test/scratch/002.png",
+    "split": "development",
+    "label": 1,
+    "scores": {
+      "A": 2.7172720432281494,
+      "B": 2.9845175743103027,
+      "C": 2.856754324652932
+    },
+    "neighbor_weight": 0.9104560017585754,
+    "B_minus_C": 0.12776324965737063,
+    "C_div_B": 0.9571913227259532,
+    "topK_indices": [
+      268,
+      300,
+      267,
+      235,
+      301,
+      234,
+      305,
+      306,
+      273,
+      274,
+      338
+    ],
+    "topK_cutoff": 2.758708953857422,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 2,
+    "max_cell_upper_tail_component_size": 6,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 268,
+    "gt_area_fraction": 0.11706122448979592,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": 11,
+    "topK_mean_GT_cell_fraction": 0.7963255167242107,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/test/scratch/002.npz",
+    "predictions": {
+      "A": 1,
+      "B": 1,
+      "C": 1
+    },
+    "margins": {
+      "A": 0.585368275642395,
+      "B": 0.6614605188369751,
+      "C": 0.6156661851839589
+    }
+  },
+  {
+    "image_path": "metal_nut/test/scratch/003.png",
+    "split": "development",
+    "label": 1,
+    "scores": {
+      "A": 2.510411024093628,
+      "B": 2.7459757328033447,
+      "C": 2.659961635416204
+    },
+    "neighbor_weight": 0.9142146110534668,
+    "B_minus_C": 0.08601409738714061,
+    "C_div_B": 0.968676308257346,
+    "topK_indices": [
+      238,
+      235,
+      237,
+      267,
+      236,
+      299,
+      268,
+      296,
+      203,
+      239,
+      266
+    ],
+    "topK_cutoff": 2.6213772296905518,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 2,
+    "max_cell_upper_tail_component_size": 10,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 238,
+    "gt_area_fraction": 0.04400816326530612,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": 11,
+    "topK_mean_GT_cell_fraction": 0.7955599993750879,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/test/scratch/003.npz",
+    "predictions": {
+      "A": 1,
+      "B": 1,
+      "C": 1
+    },
+    "margins": {
+      "A": 0.37850725650787354,
+      "B": 0.4229186773300171,
+      "C": 0.4188734959472309
+    }
+  },
+  {
+    "image_path": "metal_nut/test/scratch/004.png",
+    "split": "development",
+    "label": 1,
+    "scores": {
+      "A": 2.68371319770813,
+      "B": 2.945300817489624,
+      "C": 2.8416240865534004
+    },
+    "neighbor_weight": 0.9111847877502441,
+    "B_minus_C": 0.10367673093622365,
+    "C_div_B": 0.9647992726852972,
+    "topK_indices": [
+      330,
+      361,
+      360,
+      329,
+      357,
+      358,
+      391,
+      362,
+      392,
+      326,
+      359
+    ],
+    "topK_cutoff": 2.773883819580078,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 1,
+    "max_cell_upper_tail_component_size": 11,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 330,
+    "gt_area_fraction": 0.041324489795918365,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": 9,
+    "topK_mean_GT_cell_fraction": 0.5310503210486025,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/test/scratch/004.npz",
+    "predictions": {
+      "A": 1,
+      "B": 1,
+      "C": 1
+    },
+    "margins": {
+      "A": 0.5518094301223755,
+      "B": 0.6222437620162964,
+      "C": 0.6005359470844271
+    }
+  },
+  {
+    "image_path": "metal_nut/test/scratch/005.png",
+    "split": "development",
+    "label": 1,
+    "scores": {
+      "A": 2.574431896209717,
+      "B": 2.7970969676971436,
+      "C": 2.7114592031999067
+    },
+    "neighbor_weight": 0.920394241809845,
+    "B_minus_C": 0.08563776449723681,
+    "C_div_B": 0.9693833408400773,
+    "topK_indices": [
+      275,
+      241,
+      240,
+      276,
+      308,
+      242,
+      209,
+      239,
+      274,
+      208,
+      270
+    ],
+    "topK_cutoff": 2.6621744632720947,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 1,
+    "max_cell_upper_tail_component_size": 11,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 275,
+    "gt_area_fraction": 0.029410204081632654,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": 11,
+    "topK_mean_GT_cell_fraction": 0.8797200393694637,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/test/scratch/005.npz",
+    "predictions": {
+      "A": 1,
+      "B": 1,
+      "C": 1
+    },
+    "margins": {
+      "A": 0.4425281286239624,
+      "B": 0.4740399122238159,
+      "C": 0.4703710637309335
+    }
+  },
+  {
+    "image_path": "metal_nut/test/scratch/011.png",
+    "split": "development",
+    "label": 1,
+    "scores": {
+      "A": 2.7569966316223145,
+      "B": 2.9992916584014893,
+      "C": 2.913904385133223
+    },
+    "neighbor_weight": 0.9192159175872803,
+    "B_minus_C": 0.08538727326826612,
+    "C_div_B": 0.9715308536170256,
+    "topK_indices": [
+      604,
+      616,
+      649,
+      615,
+      648,
+      788,
+      650,
+      682,
+      572,
+      541,
+      636
+    ],
+    "topK_cutoff": 2.8535079956054688,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 3,
+    "max_cell_upper_tail_component_size": 4,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 604,
+    "gt_area_fraction": 0.05907755102040816,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": 11,
+    "topK_mean_GT_cell_fraction": 0.8974441094221125,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/test/scratch/011.npz",
+    "predictions": {
+      "A": 1,
+      "B": 1,
+      "C": 1
+    },
+    "margins": {
+      "A": 0.6250928640365601,
+      "B": 0.6762346029281616,
+      "C": 0.6728162456642499
+    }
+  },
+  {
+    "image_path": "metal_nut/test/scratch/015.png",
+    "split": "development",
+    "label": 1,
+    "scores": {
+      "A": 2.7603564262390137,
+      "B": 3.020533561706543,
+      "C": 2.9339761950752954
+    },
+    "neighbor_weight": 0.9138638377189636,
+    "B_minus_C": 0.08655736663124758,
+    "C_div_B": 0.971343683205975,
+    "topK_indices": [
+      393,
+      425,
+      361,
+      394,
+      424,
+      362,
+      426,
+      456,
+      457,
+      757,
+      758
+    ],
+    "topK_cutoff": 2.857682466506958,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 2,
+    "max_cell_upper_tail_component_size": 9,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 393,
+    "gt_area_fraction": 0.032810204081632655,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": 10,
+    "topK_mean_GT_cell_fraction": 0.6706947460513365,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/test/scratch/015.npz",
+    "predictions": {
+      "A": 1,
+      "B": 1,
+      "C": 1
+    },
+    "margins": {
+      "A": 0.6284526586532593,
+      "B": 0.6974765062332153,
+      "C": 0.6928880556063222
+    }
+  },
+  {
+    "image_path": "metal_nut/test/scratch/017.png",
+    "split": "development",
+    "label": 1,
+    "scores": {
+      "A": 2.6534223556518555,
+      "B": 2.8902828693389893,
+      "C": 2.8060061714865943
+    },
+    "neighbor_weight": 0.9180493354797363,
+    "B_minus_C": 0.084276697852395,
+    "C_div_B": 0.9708413668618985,
+    "topK_indices": [
+      777,
+      745,
+      631,
+      599,
+      746,
+      747,
+      568,
+      809,
+      778,
+      715,
+      776
+    ],
+    "topK_cutoff": 2.769914150238037,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 2,
+    "max_cell_upper_tail_component_size": 8,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 777,
+    "gt_area_fraction": 0.04764081632653061,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": 11,
+    "topK_mean_GT_cell_fraction": 0.7646268493493102,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/test/scratch/017.npz",
+    "predictions": {
+      "A": 1,
+      "B": 1,
+      "C": 1
+    },
+    "margins": {
+      "A": 0.5215185880661011,
+      "B": 0.5672258138656616,
+      "C": 0.564918032017621
+    }
+  },
+  {
+    "image_path": "metal_nut/test/scratch/021.png",
+    "split": "development",
+    "label": 1,
+    "scores": {
+      "A": 2.23604416847229,
+      "B": 2.4496524333953857,
+      "C": 2.389973055232655
+    },
+    "neighbor_weight": 0.9128005504608154,
+    "B_minus_C": 0.059679378162730945,
+    "C_div_B": 0.9756376139940753,
+    "topK_indices": [
+      549,
+      517,
+      722,
+      516,
+      721,
+      752,
+      753,
+      617,
+      518,
+      723,
+      581
+    ],
+    "topK_cutoff": 2.3395650386810303,
+    "topK_count": 11,
+    "upper_tail_count_including_ties": 11,
+    "upper_tail_8connected_components": 3,
+    "max_cell_upper_tail_component_size": 5,
+    "max_cell_is_isolated_in_upper_tail": false,
+    "max_patch_index": 549,
+    "gt_area_fraction": 0.06932448979591836,
+    "small_defect_lt_1pct": false,
+    "topK_GT_intersecting_cells": 11,
+    "topK_mean_GT_cell_fraction": 0.8970457279445079,
+    "GT_cell_measure": "adaptive area average on nominal 32x32 grid; not a receptive-field mask",
+    "source_patch_file": "04实验结果/18开发集评分分解/score_diagnosis_20261026_203346_422482/wide_resnet50/patch_scores/metal_nut/test/scratch/021.npz",
+    "predictions": {
+      "A": 1,
+      "B": 1,
+      "C": 1
+    },
+    "margins": {
+      "A": 0.10414040088653564,
+      "B": 0.1265953779220581,
+      "C": 0.14888491576368157
+    }
+  }
+]

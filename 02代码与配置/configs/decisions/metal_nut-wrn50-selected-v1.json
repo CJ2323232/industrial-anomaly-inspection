@@ -1,0 +1,34 @@
+{
+  "status": "user_selected_primary_development_scheme",
+  "recorded_on": "2026-10-26",
+  "algorithm": "PatchCore",
+  "backbone": "wide_resnet50_2.tv_in1k",
+  "input_size": [
+    256,
+    256
+  ],
+  "sigma": 4,
+  "feature_layers": [
+    "layer2",
+    "layer3"
+  ],
+  "memory_bank_shape": [
+    1802,
+    1536
+  ],
+  "num_neighbors": 9,
+  "checkpoint": "04实验结果/09骨干网络对照/backbone_comparison_20261025_220104_486177/wide_resnet50/model.pt",
+  "checkpoint_sha256": "05544fcafb537947579af506beb97e7e80498274b5e2390039fcdf484b73c579",
+  "baseline_retained": "ResNet18 / 256 / sigma4",
+  "image_threshold": 2.1319037675857544,
+  "image_threshold_provenance": "existing 44-normal-image calibration, q=0.975",
+  "provisional_pixel_threshold": 2.103178024291992,
+  "pixel_threshold_status": "development-GT-selected candidate; not independently validated or formal deployment calibration",
+  "original_normal_only_pixel_threshold": 2.0803534984588623,
+  "decision_rule": "raw_score > threshold",
+  "runtime_switch_performed": false,
+  "final_evaluation_authorized": false,
+  "held_out_images_opened": 0,
+  "next_deliverable": "package a versioned inference entry using the selected existing checkpoint and explicit thresholds; no new training",
+  "limits": "Five-fold diagnostics evaluate a threshold-selection procedure, not this fixed pixel cutoff. No final generalization claim."
+}

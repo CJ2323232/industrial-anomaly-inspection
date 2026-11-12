@@ -1,0 +1,208 @@
+{
+  "status": "supervised_development_image_threshold_candidate",
+  "recorded_on": "2026-10-26T17:18:49.121030",
+  "algorithm": "PatchCore",
+  "backbone": "wide_resnet50_2.tv_in1k",
+  "input_size": [
+    256,
+    256
+  ],
+  "sigma": 4,
+  "feature_layers": [
+    "layer2",
+    "layer3"
+  ],
+  "memory_bank_shape": [
+    1802,
+    1536
+  ],
+  "num_neighbors": 9,
+  "checkpoint": "04实验结果/09骨干网络对照/backbone_comparison_20261025_220104_486177/wide_resnet50/model.pt",
+  "checkpoint_sha256": "05544fcafb537947579af506beb97e7e80498274b5e2390039fcdf484b73c579",
+  "baseline_retained": "ResNet18 / 256 / sigma4",
+  "image_threshold": 2.2301595211029053,
+  "image_threshold_provenance": "Development image labels: zero-FN minimum-FP maximal-margin plateau midpoint. Not normal-only calibration.",
+  "provisional_pixel_threshold": 2.103178024291992,
+  "pixel_threshold_status": "development-GT-selected candidate; not independently validated or formal deployment calibration",
+  "original_normal_only_pixel_threshold": 2.0803534984588623,
+  "decision_rule": "raw_score > threshold",
+  "runtime_switch_performed": false,
+  "final_evaluation_authorized": false,
+  "held_out_images_opened": 0,
+  "next_deliverable": "package a versioned inference entry using the selected existing checkpoint and explicit thresholds; no new training",
+  "limits": "Uses development labels after v1 test diagnosis; needs new unseen validation. Same model and pixel output; not a proven universal upgrade.",
+  "version": "metal_nut-wrn50-image-v2-candidate",
+  "previous_image_threshold": 2.1319037675857544,
+  "selection_rule": "Development FN=0; minimize FP; maximize nearest-observation absolute score margin within the optimal plateau.",
+  "evidence_directory": "04实验结果/16图像级阈值校准/image_threshold_20261026_171843_356331",
+  "development_metrics": {
+    "threshold": 2.2301595211029053,
+    "lower_score": 2.2242748737335205,
+    "upper_score": 2.23604416847229,
+    "minimum_observed_margin": 0.005884647369384766,
+    "TP": 37,
+    "FP": 0,
+    "FN": 0,
+    "TN": 8,
+    "Recall": 1.0,
+    "FPR": 0.0
+  },
+  "cross_validation": {
+    "repeats": [
+      {
+        "seed": 0,
+        "TP": 35,
+        "FP": 1,
+        "FN": 2,
+        "TN": 7
+      },
+      {
+        "seed": 1,
+        "TP": 37,
+        "FP": 1,
+        "FN": 0,
+        "TN": 7
+      },
+      {
+        "seed": 2,
+        "TP": 37,
+        "FP": 1,
+        "FN": 0,
+        "TN": 7
+      },
+      {
+        "seed": 3,
+        "TP": 35,
+        "FP": 1,
+        "FN": 2,
+        "TN": 7
+      },
+      {
+        "seed": 4,
+        "TP": 36,
+        "FP": 1,
+        "FN": 1,
+        "TN": 7
+      },
+      {
+        "seed": 5,
+        "TP": 36,
+        "FP": 1,
+        "FN": 1,
+        "TN": 7
+      },
+      {
+        "seed": 6,
+        "TP": 34,
+        "FP": 1,
+        "FN": 3,
+        "TN": 7
+      },
+      {
+        "seed": 7,
+        "TP": 36,
+        "FP": 1,
+        "FN": 1,
+        "TN": 7
+      },
+      {
+        "seed": 8,
+        "TP": 36,
+        "FP": 1,
+        "FN": 1,
+        "TN": 7
+      },
+      {
+        "seed": 9,
+        "TP": 36,
+        "FP": 1,
+        "FN": 1,
+        "TN": 7
+      },
+      {
+        "seed": 10,
+        "TP": 36,
+        "FP": 1,
+        "FN": 1,
+        "TN": 7
+      },
+      {
+        "seed": 11,
+        "TP": 37,
+        "FP": 1,
+        "FN": 0,
+        "TN": 7
+      },
+      {
+        "seed": 12,
+        "TP": 36,
+        "FP": 1,
+        "FN": 1,
+        "TN": 7
+      },
+      {
+        "seed": 13,
+        "TP": 35,
+        "FP": 1,
+        "FN": 2,
+        "TN": 7
+      },
+      {
+        "seed": 14,
+        "TP": 36,
+        "FP": 1,
+        "FN": 1,
+        "TN": 7
+      },
+      {
+        "seed": 15,
+        "TP": 36,
+        "FP": 1,
+        "FN": 1,
+        "TN": 7
+      },
+      {
+        "seed": 16,
+        "TP": 36,
+        "FP": 1,
+        "FN": 1,
+        "TN": 7
+      },
+      {
+        "seed": 17,
+        "TP": 36,
+        "FP": 1,
+        "FN": 1,
+        "TN": 7
+      },
+      {
+        "seed": 18,
+        "TP": 37,
+        "FP": 1,
+        "FN": 0,
+        "TN": 7
+      },
+      {
+        "seed": 19,
+        "TP": 36,
+        "FP": 1,
+        "FN": 1,
+        "TN": 7
+      }
+    ],
+    "mean_FP_per_repeat": 1.0,
+    "mean_FN_per_repeat": 1.05,
+    "threshold_range": [
+      2.145817518234253,
+      2.364845395088196
+    ],
+    "independent_images": 45,
+    "independent_normals": 8,
+    "independent_anomalies": 37,
+    "note": "Repeated predictions of the same images are dependent, not 900 independent samples."
+  },
+  "source_policy": "02代码与配置/configs/decisions/metal_nut-wrn50-selected-v1.json",
+  "source_policy_sha256": "fe48029cae5e19a0c4f9509e82a32b8056ec0beac1c3ecba278d88728637cbd5",
+  "held_out_evaluation_for_this_version": false,
+  "post_test_development": true
+}
